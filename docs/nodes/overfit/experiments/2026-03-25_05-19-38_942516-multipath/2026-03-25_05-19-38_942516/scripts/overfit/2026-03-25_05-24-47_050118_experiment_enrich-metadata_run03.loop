@@ -1,0 +1,11 @@
+{
+  "ctx": 8192,
+  "top_p": 0.9,
+  "peek_chars": 100,
+  "temperature": 0.0,
+  "model_profile": "deepseek_r1_8b",
+  "crate_basename": "2026-03-24_01-10-55_015386",
+  "reference_path": "/srv/testbed/results/anonymous/default/2026-03-24_01-10-55_015386_reference",
+  "reference_label": "2026-03-24_01-10-55_015386_reference",
+  "baseline_result_folder": "/srv/testbed/results/anonymous/default/2026-03-24_01-10-55_015386"
+}

@@ -1,0 +1,137 @@
+{
+  "generated_at_utc": "2026-03-25T03:47:06.132479+00:00",
+  "result_folder": "/tmp/enricher/2026-03-23_19-39-04_161273",
+  "updated_entities": 43,
+  "elapsed_seconds": 14.768591,
+  "parameters": {
+    "model_profile": "gemma3_4b",
+    "model_profile_file": "/root/ai-metadata-enricher/config/model_profiles.yml",
+    "model": "gemma3:4b",
+    "ctx": 8192,
+    "temperature": 0.0,
+    "top_p": 0.9,
+    "num_predict": null,
+    "think": null,
+    "peek_chars": 100,
+    "gpu_metrics_csv": true,
+    "gpu_metrics_interval_ms": 1000,
+    "overwrite": true,
+    "force_title": true,
+    "force_description": true,
+    "force_keywords": true,
+    "seed": 42
+  },
+  "llm_usage_summary": {
+    "calls_total": 12,
+    "calls_with_usage": 12,
+    "prompt_tokens": 10282,
+    "output_tokens": 516,
+    "prompt_eval_seconds": 1.667135,
+    "eval_seconds": 7.114053,
+    "total_seconds": 14.681919,
+    "load_seconds": 5.0845,
+    "prompt_tokens_per_second": 6167.468473358155,
+    "output_tokens_per_second": 72.53249479381995,
+    "usage_present": true
+  },
+  "input_stats": {
+    "count": 12,
+    "min_chars": 1730,
+    "max_chars": 5134,
+    "mean_chars": 3242.8,
+    "stddev_chars": 1054.5
+  },
+  "prompt_template_hash": "ed3cb5aa9c670cb0e185817bded7303d6292914bfb17164c42c6fa18490bcad4",
+  "environment": {
+    "ollama_version": "ollama version is 0.18.2",
+    "model_digest": "unknown",
+    "model_details": {
+      "family": "gemma3",
+      "parameter_size": "4.3B",
+      "quantization_level": "Q4_K_M"
+    },
+    "gpu_info": "NVIDIA GB10, 580.126.09"
+  },
+  "artifact_provenance": {
+    "baseline_path": "/srv/testbed/results/anonymous/default/2026-03-23_19-39-04_161273",
+    "baseline_label": "2026-03-23_19-39-04_161273_original",
+    "working_copy_path": "/tmp/enricher/2026-03-23_19-39-04_161273",
+    "enriched_label": "2026-03-23_19-39-04_161273",
+    "raw_baseline_uploaded_this_run": null,
+    "reference_label": "2026-03-23_19-39-04_161273_reference",
+    "reference_path": "/srv/testbed/results/anonymous/default/2026-03-23_19-39-04_161273_reference"
+  },
+  "gpu_metrics_summary": {
+    "status": "captured",
+    "csv_path": "/tmp/llm-enrichment-gpu-metrics.csv",
+    "interval_ms": 1000,
+    "monitor_returncode": 0,
+    "sample_count": 114,
+    "gpu_device_count": 1,
+    "device_indices": [
+      "0"
+    ],
+    "device_names": [
+      "NVIDIA GB10"
+    ],
+    "gpu_utilization_avg_pct": 8.386,
+    "gpu_utilization_max_pct": 93.0,
+    "memory_utilization_avg_pct": 0.0,
+    "memory_utilization_max_pct": 0.0,
+    "power_draw_avg_watts": 13.694,
+    "power_draw_max_watts": 44.24,
+    "temperature_max_c": 52.0
+  },
+  "evaluation": {
+    "status": "completed",
+    "reason": null,
+    "report_json": "/tmp/enricher/bertscore_results.json",
+    "report_markdown": "/tmp/enricher/bertscore_results.md",
+    "total_references": 70,
+    "matched": 70,
+    "bertscore": {
+      "status": "computed",
+      "model": "microsoft/deberta-large-mnli",
+      "rescale_with_baseline": true,
+      "reason": null,
+      "requested_device": "auto",
+      "actual_device": "cuda",
+      "cpu_fallback_triggered": false,
+      "original_cuda_error": null
+    },
+    "aggregated": {
+      "rouge_l_f1_mean": 0.4815,
+      "rouge_l_f1_stddev": 0.4252,
+      "token_overlap_mean": 0.4549,
+      "token_overlap_stddev": 0.4461,
+      "bertscore_f1_mean": 0.5919,
+      "bertscore_f1_stddev": 0.3411,
+      "bertscore_precision_mean": 0.5856,
+      "bertscore_recall_mean": 0.5988,
+      "aggregated_by_field": {
+        "description": {
+          "count": 69,
+          "rouge_l_f1_mean": 0.4862,
+          "rouge_l_f1_stddev": 0.4265,
+          "token_overlap_mean": 0.4588,
+          "token_overlap_stddev": 0.4481,
+          "bertscore_f1_mean": 0.597,
+          "bertscore_f1_stddev": 0.3409,
+          "bertscore_precision_mean": 0.5913,
+          "bertscore_recall_mean": 0.6034
+        },
+        "name": {
+          "count": 1,
+          "rouge_l_f1_mean": 0.1538,
+          "rouge_l_f1_stddev": 0.0,
+          "token_overlap_mean": 0.1818,
+          "token_overlap_stddev": 0.0,
+          "bertscore_f1_mean": 0.2387,
+          "bertscore_f1_stddev": 0.0,
+          "bertscore_precision_mean": 0.1944,
+          "bertscore_recall_mean": 0.2812
+        }
+      }
+    }
+  }
+}

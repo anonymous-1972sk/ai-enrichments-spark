@@ -1,0 +1,39 @@
+#!/bin/bash
+set -eux
+
+PORT=$(pos_get_variable server_port -r)
+SERVER_IP=$(pos_get_variable server_ip -r)
+CLIENT_PATH=$(pos_get_variable client_path --from-loop)
+LOSS=$(pos_get_variable loss --from-loop)
+BENCHMARK_DURATION=$(pos_get_variable benchmark_duration -r)
+
+CLIENT_INTERFACE=$(pos_get_variable client_interface -r)
+CLIENT_EXTRA_INTERFACE=$(pos_get_variable client_extra_interface -r)
+
+echo "Configuring path properties with ${LOSS}% loss"
+
+RATE=$(pos_get_variable fast_path_rate -r)
+DELAY=$(pos_get_variable fast_path_delay -r)
+LATENCY=$(echo "3 * $DELAY" | bc) # 1.5 BDP
+
+tc qdisc replace dev "$CLIENT_INTERFACE" root handle 1: tbf rate "${RATE}"mbit buffer 64k latency "${LATENCY}"ms
+tc qdisc replace dev "$CLIENT_INTERFACE" parent 1: handle 10: netem delay "${DELAY}"ms loss "${LOSS}"%
+
+RATE=$(pos_get_variable slow_path_rate --from-loop)
+DELAY=$(pos_get_variable slow_path_delay --from-loop)
+LATENCY=$(echo "3 * $DELAY" | bc) # 1.5 BDP
+
+tc qdisc replace dev "$CLIENT_EXTRA_INTERFACE" root handle 1: tbf rate "${RATE}"mbit buffer 64k latency "${LATENCY}"ms
+tc qdisc replace dev "$CLIENT_EXTRA_INTERFACE" parent 1: handle 10: netem delay "${DELAY}"ms loss "${LOSS}"%
+
+pos_sync --tag "server_ready"
+
+echo "Checking path to the server"
+ip -6 route get "$SERVER_IP" from "$CLIENT_PATH"
+
+echo "Running iperf3 client via $CLIENT_PATH for ${BENCHMARK_DURATION}s"
+iperf3 --client "$SERVER_IP" --port "$PORT" --bind "$CLIENT_PATH" --time "$BENCHMARK_DURATION" --verbose
+
+pos_sync --tag "client_finished"
+
+echo "Client run complete."

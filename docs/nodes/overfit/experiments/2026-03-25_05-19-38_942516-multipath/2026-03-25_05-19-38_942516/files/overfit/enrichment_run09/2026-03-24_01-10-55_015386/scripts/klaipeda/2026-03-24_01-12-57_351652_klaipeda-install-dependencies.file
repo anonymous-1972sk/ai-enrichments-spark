@@ -1,0 +1,14 @@
+#!/bin/bash
+RESULTS_DIR=$(pos_get_variable results_dir -r)
+mkdir -p "$RESULTS_DIR"
+
+LOG_FILE="$RESULTS_DIR/install-dependencies-$(hostname).txt"
+exec > >(tee -a "$LOG_FILE") 2>&1
+set -e
+
+echo "Installing dependencies"
+
+apt-get -o Acquire::Check-Valid-Until=false update -yqq
+DEBIAN_FRONTEND=noninteractive apt-get install -y iperf3 tshark python3-pip
+
+pip install matplotlib --break-system-packages

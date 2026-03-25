@@ -1,0 +1,1 @@
+scp -r /srv/testbed/results/anonymous/default/2026-03-24_01-10-55_015386/scripts narva.anonymous.testbed:/root/evaluation

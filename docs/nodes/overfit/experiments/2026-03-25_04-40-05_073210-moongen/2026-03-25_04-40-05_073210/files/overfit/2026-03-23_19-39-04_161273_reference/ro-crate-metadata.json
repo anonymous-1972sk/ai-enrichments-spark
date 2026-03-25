@@ -1,0 +1,3237 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.2/context",
+    "@graph": [
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "author": [
+                {
+                    "@id": "https://orcid.org/XXXX-XXXX-XXXX-XXXX"
+                }
+            ],
+            "conformsTo": {
+                "@id": "https://anonymous-4dc42.github.io/rise-ro-crate-profile/0.1.0/"
+            },
+            "contributor": [
+                {
+                    "@id": "https://credit.niso.org/contributor-roles/investigation/"
+                }
+            ],
+            "dateCreated": "2026-03-23T19:39:04.189051",
+            "dateModified": "2026-03-23T20:26:05.321428",
+            "datePublished": "2026-03-23T18:39:04+00:00",
+            "description": "This experiment measures l2-load-latency in a two-node setup with MoonGen on one node as the load generator and libmoon on another node as the forwarding device under test. The benchmark tests different packet rates and packet sizes. Each measurement runs for fixed duration, records energy consumption on both machines, and stores latency histograms as CSV data and PNG plots for every parameter combination.",
+            "hasPart": [
+                {
+                    "@id": "config/nida/hardware.json"
+                },
+                {
+                    "@id": "config/allocation.json"
+                },
+                {
+                    "@id": "config/nida/topology.json"
+                },
+                {
+                    "@id": "config/nida/topology.pdf"
+                },
+                {
+                    "@id": "config/cesis/hardware.json"
+                },
+                {
+                    "@id": "config/cesis/topology.json"
+                },
+                {
+                    "@id": "config/cesis/topology.pdf"
+                },
+                {
+                    "@id": "config/2026-03-23_19-39-05_264296_variables.json"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-41-37_716526_bootstrap.file"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-41-37_716526_bootstrap.stdout"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-41-37_716526_bootstrap.stderr"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-41-37_716526_bootstrap.status"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-39-08_076780_reset.command"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-39-08_076780_reset.stdout"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-39-08_076780_reset.stderr"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-39-08_076780_reset.status"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-43-51_281626_bootstrap.file"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-43-51_281626_bootstrap.stdout"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-43-51_281626_bootstrap.stderr"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-43-51_281626_bootstrap.status"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-39-08_407231_reset.command"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-39-08_407231_reset.stdout"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-39-08_407231_reset.stderr"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-39-08_407231_reset.status"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-43-55_946506_setup-dut.file"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-43-55_946506_setup-dut.stdout"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-43-55_946506_setup-dut.stderr"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-43-55_946506_setup-dut.status"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-43-55_628662_setup-loadgen.file"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-43-55_628662_setup-loadgen.stdout"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-43-55_628662_setup-loadgen.stderr"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-43-55_628662_setup-loadgen.status"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-48-35_142825_copy_plot_latency.py.command"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-48-35_142825_copy_plot_latency.py.stdout"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-48-35_142825_copy_plot_latency.py.stderr"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-48-35_142825_copy_plot_latency.py.status"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-48-56_389619_loadgen-l2-load-latency_run0.command"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-48-56_389619_loadgen-l2-load-latency_run0.stdout"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-48-56_389619_loadgen-l2-load-latency_run0.stderr"
+                },
+                {
+                    "@id": "files/cesis/histogram-latencies_run0.csv"
+                },
+                {
+                    "@id": "files/cesis/histogram-latencies_run0.png"
+                },
+                {
+                    "@id": "energy/cesis/measurement_run0.csv"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator.file"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run0.loop"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run0.stdout"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run0.stderr"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run0.status"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-51-32_755121_dut-l2-load-latency_run0.command"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-51-32_755121_dut-l2-load-latency_run0.stdout"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-51-32_755121_dut-l2-load-latency_run0.stderr"
+                },
+                {
+                    "@id": "energy/nida/dut_measurement_run0.csv"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder.file"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run0.loop"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run0.stdout"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run0.stderr"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run0.status"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-55-11_061959_loadgen-l2-load-latency_run1.command"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-55-11_061959_loadgen-l2-load-latency_run1.stdout"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-55-11_061959_loadgen-l2-load-latency_run1.stderr"
+                },
+                {
+                    "@id": "files/cesis/histogram-latencies_run1.csv"
+                },
+                {
+                    "@id": "files/cesis/histogram-latencies_run1.png"
+                },
+                {
+                    "@id": "energy/cesis/measurement_run1.csv"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run1.loop"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run1.stdout"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run1.stderr"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run1.status"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-57-47_138890_dut-l2-load-latency_run1.command"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-57-47_138890_dut-l2-load-latency_run1.stdout"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-57-47_138890_dut-l2-load-latency_run1.stderr"
+                },
+                {
+                    "@id": "energy/nida/dut_measurement_run1.csv"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run1.loop"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run1.stdout"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run1.stderr"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run1.status"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_20-01-25_586122_loadgen-l2-load-latency_run2.command"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_20-01-25_586122_loadgen-l2-load-latency_run2.stdout"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_20-01-25_586122_loadgen-l2-load-latency_run2.stderr"
+                },
+                {
+                    "@id": "files/cesis/histogram-latencies_run2.csv"
+                },
+                {
+                    "@id": "files/cesis/histogram-latencies_run2.png"
+                },
+                {
+                    "@id": "energy/cesis/measurement_run2.csv"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run2.loop"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run2.stdout"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run2.stderr"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run2.status"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_20-04-01_765228_dut-l2-load-latency_run2.command"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_20-04-01_765228_dut-l2-load-latency_run2.stdout"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_20-04-01_765228_dut-l2-load-latency_run2.stderr"
+                },
+                {
+                    "@id": "energy/nida/dut_measurement_run2.csv"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run2.loop"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run2.stdout"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run2.stderr"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run2.status"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_20-07-40_162594_loadgen-l2-load-latency_run3.command"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_20-07-40_162594_loadgen-l2-load-latency_run3.stdout"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_20-07-40_162594_loadgen-l2-load-latency_run3.stderr"
+                },
+                {
+                    "@id": "files/cesis/histogram-latencies_run3.csv"
+                },
+                {
+                    "@id": "files/cesis/histogram-latencies_run3.png"
+                },
+                {
+                    "@id": "energy/cesis/measurement_run3.csv"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run3.loop"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run3.stdout"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run3.stderr"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run3.status"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_20-10-16_344373_dut-l2-load-latency_run3.command"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_20-10-16_344373_dut-l2-load-latency_run3.stdout"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_20-10-16_344373_dut-l2-load-latency_run3.stderr"
+                },
+                {
+                    "@id": "energy/nida/dut_measurement_run3.csv"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run3.loop"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run3.stdout"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run3.stderr"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run3.status"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_20-13-54_767010_loadgen-l2-load-latency_run4.command"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_20-13-54_767010_loadgen-l2-load-latency_run4.stdout"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_20-13-54_767010_loadgen-l2-load-latency_run4.stderr"
+                },
+                {
+                    "@id": "files/cesis/histogram-latencies_run4.csv"
+                },
+                {
+                    "@id": "files/cesis/histogram-latencies_run4.png"
+                },
+                {
+                    "@id": "energy/cesis/measurement_run4.csv"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run4.loop"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run4.stdout"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run4.stderr"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run4.status"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_20-16-30_896651_dut-l2-load-latency_run4.command"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_20-16-30_896651_dut-l2-load-latency_run4.stdout"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_20-16-30_896651_dut-l2-load-latency_run4.stderr"
+                },
+                {
+                    "@id": "energy/nida/dut_measurement_run4.csv"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run4.loop"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run4.stdout"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run4.stderr"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run4.status"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_20-20-09_370681_loadgen-l2-load-latency_run5.command"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_20-20-09_370681_loadgen-l2-load-latency_run5.stdout"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_20-20-09_370681_loadgen-l2-load-latency_run5.stderr"
+                },
+                {
+                    "@id": "files/cesis/histogram-latencies_run5.csv"
+                },
+                {
+                    "@id": "files/cesis/histogram-latencies_run5.png"
+                },
+                {
+                    "@id": "energy/cesis/measurement_run5.csv"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run5.loop"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run5.stdout"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run5.stderr"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run5.status"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_20-22-45_463490_dut-l2-load-latency_run5.command"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_20-22-45_463490_dut-l2-load-latency_run5.stdout"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_20-22-45_463490_dut-l2-load-latency_run5.stderr"
+                },
+                {
+                    "@id": "energy/nida/dut_measurement_run5.csv"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run5.loop"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run5.stdout"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run5.stderr"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run5.status"
+                }
+            ],
+            "keywords": [
+                "moongen",
+                "libmoon",
+                "latency measurement",
+                "packet forwarding",
+                "benchmark"
+            ],
+            "mainEntity": {
+                "@id": "config/allocation.json"
+            },
+            "name": "MoonGen Load Latency Benchmarks"
+        },
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.2"
+            }
+        },
+        {
+            "@id": "http://doi.org/10.1145/3485983.3494841",
+            "@type": "CreativeWork",
+            "alternateName": "pos",
+            "citation": "http://doi.org/10.1145/3485983.3494841",
+            "description": "The pos Framework: A Methodology and Toolchain for Reproducible Network Experiments",
+            "name": "Plain Orchestrating Service",
+            "version": "3.0.0"
+        },
+        {
+            "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/19",
+            "@type": "WebSite",
+            "name": "Acrobat PDF 1.5"
+        },
+        {
+            "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817",
+            "@type": "WebSite",
+            "name": "JSON Data Format"
+        },
+        {
+            "@id": "https://anonymous-4dc42.github.io/rise-ro-crate-profile/0.1.0/",
+            "@type": [
+                "CreativeWork",
+                "Profile"
+            ],
+            "alternateName": "RISE RO-Crate Profile",
+            "name": "Research Infrastructure Shareable Experiments RO-Crate Profile",
+            "version": "0.1.0"
+        },
+        {
+            "@id": "https://orcid.org/XXXX-XXXX-XXXX-XXXX",
+            "@type": "Person",
+            "affiliation": {
+                "@id": "https://ror.org/anonymous"
+            },
+            "familyName": "Anonymous",
+            "givenName": "Anonymous",
+            "name": "Anonymous"
+        },
+        {
+            "@id": "https://credit.niso.org/contributor-roles/investigation/",
+            "@type": "Role",
+            "contributor": [
+                {
+                    "@id": "https://orcid.org/XXXX-XXXX-XXXX-XXXX"
+                }
+            ],
+            "roleName": "Investigation"
+        },
+        {
+            "@id": "https://ror.org/anonymous",
+            "@type": "Organization",
+            "location": "Anonym City, Anonymized",
+            "name": "Anonym University",
+            "url": "https://www.anonymized-university.com"
+        },
+        {
+            "@id": "config/nida/hardware.json",
+            "@type": "File",
+            "contentSize": "17999",
+            "dateCreated": "2026-03-23T19:39:07.051399",
+            "dateModified": "2026-03-23T19:39:07.051399",
+            "description": "Contains information about CPU, GPU, RAM, motherboard, storage, and network",
+            "encodingFormat": {
+                "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817"
+            },
+            "name": "Hardware of testbed node nida"
+        },
+        {
+            "@id": "config/allocation.json",
+            "@type": "Experiment",
+            "dateCreated": "2026-03-23T19:39:04.161571",
+            "dateModified": "2026-03-23T19:39:04.161571",
+            "encodingFormat": "application/json",
+            "energyMeasurements": [
+                {
+                    "@id": "energy/cesis/measurement_run0.csv"
+                },
+                {
+                    "@id": "energy/nida/dut_measurement_run0.csv"
+                },
+                {
+                    "@id": "energy/cesis/measurement_run1.csv"
+                },
+                {
+                    "@id": "energy/nida/dut_measurement_run1.csv"
+                },
+                {
+                    "@id": "energy/cesis/measurement_run2.csv"
+                },
+                {
+                    "@id": "energy/nida/dut_measurement_run2.csv"
+                },
+                {
+                    "@id": "energy/cesis/measurement_run3.csv"
+                },
+                {
+                    "@id": "energy/nida/dut_measurement_run3.csv"
+                },
+                {
+                    "@id": "energy/cesis/measurement_run4.csv"
+                },
+                {
+                    "@id": "energy/nida/dut_measurement_run4.csv"
+                },
+                {
+                    "@id": "energy/cesis/measurement_run5.csv"
+                },
+                {
+                    "@id": "energy/nida/dut_measurement_run5.csv"
+                }
+            ],
+            "executedCommands": [
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-41-37_716526_bootstrap.file"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-39-08_076780_reset.command"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-43-51_281626_bootstrap.file"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-39-08_407231_reset.command"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-43-55_946506_setup-dut.file"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-43-55_628662_setup-loadgen.file"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-48-35_142825_copy_plot_latency.py.command"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator.file"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder.file"
+                }
+            ],
+            "experimentController": [
+                {
+                    "@id": "http://doi.org/10.1145/3485983.3494841"
+                }
+            ],
+            "experimentNodes": [
+                {
+                    "@id": "nida.anonymous.testbed"
+                },
+                {
+                    "@id": "cesis.anonymous.testbed"
+                }
+            ],
+            "includedOSImages": [
+                {
+                    "@id": "default/debian-bookworm"
+                }
+            ],
+            "name": "anonymous_260323_193904_161273",
+            "resultData": [
+                {
+                    "@id": "files/cesis/histogram-latencies_run0.csv"
+                },
+                {
+                    "@id": "files/cesis/histogram-latencies_run0.png"
+                },
+                {
+                    "@id": "files/cesis/histogram-latencies_run1.csv"
+                },
+                {
+                    "@id": "files/cesis/histogram-latencies_run1.png"
+                },
+                {
+                    "@id": "files/cesis/histogram-latencies_run2.csv"
+                },
+                {
+                    "@id": "files/cesis/histogram-latencies_run2.png"
+                },
+                {
+                    "@id": "files/cesis/histogram-latencies_run3.csv"
+                },
+                {
+                    "@id": "files/cesis/histogram-latencies_run3.png"
+                },
+                {
+                    "@id": "files/cesis/histogram-latencies_run4.csv"
+                },
+                {
+                    "@id": "files/cesis/histogram-latencies_run4.png"
+                },
+                {
+                    "@id": "files/cesis/histogram-latencies_run5.csv"
+                },
+                {
+                    "@id": "files/cesis/histogram-latencies_run5.png"
+                }
+            ],
+            "supplementaryData": []
+        },
+        {
+            "@id": "config/nida/topology.json",
+            "@type": "File",
+            "contentSize": "789",
+            "dateCreated": "2026-03-23T19:39:07.057403",
+            "dateModified": "2026-03-23T19:39:07.057403",
+            "description": "Contains network topology with neighboring nodes including link speed",
+            "encodingFormat": {
+                "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817"
+            },
+            "name": "Network topology of testbed node nida"
+        },
+        {
+            "@id": "config/nida/topology.pdf",
+            "@type": "File",
+            "contentSize": "50138",
+            "dateCreated": "2026-03-23T19:39:07.077076",
+            "dateModified": "2026-03-23T19:39:07.077076",
+            "description": "contains network topology figure with neighboring nodes including link speed",
+            "encodingFormat": {
+                "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/19"
+            },
+            "name": "Network topology of testbed node nida"
+        },
+        {
+            "@id": "nida.anonymous.testbed",
+            "@type": "ExperimentNode",
+            "description": "Metadata for Testbed Node nida.",
+            "hardware": {
+                "@id": "config/nida/hardware.json"
+            },
+            "name": "nida",
+            "topology": {
+                "@id": "config/nida/topology.json"
+            },
+            "visualizedTopology": {
+                "@id": "config/nida/topology.pdf"
+            }
+        },
+        {
+            "@id": "config/cesis/hardware.json",
+            "@type": "File",
+            "contentSize": "15722",
+            "dateCreated": "2026-03-23T19:39:06.635628",
+            "dateModified": "2026-03-23T19:39:06.635628",
+            "description": "Contains information about CPU, GPU, RAM, motherboard, storage, and network",
+            "encodingFormat": {
+                "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817"
+            },
+            "name": "Hardware of testbed node cesis"
+        },
+        {
+            "@id": "config/cesis/topology.json",
+            "@type": "File",
+            "contentSize": "788",
+            "dateCreated": "2026-03-23T19:39:06.641784",
+            "dateModified": "2026-03-23T19:39:06.641784",
+            "description": "Contains network topology with neighboring nodes including link speed",
+            "encodingFormat": {
+                "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817"
+            },
+            "name": "Network topology of testbed node cesis"
+        },
+        {
+            "@id": "config/cesis/topology.pdf",
+            "@type": "File",
+            "contentSize": "50118",
+            "dateCreated": "2026-03-23T19:39:06.645403",
+            "dateModified": "2026-03-23T19:39:06.645403",
+            "description": "contains network topology figure with neighboring nodes including link speed",
+            "encodingFormat": {
+                "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/19"
+            },
+            "name": "Network topology of testbed node cesis"
+        },
+        {
+            "@id": "cesis.anonymous.testbed",
+            "@type": "ExperimentNode",
+            "description": "Metadata for Testbed Node cesis.",
+            "hardware": {
+                "@id": "config/cesis/hardware.json"
+            },
+            "name": "cesis",
+            "topology": {
+                "@id": "config/cesis/topology.json"
+            },
+            "visualizedTopology": {
+                "@id": "config/cesis/topology.pdf"
+            }
+        },
+        {
+            "@id": "config/2026-03-23_19-39-05_264296_variables.json",
+            "@type": "File",
+            "contentSize": "639",
+            "dateCreated": "2026-03-23T19:39:05.264296",
+            "dateModified": "2026-03-23T19:39:05.264296",
+            "description": "Contains a variable set for the allocation as of 2026-03-23_19-39-05_264296.",
+            "encodingFormat": {
+                "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817"
+            },
+            "keywords": [
+                "variables"
+            ],
+            "name": "VariableSet"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-41-37_716526_bootstrap.file",
+            "@type": "CommandFileBootstrap",
+            "contentSize": "10495",
+            "dateCreated": "2026-03-23T19:41:37.716568",
+            "dateModified": "2026-03-23T19:41:37.716568",
+            "description": "Bootstraps the node, sets up the environment and deploys pos tools.",
+            "duration": "PT2S",
+            "endTime": "2026-03-23T19:41:40.371010",
+            "executedOn": {
+                "@id": "cesis.anonymous.testbed"
+            },
+            "keywords": [
+                "command",
+                "script",
+                "bootstrap"
+            ],
+            "name": "bootstrap",
+            "startTime": "2026-03-23T19:41:37.716568",
+            "status": {
+                "@id": "scripts/cesis/2026-03-23_19-41-37_716526_bootstrap.status"
+            },
+            "stderr": {
+                "@id": "scripts/cesis/2026-03-23_19-41-37_716526_bootstrap.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/cesis/2026-03-23_19-41-37_716526_bootstrap.stdout"
+            },
+            "variableSet": {
+                "@id": "config/2026-03-23_19-39-05_264296_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-41-37_716526_bootstrap.stdout",
+            "@type": "File",
+            "contentSize": "10686",
+            "dateCreated": "2026-03-23T19:41:37.716568",
+            "dateModified": "2026-03-23T19:41:37.716568",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-41-37_716526_bootstrap.file"
+            },
+            "name": "bootstrap"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-41-37_716526_bootstrap.stderr",
+            "@type": "File",
+            "contentSize": "2051",
+            "dateCreated": "2026-03-23T19:41:37.716568",
+            "dateModified": "2026-03-23T19:41:37.716568",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-41-37_716526_bootstrap.file"
+            },
+            "name": "bootstrap"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-41-37_716526_bootstrap.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-23T19:41:37.716568",
+            "dateModified": "2026-03-23T19:41:37.716568",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-41-37_716526_bootstrap.file"
+            },
+            "name": "bootstrap"
+        },
+        {
+            "@id": "default/debian-bookworm",
+            "@type": "OSImage",
+            "description": "This image was generated automatically and uses debian-bookworm as base.",
+            "fileSize": "562036736",
+            "name": "debian-bookworm"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-39-08_076780_reset.command",
+            "@type": "CommandFileReset",
+            "bootParameters": [
+                "iommu=pt"
+            ],
+            "bootedImage": {
+                "@id": "default/debian-bookworm"
+            },
+            "contentSize": "642",
+            "dateCreated": "2026-03-23T19:39:08.076780",
+            "dateModified": "2026-03-23T19:39:08.076780",
+            "description": "Shuts down the node and restarts it from the specified live image to ensure a clean system state.",
+            "duration": "PT153S",
+            "endTime": "2026-03-23T19:41:41.620307",
+            "executedOn": {
+                "@id": "cesis.anonymous.testbed"
+            },
+            "keywords": [
+                "command",
+                "reset"
+            ],
+            "name": "reset",
+            "startTime": "2026-03-23T19:39:08.077071",
+            "status": {
+                "@id": "scripts/cesis/2026-03-23_19-39-08_076780_reset.status"
+            },
+            "stderr": {
+                "@id": "scripts/cesis/2026-03-23_19-39-08_076780_reset.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/cesis/2026-03-23_19-39-08_076780_reset.stdout"
+            }
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-39-08_076780_reset.stdout",
+            "@type": "File",
+            "contentSize": "4",
+            "dateCreated": "2026-03-23T19:39:08.076780",
+            "dateModified": "2026-03-23T19:39:08.076780",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-39-08_076780_reset.command"
+            },
+            "name": "reset"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-39-08_076780_reset.stderr",
+            "@type": "File",
+            "contentSize": "4",
+            "dateCreated": "2026-03-23T19:39:08.076780",
+            "dateModified": "2026-03-23T19:39:08.076780",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-39-08_076780_reset.command"
+            },
+            "name": "reset"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-39-08_076780_reset.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-23T19:39:08.076780",
+            "dateModified": "2026-03-23T19:39:08.076780",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-39-08_076780_reset.command"
+            },
+            "name": "reset"
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-43-51_281626_bootstrap.file",
+            "@type": "CommandFileBootstrap",
+            "contentSize": "10495",
+            "dateCreated": "2026-03-23T19:43:51.281666",
+            "dateModified": "2026-03-23T19:43:51.281666",
+            "description": "Bootstraps the node, sets up the environment and deploys pos tools.",
+            "duration": "PT2S",
+            "endTime": "2026-03-23T19:43:53.963363",
+            "executedOn": {
+                "@id": "nida.anonymous.testbed"
+            },
+            "keywords": [
+                "command",
+                "script",
+                "bootstrap"
+            ],
+            "name": "bootstrap",
+            "startTime": "2026-03-23T19:43:51.281666",
+            "status": {
+                "@id": "scripts/nida/2026-03-23_19-43-51_281626_bootstrap.status"
+            },
+            "stderr": {
+                "@id": "scripts/nida/2026-03-23_19-43-51_281626_bootstrap.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/nida/2026-03-23_19-43-51_281626_bootstrap.stdout"
+            },
+            "variableSet": {
+                "@id": "config/2026-03-23_19-39-05_264296_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-43-51_281626_bootstrap.stdout",
+            "@type": "File",
+            "contentSize": "10686",
+            "dateCreated": "2026-03-23T19:43:51.281666",
+            "dateModified": "2026-03-23T19:43:51.281666",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_19-43-51_281626_bootstrap.file"
+            },
+            "name": "bootstrap"
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-43-51_281626_bootstrap.stderr",
+            "@type": "File",
+            "contentSize": "2049",
+            "dateCreated": "2026-03-23T19:43:51.281666",
+            "dateModified": "2026-03-23T19:43:51.281666",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_19-43-51_281626_bootstrap.file"
+            },
+            "name": "bootstrap"
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-43-51_281626_bootstrap.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-23T19:43:51.281666",
+            "dateModified": "2026-03-23T19:43:51.281666",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_19-43-51_281626_bootstrap.file"
+            },
+            "name": "bootstrap"
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-39-08_407231_reset.command",
+            "@type": "CommandFileReset",
+            "bootParameters": [
+                "iommu=pt"
+            ],
+            "bootedImage": {
+                "@id": "default/debian-bookworm"
+            },
+            "contentSize": "638",
+            "dateCreated": "2026-03-23T19:39:08.407231",
+            "dateModified": "2026-03-23T19:39:08.407231",
+            "description": "Shuts down the node and restarts it from the specified live image to ensure a clean system state.",
+            "duration": "PT286S",
+            "endTime": "2026-03-23T19:43:55.248317",
+            "executedOn": {
+                "@id": "nida.anonymous.testbed"
+            },
+            "keywords": [
+                "command",
+                "reset"
+            ],
+            "name": "reset",
+            "startTime": "2026-03-23T19:39:08.407501",
+            "status": {
+                "@id": "scripts/nida/2026-03-23_19-39-08_407231_reset.status"
+            },
+            "stderr": {
+                "@id": "scripts/nida/2026-03-23_19-39-08_407231_reset.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/nida/2026-03-23_19-39-08_407231_reset.stdout"
+            }
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-39-08_407231_reset.stdout",
+            "@type": "File",
+            "contentSize": "4",
+            "dateCreated": "2026-03-23T19:39:08.407231",
+            "dateModified": "2026-03-23T19:39:08.407231",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_19-39-08_407231_reset.command"
+            },
+            "name": "reset"
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-39-08_407231_reset.stderr",
+            "@type": "File",
+            "contentSize": "4",
+            "dateCreated": "2026-03-23T19:39:08.407231",
+            "dateModified": "2026-03-23T19:39:08.407231",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_19-39-08_407231_reset.command"
+            },
+            "name": "reset"
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-39-08_407231_reset.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-23T19:39:08.407231",
+            "dateModified": "2026-03-23T19:39:08.407231",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_19-39-08_407231_reset.command"
+            },
+            "name": "reset"
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-43-55_946506_setup-dut.file",
+            "@type": "CommandFile",
+            "contentSize": "539",
+            "dateCreated": "2026-03-23T19:43:55.946506",
+            "dateModified": "2026-03-23T19:43:55.946506",
+            "duration": "PT183S",
+            "endTime": "2026-03-23T19:46:59.050404",
+            "executedOn": {
+                "@id": "nida.anonymous.testbed"
+            },
+            "keywords": [
+                "command",
+                "script"
+            ],
+            "name": "setup-dut",
+            "startTime": "2026-03-23T19:43:55.946686",
+            "status": {
+                "@id": "scripts/nida/2026-03-23_19-43-55_946506_setup-dut.status"
+            },
+            "stderr": {
+                "@id": "scripts/nida/2026-03-23_19-43-55_946506_setup-dut.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/nida/2026-03-23_19-43-55_946506_setup-dut.stdout"
+            },
+            "variableSet": {
+                "@id": "config/2026-03-23_19-39-05_264296_variables.json"
+            },
+            "description": "Prepares the DUT node by building libmoon and enabling hugepage support. It also disables CPU turbo boost for more stable forwarding measurements."
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-43-55_946506_setup-dut.stdout",
+            "@type": "File",
+            "contentSize": "304494",
+            "dateCreated": "2026-03-23T19:43:55.946506",
+            "dateModified": "2026-03-23T19:43:55.946506",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_19-43-55_946506_setup-dut.file"
+            },
+            "name": "setup-dut"
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-43-55_946506_setup-dut.stderr",
+            "@type": "File",
+            "contentSize": "1589",
+            "dateCreated": "2026-03-23T19:43:55.946506",
+            "dateModified": "2026-03-23T19:43:55.946506",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_19-43-55_946506_setup-dut.file"
+            },
+            "name": "setup-dut"
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-43-55_946506_setup-dut.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-23T19:43:55.946506",
+            "dateModified": "2026-03-23T19:43:55.946506",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_19-43-55_946506_setup-dut.file"
+            },
+            "name": "setup-dut"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-43-55_628662_setup-loadgen.file",
+            "@type": "CommandFile",
+            "contentSize": "500",
+            "dateCreated": "2026-03-23T19:43:55.628662",
+            "dateModified": "2026-03-23T19:43:55.628662",
+            "duration": "PT279S",
+            "endTime": "2026-03-23T19:48:34.696122",
+            "executedOn": {
+                "@id": "cesis.anonymous.testbed"
+            },
+            "keywords": [
+                "command",
+                "script"
+            ],
+            "name": "setup-loadgen",
+            "startTime": "2026-03-23T19:43:55.628952",
+            "status": {
+                "@id": "scripts/cesis/2026-03-23_19-43-55_628662_setup-loadgen.status"
+            },
+            "stderr": {
+                "@id": "scripts/cesis/2026-03-23_19-43-55_628662_setup-loadgen.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/cesis/2026-03-23_19-43-55_628662_setup-loadgen.stdout"
+            },
+            "variableSet": {
+                "@id": "config/2026-03-23_19-39-05_264296_variables.json"
+            },
+            "description": "Prepares the load-generator node by building MoonGen from the provided repository and branch. Additionally, it enables hugepage support for packet generation and latency measurements."
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-43-55_628662_setup-loadgen.stdout",
+            "@type": "File",
+            "contentSize": "360397",
+            "dateCreated": "2026-03-23T19:43:55.628662",
+            "dateModified": "2026-03-23T19:43:55.628662",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-43-55_628662_setup-loadgen.file"
+            },
+            "name": "setup-loadgen"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-43-55_628662_setup-loadgen.stderr",
+            "@type": "File",
+            "contentSize": "1818",
+            "dateCreated": "2026-03-23T19:43:55.628662",
+            "dateModified": "2026-03-23T19:43:55.628662",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-43-55_628662_setup-loadgen.file"
+            },
+            "name": "setup-loadgen"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-43-55_628662_setup-loadgen.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-23T19:43:55.628662",
+            "dateModified": "2026-03-23T19:43:55.628662",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-43-55_628662_setup-loadgen.file"
+            },
+            "name": "setup-loadgen"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-48-35_142825_copy_plot_latency.py.command",
+            "@type": "CommandFileCopy",
+            "contentSize": "138",
+            "dateCreated": "2026-03-23T19:48:35.142825",
+            "dateModified": "2026-03-23T19:48:35.142825",
+            "description": "Copies file from /home/anonymous/experiments/experiments/loop-experiment-llm/evaluation/plot_latency.py to MoonGen/plot_latency.py on node cesis.",
+            "destinationPath": "MoonGen/plot_latency.py",
+            "duration": "PT0S",
+            "endTime": "2026-03-23T19:48:35.503318",
+            "executedOn": {
+                "@id": "cesis.anonymous.testbed"
+            },
+            "keywords": [
+                "command",
+                "copy"
+            ],
+            "name": "latency-plot-script",
+            "recursiveCopy": false,
+            "sourcePath": "/home/anonymous/experiments/experiments/loop-experiment-llm/evaluation/plot_latency.py",
+            "startTime": "2026-03-23T19:48:35.143090",
+            "status": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_142825_copy_plot_latency.py.status"
+            },
+            "stderr": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_142825_copy_plot_latency.py.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_142825_copy_plot_latency.py.stdout"
+            }
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-48-35_142825_copy_plot_latency.py.stdout",
+            "@type": "File",
+            "contentSize": "4",
+            "dateCreated": "2026-03-23T19:48:35.142825",
+            "dateModified": "2026-03-23T19:48:35.142825",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_142825_copy_plot_latency.py.command"
+            },
+            "name": "copy_plot_latency.py"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-48-35_142825_copy_plot_latency.py.stderr",
+            "@type": "File",
+            "contentSize": "4",
+            "dateCreated": "2026-03-23T19:48:35.142825",
+            "dateModified": "2026-03-23T19:48:35.142825",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_142825_copy_plot_latency.py.command"
+            },
+            "name": "copy_plot_latency.py"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-48-35_142825_copy_plot_latency.py.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-23T19:48:35.142825",
+            "dateModified": "2026-03-23T19:48:35.142825",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_142825_copy_plot_latency.py.command"
+            },
+            "name": "copy_plot_latency.py"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-48-56_389619_loadgen-l2-load-latency_run0.command",
+            "@type": "CommandFile",
+            "contentSize": "129",
+            "dateCreated": "2026-03-23T19:48:56.389619",
+            "dateModified": "2026-03-23T19:48:56.389619",
+            "duration": "PT0S",
+            "endTime": "2026-03-23T19:48:56.389619",
+            "executedOn": {
+                "@id": "cesis.anonymous.testbed"
+            },
+            "invokedBy": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run0.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "command"
+            ],
+            "name": "loadgen-l2-load-latency_run0",
+            "startTime": "2026-03-23T19:48:56.389619",
+            "status": "finished",
+            "stderr": {
+                "@id": "scripts/cesis/2026-03-23_19-48-56_389619_loadgen-l2-load-latency_run0.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/cesis/2026-03-23_19-48-56_389619_loadgen-l2-load-latency_run0.stdout"
+            },
+            "description": "Runs MoonGen's l2-load-latency example using the selected transmit and receive ports and histogram output paths."
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-48-56_389619_loadgen-l2-load-latency_run0.stdout",
+            "@type": "File",
+            "contentSize": "56398",
+            "dateCreated": "2026-03-23T19:48:56.389619",
+            "dateModified": "2026-03-23T19:48:56.389619",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-48-56_389619_loadgen-l2-load-latency_run0.command"
+            },
+            "name": "loadgen-l2-load-latency_run0"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-48-56_389619_loadgen-l2-load-latency_run0.stderr",
+            "@type": "File",
+            "contentSize": "984",
+            "dateCreated": "2026-03-23T19:48:56.389619",
+            "dateModified": "2026-03-23T19:48:56.389619",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-48-56_389619_loadgen-l2-load-latency_run0.command"
+            },
+            "name": "loadgen-l2-load-latency_run0"
+        },
+        {
+            "@id": "files/cesis/histogram-latencies_run0.csv",
+            "@type": "File",
+            "contentSize": "12970",
+            "dateCreated": "2026-03-23T19:54:49.506405",
+            "dateModified": "2026-03-23T19:54:49.506405",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run0.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "histogram-latencies_run0.csv",
+            "description": "Uploaded latency histogram CSV for one benchmark iteration containing the latency-distribution data produced for the selected packet-rate and packet-size combination."
+        },
+        {
+            "@id": "files/cesis/histogram-latencies_run0.png",
+            "@type": "File",
+            "contentSize": "90775",
+            "dateCreated": "2026-03-23T19:54:49.901706",
+            "dateModified": "2026-03-23T19:54:49.901706",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run0.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "histogram-latencies_run0.png",
+            "description": "Uploaded latency histogram plot for one benchmark iteration of the MoonGen L2 load-latency experiment. It visualizes the filtered latency distribution for the selected packet-rate and packet-size combination."
+        },
+        {
+            "@id": "energy/cesis/measurement_run0.csv",
+            "@type": "File",
+            "contentSize": "12611",
+            "dateCreated": "2026-03-23T19:54:50.689523",
+            "dateModified": "2026-03-23T19:54:50.689523",
+            "description": "Energy measurement during experiment on node cesis. The measurement is done using a GUDE Power Unit providing current, voltage and power consumption values.",
+            "encodingFormat": "csv",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run0.loop"
+            },
+            "keywords": [
+                "energy"
+            ],
+            "name": "measurement_run0.csv"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator.file",
+            "@type": "CommandFileLooped",
+            "contentSize": "1801",
+            "dateCreated": "2026-03-23T19:48:35.867974",
+            "dateModified": "2026-03-23T19:48:35.867974",
+            "duration": "PT2247S",
+            "endTime": "2026-03-23T20:26:03.441048",
+            "executedOn": {
+                "@id": "cesis.anonymous.testbed"
+            },
+            "keywords": [
+                "command",
+                "script",
+                "looped"
+            ],
+            "loopRuns": [
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run0.loop"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run1.loop"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run2.loop"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run3.loop"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run4.loop"
+                },
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run5.loop"
+                }
+            ],
+            "name": "moongen-load-generator",
+            "startTime": "2026-03-23T19:48:35.870502",
+            "variableSet": {
+                "@id": "config/2026-03-23_19-39-05_264296_variables.json"
+            },
+            "description": "Looped benchmark that iterates over all configured packet-rate and packet-size combinations, synchronizes with the DUT, records node energy usage and runs MoonGen's l2-load-latency example. Afterwards it uploads the generated latency histogram and plot."
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run0.loop",
+            "@type": "LoopRun",
+            "contentSize": "39",
+            "dateCreated": "2026-03-23T19:48:35.867974",
+            "dateModified": "2026-03-23T19:48:35.867974",
+            "duration": "PT374S",
+            "endTime": "2026-03-23T19:54:50.744057",
+            "energyMeasurements": [
+                {
+                    "@id": "energy/cesis/measurement_run0.csv"
+                }
+            ],
+            "invokedCommands": [
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-48-56_389619_loadgen-l2-load-latency_run0.command"
+                }
+            ],
+            "keywords": [
+                "variables",
+                "loop_run"
+            ],
+            "name": "moongen-load-generator_run0",
+            "resultData": [
+                {
+                    "@id": "files/cesis/histogram-latencies_run0.csv"
+                },
+                {
+                    "@id": "files/cesis/histogram-latencies_run0.png"
+                }
+            ],
+            "runOfLoopedCommand": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator.file"
+            },
+            "startTime": "2026-03-23T19:48:35.870502",
+            "status": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run0.status"
+            },
+            "stderr": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run0.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run0.stdout"
+            },
+            "description": "Each iteration runs the MoonGen l2-load-latency script with different values for packet rate and packet size, storing the measured latencies in a CSV file, generating a plot, and uploading both artifacts after each run."
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run0.stdout",
+            "@type": "File",
+            "contentSize": "459",
+            "dateCreated": "2026-03-23T19:48:35.867974",
+            "dateModified": "2026-03-23T19:48:35.867974",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run0.loop"
+            },
+            "name": "moongen-load-generator_run0"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run0.stderr",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2026-03-23T19:48:35.867974",
+            "dateModified": "2026-03-23T19:48:35.867974",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run0.loop"
+            },
+            "name": "moongen-load-generator_run0"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run0.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-23T19:48:35.867974",
+            "dateModified": "2026-03-23T19:48:35.867974",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run0.loop"
+            },
+            "name": "moongen-load-generator_run0"
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-51-32_755121_dut-l2-load-latency_run0.command",
+            "@type": "CommandFile",
+            "contentSize": "56",
+            "dateCreated": "2026-03-23T19:51:32.755121",
+            "dateModified": "2026-03-23T19:51:32.755121",
+            "duration": "PT0S",
+            "endTime": "2026-03-23T19:51:32.755121",
+            "executedOn": {
+                "@id": "nida.anonymous.testbed"
+            },
+            "invokedBy": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run0.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "command"
+            ],
+            "name": "dut-l2-load-latency_run0",
+            "startTime": "2026-03-23T19:51:32.755121",
+            "status": "finished",
+            "stderr": {
+                "@id": "scripts/nida/2026-03-23_19-51-32_755121_dut-l2-load-latency_run0.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/nida/2026-03-23_19-51-32_755121_dut-l2-load-latency_run0.stdout"
+            },
+            "description": "Runs libmoon's l2-forward example so the DUT forwards traffic during the load-generator measurement window."
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-51-32_755121_dut-l2-load-latency_run0.stdout",
+            "@type": "File",
+            "contentSize": "56470",
+            "dateCreated": "2026-03-23T19:51:32.755121",
+            "dateModified": "2026-03-23T19:51:32.755121",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_19-51-32_755121_dut-l2-load-latency_run0.command"
+            },
+            "name": "dut-l2-load-latency_run0"
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-51-32_755121_dut-l2-load-latency_run0.stderr",
+            "@type": "File",
+            "contentSize": "818",
+            "dateCreated": "2026-03-23T19:51:32.755121",
+            "dateModified": "2026-03-23T19:51:32.755121",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_19-51-32_755121_dut-l2-load-latency_run0.command"
+            },
+            "name": "dut-l2-load-latency_run0"
+        },
+        {
+            "@id": "energy/nida/dut_measurement_run0.csv",
+            "@type": "File",
+            "contentSize": "13023",
+            "dateCreated": "2026-03-23T19:54:52.091812",
+            "dateModified": "2026-03-23T19:54:52.091812",
+            "description": "Energy measurement during experiment on node nida. The measurement is done using a GUDE Power Unit providing current, voltage and power consumption values.",
+            "encodingFormat": "csv",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run0.loop"
+            },
+            "keywords": [
+                "energy"
+            ],
+            "name": "dut_measurement_run0.csv"
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder.file",
+            "@type": "CommandFileLooped",
+            "contentSize": "980",
+            "dateCreated": "2026-03-23T19:48:36.203425",
+            "dateModified": "2026-03-23T19:48:36.203425",
+            "duration": "PT2248S",
+            "endTime": "2026-03-23T20:26:04.907058",
+            "executedOn": {
+                "@id": "nida.anonymous.testbed"
+            },
+            "keywords": [
+                "command",
+                "script",
+                "looped"
+            ],
+            "loopRuns": [
+                {
+                    "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run0.loop"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run1.loop"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run2.loop"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run3.loop"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run4.loop"
+                },
+                {
+                    "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run5.loop"
+                }
+            ],
+            "name": "l2-forwarder",
+            "startTime": "2026-03-23T19:48:36.205179",
+            "variableSet": {
+                "@id": "config/2026-03-23_19-39-05_264296_variables.json"
+            },
+            "description": "Forwarder that synchronizes with the load-generator node, records energy usage and forwards the received packets back to the load-generator node."
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run0.loop",
+            "@type": "LoopRun",
+            "contentSize": "39",
+            "dateCreated": "2026-03-23T19:48:36.203425",
+            "dateModified": "2026-03-23T19:48:36.203425",
+            "duration": "PT375S",
+            "endTime": "2026-03-23T19:54:52.147906",
+            "energyMeasurements": [
+                {
+                    "@id": "energy/nida/dut_measurement_run0.csv"
+                }
+            ],
+            "invokedCommands": [
+                {
+                    "@id": "scripts/nida/2026-03-23_19-51-32_755121_dut-l2-load-latency_run0.command"
+                }
+            ],
+            "keywords": [
+                "variables",
+                "loop_run"
+            ],
+            "name": "l2-forwarder_run0",
+            "runOfLoopedCommand": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder.file"
+            },
+            "startTime": "2026-03-23T19:48:36.205179",
+            "status": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run0.status"
+            },
+            "stderr": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run0.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run0.stdout"
+            },
+            "description": "Each iteration runs the libmoon l2-forward script to forward the received packets from the loadgen node."
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run0.stdout",
+            "@type": "File",
+            "contentSize": "98",
+            "dateCreated": "2026-03-23T19:48:36.203425",
+            "dateModified": "2026-03-23T19:48:36.203425",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run0.loop"
+            },
+            "name": "l2-forwarder_run0"
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run0.stderr",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2026-03-23T19:48:36.203425",
+            "dateModified": "2026-03-23T19:48:36.203425",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run0.loop"
+            },
+            "name": "l2-forwarder_run0"
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run0.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-23T19:48:36.203425",
+            "dateModified": "2026-03-23T19:48:36.203425",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run0.loop"
+            },
+            "name": "l2-forwarder_run0"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-55-11_061959_loadgen-l2-load-latency_run1.command",
+            "@type": "CommandFile",
+            "contentSize": "131",
+            "dateCreated": "2026-03-23T19:55:11.061959",
+            "dateModified": "2026-03-23T19:55:11.061959",
+            "duration": "PT0S",
+            "endTime": "2026-03-23T19:55:11.061959",
+            "executedOn": {
+                "@id": "cesis.anonymous.testbed"
+            },
+            "invokedBy": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run1.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "command"
+            ],
+            "name": "loadgen-l2-load-latency_run1",
+            "startTime": "2026-03-23T19:55:11.061959",
+            "status": "finished",
+            "stderr": {
+                "@id": "scripts/cesis/2026-03-23_19-55-11_061959_loadgen-l2-load-latency_run1.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/cesis/2026-03-23_19-55-11_061959_loadgen-l2-load-latency_run1.stdout"
+            },
+            "description": "Runs MoonGen's l2-load-latency example using the selected transmit and receive ports and histogram output paths."
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-55-11_061959_loadgen-l2-load-latency_run1.stdout",
+            "@type": "File",
+            "contentSize": "56396",
+            "dateCreated": "2026-03-23T19:55:11.061959",
+            "dateModified": "2026-03-23T19:55:11.061959",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-55-11_061959_loadgen-l2-load-latency_run1.command"
+            },
+            "name": "loadgen-l2-load-latency_run1"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-55-11_061959_loadgen-l2-load-latency_run1.stderr",
+            "@type": "File",
+            "contentSize": "984",
+            "dateCreated": "2026-03-23T19:55:11.061959",
+            "dateModified": "2026-03-23T19:55:11.061959",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-55-11_061959_loadgen-l2-load-latency_run1.command"
+            },
+            "name": "loadgen-l2-load-latency_run1"
+        },
+        {
+            "@id": "files/cesis/histogram-latencies_run1.csv",
+            "@type": "File",
+            "contentSize": "20857",
+            "dateCreated": "2026-03-23T20:01:03.900142",
+            "dateModified": "2026-03-23T20:01:03.900142",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run1.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "histogram-latencies_run1.csv",
+            "description": "Uploaded latency histogram CSV for one benchmark iteration containing the latency-distribution data produced for the selected packet-rate and packet-size combination."
+        },
+        {
+            "@id": "files/cesis/histogram-latencies_run1.png",
+            "@type": "File",
+            "contentSize": "96073",
+            "dateCreated": "2026-03-23T20:01:04.311801",
+            "dateModified": "2026-03-23T20:01:04.311801",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run1.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "histogram-latencies_run1.png",
+            "description": "Uploaded latency histogram plot for one benchmark iteration of the MoonGen L2 load-latency experiment. It visualizes the filtered latency distribution for the selected packet-rate and packet-size combination."
+        },
+        {
+            "@id": "energy/cesis/measurement_run1.csv",
+            "@type": "File",
+            "contentSize": "12923",
+            "dateCreated": "2026-03-23T20:01:05.101909",
+            "dateModified": "2026-03-23T20:01:05.101909",
+            "description": "Energy measurement during experiment on node cesis. The measurement is done using a GUDE Power Unit providing current, voltage and power consumption values.",
+            "encodingFormat": "csv",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run1.loop"
+            },
+            "keywords": [
+                "energy"
+            ],
+            "name": "measurement_run1.csv"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run1.loop",
+            "@type": "LoopRun",
+            "contentSize": "41",
+            "dateCreated": "2026-03-23T19:48:35.867974",
+            "dateModified": "2026-03-23T19:48:35.867974",
+            "duration": "PT374S",
+            "endTime": "2026-03-23T20:01:05.159114",
+            "energyMeasurements": [
+                {
+                    "@id": "energy/cesis/measurement_run1.csv"
+                }
+            ],
+            "invokedCommands": [
+                {
+                    "@id": "scripts/cesis/2026-03-23_19-55-11_061959_loadgen-l2-load-latency_run1.command"
+                }
+            ],
+            "keywords": [
+                "variables",
+                "loop_run"
+            ],
+            "name": "moongen-load-generator_run1",
+            "resultData": [
+                {
+                    "@id": "files/cesis/histogram-latencies_run1.csv"
+                },
+                {
+                    "@id": "files/cesis/histogram-latencies_run1.png"
+                }
+            ],
+            "runOfLoopedCommand": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator.file"
+            },
+            "startTime": "2026-03-23T19:54:50.744057",
+            "status": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run1.status"
+            },
+            "stderr": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run1.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run1.stdout"
+            },
+            "description": "Each iteration runs the MoonGen l2-load-latency script with different values for packet rate and packet size, storing the measured latencies in a CSV file, generating a plot, and uploading both artifacts after each run."
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run1.stdout",
+            "@type": "File",
+            "contentSize": "460",
+            "dateCreated": "2026-03-23T19:48:35.867974",
+            "dateModified": "2026-03-23T19:48:35.867974",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run1.loop"
+            },
+            "name": "moongen-load-generator_run1"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run1.stderr",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2026-03-23T19:48:35.867974",
+            "dateModified": "2026-03-23T19:48:35.867974",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run1.loop"
+            },
+            "name": "moongen-load-generator_run1"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run1.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-23T19:48:35.867974",
+            "dateModified": "2026-03-23T19:48:35.867974",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run1.loop"
+            },
+            "name": "moongen-load-generator_run1"
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-57-47_138890_dut-l2-load-latency_run1.command",
+            "@type": "CommandFile",
+            "contentSize": "56",
+            "dateCreated": "2026-03-23T19:57:47.138890",
+            "dateModified": "2026-03-23T19:57:47.138890",
+            "duration": "PT0S",
+            "endTime": "2026-03-23T19:57:47.138890",
+            "executedOn": {
+                "@id": "nida.anonymous.testbed"
+            },
+            "invokedBy": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run1.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "command"
+            ],
+            "name": "dut-l2-load-latency_run1",
+            "startTime": "2026-03-23T19:57:47.138890",
+            "status": "finished",
+            "stderr": {
+                "@id": "scripts/nida/2026-03-23_19-57-47_138890_dut-l2-load-latency_run1.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/nida/2026-03-23_19-57-47_138890_dut-l2-load-latency_run1.stdout"
+            },
+            "description": "Runs libmoon's l2-forward example so the DUT forwards traffic during the load-generator measurement window."
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-57-47_138890_dut-l2-load-latency_run1.stdout",
+            "@type": "File",
+            "contentSize": "56470",
+            "dateCreated": "2026-03-23T19:57:47.138890",
+            "dateModified": "2026-03-23T19:57:47.138890",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_19-57-47_138890_dut-l2-load-latency_run1.command"
+            },
+            "name": "dut-l2-load-latency_run1"
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-57-47_138890_dut-l2-load-latency_run1.stderr",
+            "@type": "File",
+            "contentSize": "818",
+            "dateCreated": "2026-03-23T19:57:47.138890",
+            "dateModified": "2026-03-23T19:57:47.138890",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_19-57-47_138890_dut-l2-load-latency_run1.command"
+            },
+            "name": "dut-l2-load-latency_run1"
+        },
+        {
+            "@id": "energy/nida/dut_measurement_run1.csv",
+            "@type": "File",
+            "contentSize": "12882",
+            "dateCreated": "2026-03-23T20:01:06.432562",
+            "dateModified": "2026-03-23T20:01:06.432562",
+            "description": "Energy measurement during experiment on node nida. The measurement is done using a GUDE Power Unit providing current, voltage and power consumption values.",
+            "encodingFormat": "csv",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run1.loop"
+            },
+            "keywords": [
+                "energy"
+            ],
+            "name": "dut_measurement_run1.csv"
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run1.loop",
+            "@type": "LoopRun",
+            "contentSize": "41",
+            "dateCreated": "2026-03-23T19:48:36.203425",
+            "dateModified": "2026-03-23T19:48:36.203425",
+            "duration": "PT374S",
+            "endTime": "2026-03-23T20:01:06.492427",
+            "energyMeasurements": [
+                {
+                    "@id": "energy/nida/dut_measurement_run1.csv"
+                }
+            ],
+            "invokedCommands": [
+                {
+                    "@id": "scripts/nida/2026-03-23_19-57-47_138890_dut-l2-load-latency_run1.command"
+                }
+            ],
+            "keywords": [
+                "variables",
+                "loop_run"
+            ],
+            "name": "l2-forwarder_run1",
+            "runOfLoopedCommand": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder.file"
+            },
+            "startTime": "2026-03-23T19:54:52.147906",
+            "status": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run1.status"
+            },
+            "stderr": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run1.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run1.stdout"
+            },
+            "description": "Each iteration runs the libmoon l2-forward script to forward the received packets from the loadgen node."
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run1.stdout",
+            "@type": "File",
+            "contentSize": "98",
+            "dateCreated": "2026-03-23T19:48:36.203425",
+            "dateModified": "2026-03-23T19:48:36.203425",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run1.loop"
+            },
+            "name": "l2-forwarder_run1"
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run1.stderr",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2026-03-23T19:48:36.203425",
+            "dateModified": "2026-03-23T19:48:36.203425",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run1.loop"
+            },
+            "name": "l2-forwarder_run1"
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run1.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-23T19:48:36.203425",
+            "dateModified": "2026-03-23T19:48:36.203425",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run1.loop"
+            },
+            "name": "l2-forwarder_run1"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_20-01-25_586122_loadgen-l2-load-latency_run2.command",
+            "@type": "CommandFile",
+            "contentSize": "130",
+            "dateCreated": "2026-03-23T20:01:25.586122",
+            "dateModified": "2026-03-23T20:01:25.586122",
+            "duration": "PT0S",
+            "endTime": "2026-03-23T20:01:25.586122",
+            "executedOn": {
+                "@id": "cesis.anonymous.testbed"
+            },
+            "invokedBy": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run2.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "command"
+            ],
+            "name": "loadgen-l2-load-latency_run2",
+            "startTime": "2026-03-23T20:01:25.586122",
+            "status": "finished",
+            "stderr": {
+                "@id": "scripts/cesis/2026-03-23_20-01-25_586122_loadgen-l2-load-latency_run2.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/cesis/2026-03-23_20-01-25_586122_loadgen-l2-load-latency_run2.stdout"
+            },
+            "description": "Runs MoonGen's l2-load-latency example using the selected transmit and receive ports and histogram output paths."
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_20-01-25_586122_loadgen-l2-load-latency_run2.stdout",
+            "@type": "File",
+            "contentSize": "57872",
+            "dateCreated": "2026-03-23T20:01:25.586122",
+            "dateModified": "2026-03-23T20:01:25.586122",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_20-01-25_586122_loadgen-l2-load-latency_run2.command"
+            },
+            "name": "loadgen-l2-load-latency_run2"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_20-01-25_586122_loadgen-l2-load-latency_run2.stderr",
+            "@type": "File",
+            "contentSize": "984",
+            "dateCreated": "2026-03-23T20:01:25.586122",
+            "dateModified": "2026-03-23T20:01:25.586122",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_20-01-25_586122_loadgen-l2-load-latency_run2.command"
+            },
+            "name": "loadgen-l2-load-latency_run2"
+        },
+        {
+            "@id": "files/cesis/histogram-latencies_run2.csv",
+            "@type": "File",
+            "contentSize": "16879",
+            "dateCreated": "2026-03-23T20:07:18.531234",
+            "dateModified": "2026-03-23T20:07:18.531234",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run2.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "histogram-latencies_run2.csv",
+            "description": "Uploaded latency histogram CSV for one benchmark iteration containing the latency-distribution data produced for the selected packet-rate and packet-size combination."
+        },
+        {
+            "@id": "files/cesis/histogram-latencies_run2.png",
+            "@type": "File",
+            "contentSize": "105875",
+            "dateCreated": "2026-03-23T20:07:18.932043",
+            "dateModified": "2026-03-23T20:07:18.932043",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run2.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "histogram-latencies_run2.png",
+            "description": "Uploaded latency histogram plot for one benchmark iteration of the MoonGen L2 load-latency experiment. It visualizes the filtered latency distribution for the selected packet-rate and packet-size combination."
+        },
+        {
+            "@id": "energy/cesis/measurement_run2.csv",
+            "@type": "File",
+            "contentSize": "12745",
+            "dateCreated": "2026-03-23T20:07:19.720530",
+            "dateModified": "2026-03-23T20:07:19.720530",
+            "description": "Energy measurement during experiment on node cesis. The measurement is done using a GUDE Power Unit providing current, voltage and power consumption values.",
+            "encodingFormat": "csv",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run2.loop"
+            },
+            "keywords": [
+                "energy"
+            ],
+            "name": "measurement_run2.csv"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run2.loop",
+            "@type": "LoopRun",
+            "contentSize": "40",
+            "dateCreated": "2026-03-23T19:48:35.867974",
+            "dateModified": "2026-03-23T19:48:35.867974",
+            "duration": "PT374S",
+            "endTime": "2026-03-23T20:07:19.780235",
+            "energyMeasurements": [
+                {
+                    "@id": "energy/cesis/measurement_run2.csv"
+                }
+            ],
+            "invokedCommands": [
+                {
+                    "@id": "scripts/cesis/2026-03-23_20-01-25_586122_loadgen-l2-load-latency_run2.command"
+                }
+            ],
+            "keywords": [
+                "variables",
+                "loop_run"
+            ],
+            "name": "moongen-load-generator_run2",
+            "resultData": [
+                {
+                    "@id": "files/cesis/histogram-latencies_run2.csv"
+                },
+                {
+                    "@id": "files/cesis/histogram-latencies_run2.png"
+                }
+            ],
+            "runOfLoopedCommand": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator.file"
+            },
+            "startTime": "2026-03-23T20:01:05.159114",
+            "status": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run2.status"
+            },
+            "stderr": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run2.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run2.stdout"
+            },
+            "description": "Each iteration runs the MoonGen l2-load-latency script with different values for packet rate and packet size, storing the measured latencies in a CSV file, generating a plot, and uploading both artifacts after each run."
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run2.stdout",
+            "@type": "File",
+            "contentSize": "459",
+            "dateCreated": "2026-03-23T19:48:35.867974",
+            "dateModified": "2026-03-23T19:48:35.867974",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run2.loop"
+            },
+            "name": "moongen-load-generator_run2"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run2.stderr",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2026-03-23T19:48:35.867974",
+            "dateModified": "2026-03-23T19:48:35.867974",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run2.loop"
+            },
+            "name": "moongen-load-generator_run2"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run2.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-23T19:48:35.867974",
+            "dateModified": "2026-03-23T19:48:35.867974",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run2.loop"
+            },
+            "name": "moongen-load-generator_run2"
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_20-04-01_765228_dut-l2-load-latency_run2.command",
+            "@type": "CommandFile",
+            "contentSize": "56",
+            "dateCreated": "2026-03-23T20:04:01.765228",
+            "dateModified": "2026-03-23T20:04:01.765228",
+            "duration": "PT0S",
+            "endTime": "2026-03-23T20:04:01.765228",
+            "executedOn": {
+                "@id": "nida.anonymous.testbed"
+            },
+            "invokedBy": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run2.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "command"
+            ],
+            "name": "dut-l2-load-latency_run2",
+            "startTime": "2026-03-23T20:04:01.765228",
+            "status": "finished",
+            "stderr": {
+                "@id": "scripts/nida/2026-03-23_20-04-01_765228_dut-l2-load-latency_run2.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/nida/2026-03-23_20-04-01_765228_dut-l2-load-latency_run2.stdout"
+            },
+            "description": "Runs libmoon's l2-forward example so the DUT forwards traffic during the load-generator measurement window."
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_20-04-01_765228_dut-l2-load-latency_run2.stdout",
+            "@type": "File",
+            "contentSize": "57883",
+            "dateCreated": "2026-03-23T20:04:01.765228",
+            "dateModified": "2026-03-23T20:04:01.765228",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_20-04-01_765228_dut-l2-load-latency_run2.command"
+            },
+            "name": "dut-l2-load-latency_run2"
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_20-04-01_765228_dut-l2-load-latency_run2.stderr",
+            "@type": "File",
+            "contentSize": "818",
+            "dateCreated": "2026-03-23T20:04:01.765228",
+            "dateModified": "2026-03-23T20:04:01.765228",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_20-04-01_765228_dut-l2-load-latency_run2.command"
+            },
+            "name": "dut-l2-load-latency_run2"
+        },
+        {
+            "@id": "energy/nida/dut_measurement_run2.csv",
+            "@type": "File",
+            "contentSize": "12985",
+            "dateCreated": "2026-03-23T20:07:21.048075",
+            "dateModified": "2026-03-23T20:07:21.048075",
+            "description": "Energy measurement during experiment on node nida. The measurement is done using a GUDE Power Unit providing current, voltage and power consumption values.",
+            "encodingFormat": "csv",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run2.loop"
+            },
+            "keywords": [
+                "energy"
+            ],
+            "name": "dut_measurement_run2.csv"
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run2.loop",
+            "@type": "LoopRun",
+            "contentSize": "40",
+            "dateCreated": "2026-03-23T19:48:36.203425",
+            "dateModified": "2026-03-23T19:48:36.203425",
+            "duration": "PT374S",
+            "endTime": "2026-03-23T20:07:21.111063",
+            "energyMeasurements": [
+                {
+                    "@id": "energy/nida/dut_measurement_run2.csv"
+                }
+            ],
+            "invokedCommands": [
+                {
+                    "@id": "scripts/nida/2026-03-23_20-04-01_765228_dut-l2-load-latency_run2.command"
+                }
+            ],
+            "keywords": [
+                "variables",
+                "loop_run"
+            ],
+            "name": "l2-forwarder_run2",
+            "runOfLoopedCommand": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder.file"
+            },
+            "startTime": "2026-03-23T20:01:06.492427",
+            "status": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run2.status"
+            },
+            "stderr": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run2.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run2.stdout"
+            },
+            "description": "Each iteration runs the libmoon l2-forward script to forward the received packets from the loadgen node."
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run2.stdout",
+            "@type": "File",
+            "contentSize": "98",
+            "dateCreated": "2026-03-23T19:48:36.203425",
+            "dateModified": "2026-03-23T19:48:36.203425",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run2.loop"
+            },
+            "name": "l2-forwarder_run2"
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run2.stderr",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2026-03-23T19:48:36.203425",
+            "dateModified": "2026-03-23T19:48:36.203425",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run2.loop"
+            },
+            "name": "l2-forwarder_run2"
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run2.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-23T19:48:36.203425",
+            "dateModified": "2026-03-23T19:48:36.203425",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run2.loop"
+            },
+            "name": "l2-forwarder_run2"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_20-07-40_162594_loadgen-l2-load-latency_run3.command",
+            "@type": "CommandFile",
+            "contentSize": "132",
+            "dateCreated": "2026-03-23T20:07:40.162594",
+            "dateModified": "2026-03-23T20:07:40.162594",
+            "duration": "PT0S",
+            "endTime": "2026-03-23T20:07:40.162594",
+            "executedOn": {
+                "@id": "cesis.anonymous.testbed"
+            },
+            "invokedBy": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run3.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "command"
+            ],
+            "name": "loadgen-l2-load-latency_run3",
+            "startTime": "2026-03-23T20:07:40.162594",
+            "status": "finished",
+            "stderr": {
+                "@id": "scripts/cesis/2026-03-23_20-07-40_162594_loadgen-l2-load-latency_run3.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/cesis/2026-03-23_20-07-40_162594_loadgen-l2-load-latency_run3.stdout"
+            },
+            "description": "Runs MoonGen's l2-load-latency example using the selected transmit and receive ports and histogram output paths."
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_20-07-40_162594_loadgen-l2-load-latency_run3.stdout",
+            "@type": "File",
+            "contentSize": "57870",
+            "dateCreated": "2026-03-23T20:07:40.162594",
+            "dateModified": "2026-03-23T20:07:40.162594",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_20-07-40_162594_loadgen-l2-load-latency_run3.command"
+            },
+            "name": "loadgen-l2-load-latency_run3"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_20-07-40_162594_loadgen-l2-load-latency_run3.stderr",
+            "@type": "File",
+            "contentSize": "984",
+            "dateCreated": "2026-03-23T20:07:40.162594",
+            "dateModified": "2026-03-23T20:07:40.162594",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_20-07-40_162594_loadgen-l2-load-latency_run3.command"
+            },
+            "name": "loadgen-l2-load-latency_run3"
+        },
+        {
+            "@id": "files/cesis/histogram-latencies_run3.csv",
+            "@type": "File",
+            "contentSize": "29488",
+            "dateCreated": "2026-03-23T20:13:33.107669",
+            "dateModified": "2026-03-23T20:13:33.107669",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run3.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "histogram-latencies_run3.csv",
+            "description": "Uploaded latency histogram CSV for one benchmark iteration containing the latency-distribution data produced for the selected packet-rate and packet-size combination."
+        },
+        {
+            "@id": "files/cesis/histogram-latencies_run3.png",
+            "@type": "File",
+            "contentSize": "101320",
+            "dateCreated": "2026-03-23T20:13:33.503555",
+            "dateModified": "2026-03-23T20:13:33.503555",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run3.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "histogram-latencies_run3.png",
+            "description": "Uploaded latency histogram plot for one benchmark iteration of the MoonGen L2 load-latency experiment. It visualizes the filtered latency distribution for the selected packet-rate and packet-size combination."
+        },
+        {
+            "@id": "energy/cesis/measurement_run3.csv",
+            "@type": "File",
+            "contentSize": "13264",
+            "dateCreated": "2026-03-23T20:13:34.286694",
+            "dateModified": "2026-03-23T20:13:34.286694",
+            "description": "Energy measurement during experiment on node cesis. The measurement is done using a GUDE Power Unit providing current, voltage and power consumption values.",
+            "encodingFormat": "csv",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run3.loop"
+            },
+            "keywords": [
+                "energy"
+            ],
+            "name": "measurement_run3.csv"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run3.loop",
+            "@type": "LoopRun",
+            "contentSize": "42",
+            "dateCreated": "2026-03-23T19:48:35.867974",
+            "dateModified": "2026-03-23T19:48:35.867974",
+            "duration": "PT374S",
+            "endTime": "2026-03-23T20:13:34.348635",
+            "energyMeasurements": [
+                {
+                    "@id": "energy/cesis/measurement_run3.csv"
+                }
+            ],
+            "invokedCommands": [
+                {
+                    "@id": "scripts/cesis/2026-03-23_20-07-40_162594_loadgen-l2-load-latency_run3.command"
+                }
+            ],
+            "keywords": [
+                "variables",
+                "loop_run"
+            ],
+            "name": "moongen-load-generator_run3",
+            "resultData": [
+                {
+                    "@id": "files/cesis/histogram-latencies_run3.csv"
+                },
+                {
+                    "@id": "files/cesis/histogram-latencies_run3.png"
+                }
+            ],
+            "runOfLoopedCommand": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator.file"
+            },
+            "startTime": "2026-03-23T20:07:19.780235",
+            "status": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run3.status"
+            },
+            "stderr": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run3.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run3.stdout"
+            },
+            "description": "Each iteration runs the MoonGen l2-load-latency script with different values for packet rate and packet size, storing the measured latencies in a CSV file, generating a plot, and uploading both artifacts after each run."
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run3.stdout",
+            "@type": "File",
+            "contentSize": "462",
+            "dateCreated": "2026-03-23T19:48:35.867974",
+            "dateModified": "2026-03-23T19:48:35.867974",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run3.loop"
+            },
+            "name": "moongen-load-generator_run3"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run3.stderr",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2026-03-23T19:48:35.867974",
+            "dateModified": "2026-03-23T19:48:35.867974",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run3.loop"
+            },
+            "name": "moongen-load-generator_run3"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run3.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-23T19:48:35.867974",
+            "dateModified": "2026-03-23T19:48:35.867974",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run3.loop"
+            },
+            "name": "moongen-load-generator_run3"
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_20-10-16_344373_dut-l2-load-latency_run3.command",
+            "@type": "CommandFile",
+            "contentSize": "56",
+            "dateCreated": "2026-03-23T20:10:16.344373",
+            "dateModified": "2026-03-23T20:10:16.344373",
+            "duration": "PT0S",
+            "endTime": "2026-03-23T20:10:16.344373",
+            "executedOn": {
+                "@id": "nida.anonymous.testbed"
+            },
+            "invokedBy": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run3.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "command"
+            ],
+            "name": "dut-l2-load-latency_run3",
+            "startTime": "2026-03-23T20:10:16.344373",
+            "status": "finished",
+            "stderr": {
+                "@id": "scripts/nida/2026-03-23_20-10-16_344373_dut-l2-load-latency_run3.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/nida/2026-03-23_20-10-16_344373_dut-l2-load-latency_run3.stdout"
+            },
+            "description": "Runs libmoon's l2-forward example so the DUT forwards traffic during the load-generator measurement window."
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_20-10-16_344373_dut-l2-load-latency_run3.stdout",
+            "@type": "File",
+            "contentSize": "57882",
+            "dateCreated": "2026-03-23T20:10:16.344373",
+            "dateModified": "2026-03-23T20:10:16.344373",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_20-10-16_344373_dut-l2-load-latency_run3.command"
+            },
+            "name": "dut-l2-load-latency_run3"
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_20-10-16_344373_dut-l2-load-latency_run3.stderr",
+            "@type": "File",
+            "contentSize": "818",
+            "dateCreated": "2026-03-23T20:10:16.344373",
+            "dateModified": "2026-03-23T20:10:16.344373",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_20-10-16_344373_dut-l2-load-latency_run3.command"
+            },
+            "name": "dut-l2-load-latency_run3"
+        },
+        {
+            "@id": "energy/nida/dut_measurement_run3.csv",
+            "@type": "File",
+            "contentSize": "13168",
+            "dateCreated": "2026-03-23T20:13:35.643097",
+            "dateModified": "2026-03-23T20:13:35.643097",
+            "description": "Energy measurement during experiment on node nida. The measurement is done using a GUDE Power Unit providing current, voltage and power consumption values.",
+            "encodingFormat": "csv",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run3.loop"
+            },
+            "keywords": [
+                "energy"
+            ],
+            "name": "dut_measurement_run3.csv"
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run3.loop",
+            "@type": "LoopRun",
+            "contentSize": "42",
+            "dateCreated": "2026-03-23T19:48:36.203425",
+            "dateModified": "2026-03-23T19:48:36.203425",
+            "duration": "PT374S",
+            "endTime": "2026-03-23T20:13:35.702979",
+            "energyMeasurements": [
+                {
+                    "@id": "energy/nida/dut_measurement_run3.csv"
+                }
+            ],
+            "invokedCommands": [
+                {
+                    "@id": "scripts/nida/2026-03-23_20-10-16_344373_dut-l2-load-latency_run3.command"
+                }
+            ],
+            "keywords": [
+                "variables",
+                "loop_run"
+            ],
+            "name": "l2-forwarder_run3",
+            "runOfLoopedCommand": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder.file"
+            },
+            "startTime": "2026-03-23T20:07:21.111063",
+            "status": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run3.status"
+            },
+            "stderr": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run3.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run3.stdout"
+            },
+            "description": "Each iteration runs the libmoon l2-forward script to forward the received packets from the loadgen node."
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run3.stdout",
+            "@type": "File",
+            "contentSize": "98",
+            "dateCreated": "2026-03-23T19:48:36.203425",
+            "dateModified": "2026-03-23T19:48:36.203425",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run3.loop"
+            },
+            "name": "l2-forwarder_run3"
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run3.stderr",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2026-03-23T19:48:36.203425",
+            "dateModified": "2026-03-23T19:48:36.203425",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run3.loop"
+            },
+            "name": "l2-forwarder_run3"
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run3.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-23T19:48:36.203425",
+            "dateModified": "2026-03-23T19:48:36.203425",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run3.loop"
+            },
+            "name": "l2-forwarder_run3"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_20-13-54_767010_loadgen-l2-load-latency_run4.command",
+            "@type": "CommandFile",
+            "contentSize": "131",
+            "dateCreated": "2026-03-23T20:13:54.767010",
+            "dateModified": "2026-03-23T20:13:54.767010",
+            "duration": "PT0S",
+            "endTime": "2026-03-23T20:13:54.767010",
+            "executedOn": {
+                "@id": "cesis.anonymous.testbed"
+            },
+            "invokedBy": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run4.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "command"
+            ],
+            "name": "loadgen-l2-load-latency_run4",
+            "startTime": "2026-03-23T20:13:54.767010",
+            "status": "finished",
+            "stderr": {
+                "@id": "scripts/cesis/2026-03-23_20-13-54_767010_loadgen-l2-load-latency_run4.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/cesis/2026-03-23_20-13-54_767010_loadgen-l2-load-latency_run4.stdout"
+            },
+            "description": "Runs MoonGen's l2-load-latency example using the selected transmit and receive ports and histogram output paths."
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_20-13-54_767010_loadgen-l2-load-latency_run4.stdout",
+            "@type": "File",
+            "contentSize": "59266",
+            "dateCreated": "2026-03-23T20:13:54.767010",
+            "dateModified": "2026-03-23T20:13:54.767010",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_20-13-54_767010_loadgen-l2-load-latency_run4.command"
+            },
+            "name": "loadgen-l2-load-latency_run4"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_20-13-54_767010_loadgen-l2-load-latency_run4.stderr",
+            "@type": "File",
+            "contentSize": "984",
+            "dateCreated": "2026-03-23T20:13:54.767010",
+            "dateModified": "2026-03-23T20:13:54.767010",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_20-13-54_767010_loadgen-l2-load-latency_run4.command"
+            },
+            "name": "loadgen-l2-load-latency_run4"
+        },
+        {
+            "@id": "files/cesis/histogram-latencies_run4.csv",
+            "@type": "File",
+            "contentSize": "1009",
+            "dateCreated": "2026-03-23T20:19:47.615133",
+            "dateModified": "2026-03-23T20:19:47.615133",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run4.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "histogram-latencies_run4.csv",
+            "description": "Uploaded latency histogram CSV for one benchmark iteration containing the latency-distribution data produced for the selected packet-rate and packet-size combination."
+        },
+        {
+            "@id": "files/cesis/histogram-latencies_run4.png",
+            "@type": "File",
+            "contentSize": "86334",
+            "dateCreated": "2026-03-23T20:19:48.023334",
+            "dateModified": "2026-03-23T20:19:48.023334",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run4.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "histogram-latencies_run4.png",
+            "description": "Uploaded latency histogram plot for one benchmark iteration of the MoonGen L2 load-latency experiment. It visualizes the filtered latency distribution for the selected packet-rate and packet-size combination."
+        },
+        {
+            "@id": "energy/cesis/measurement_run4.csv",
+            "@type": "File",
+            "contentSize": "12925",
+            "dateCreated": "2026-03-23T20:19:48.826331",
+            "dateModified": "2026-03-23T20:19:48.826331",
+            "description": "Energy measurement during experiment on node cesis. The measurement is done using a GUDE Power Unit providing current, voltage and power consumption values.",
+            "encodingFormat": "csv",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run4.loop"
+            },
+            "keywords": [
+                "energy"
+            ],
+            "name": "measurement_run4.csv"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run4.loop",
+            "@type": "LoopRun",
+            "contentSize": "41",
+            "dateCreated": "2026-03-23T19:48:35.867974",
+            "dateModified": "2026-03-23T19:48:35.867974",
+            "duration": "PT374S",
+            "endTime": "2026-03-23T20:19:48.890520",
+            "energyMeasurements": [
+                {
+                    "@id": "energy/cesis/measurement_run4.csv"
+                }
+            ],
+            "invokedCommands": [
+                {
+                    "@id": "scripts/cesis/2026-03-23_20-13-54_767010_loadgen-l2-load-latency_run4.command"
+                }
+            ],
+            "keywords": [
+                "variables",
+                "loop_run"
+            ],
+            "name": "moongen-load-generator_run4",
+            "resultData": [
+                {
+                    "@id": "files/cesis/histogram-latencies_run4.csv"
+                },
+                {
+                    "@id": "files/cesis/histogram-latencies_run4.png"
+                }
+            ],
+            "runOfLoopedCommand": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator.file"
+            },
+            "startTime": "2026-03-23T20:13:34.348635",
+            "status": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run4.status"
+            },
+            "stderr": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run4.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run4.stdout"
+            },
+            "description": "Each iteration runs the MoonGen l2-load-latency script with different values for packet rate and packet size, storing the measured latencies in a CSV file, generating a plot, and uploading both artifacts after each run."
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run4.stdout",
+            "@type": "File",
+            "contentSize": "463",
+            "dateCreated": "2026-03-23T19:48:35.867974",
+            "dateModified": "2026-03-23T19:48:35.867974",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run4.loop"
+            },
+            "name": "moongen-load-generator_run4"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run4.stderr",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2026-03-23T19:48:35.867974",
+            "dateModified": "2026-03-23T19:48:35.867974",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run4.loop"
+            },
+            "name": "moongen-load-generator_run4"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run4.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-23T19:48:35.867974",
+            "dateModified": "2026-03-23T19:48:35.867974",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run4.loop"
+            },
+            "name": "moongen-load-generator_run4"
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_20-16-30_896651_dut-l2-load-latency_run4.command",
+            "@type": "CommandFile",
+            "contentSize": "56",
+            "dateCreated": "2026-03-23T20:16:30.896651",
+            "dateModified": "2026-03-23T20:16:30.896651",
+            "duration": "PT0S",
+            "endTime": "2026-03-23T20:16:30.896651",
+            "executedOn": {
+                "@id": "nida.anonymous.testbed"
+            },
+            "invokedBy": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run4.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "command"
+            ],
+            "name": "dut-l2-load-latency_run4",
+            "startTime": "2026-03-23T20:16:30.896651",
+            "status": "finished",
+            "stderr": {
+                "@id": "scripts/nida/2026-03-23_20-16-30_896651_dut-l2-load-latency_run4.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/nida/2026-03-23_20-16-30_896651_dut-l2-load-latency_run4.stdout"
+            },
+            "description": "Runs libmoon's l2-forward example so the DUT forwards traffic during the load-generator measurement window."
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_20-16-30_896651_dut-l2-load-latency_run4.stdout",
+            "@type": "File",
+            "contentSize": "59274",
+            "dateCreated": "2026-03-23T20:16:30.896651",
+            "dateModified": "2026-03-23T20:16:30.896651",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_20-16-30_896651_dut-l2-load-latency_run4.command"
+            },
+            "name": "dut-l2-load-latency_run4"
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_20-16-30_896651_dut-l2-load-latency_run4.stderr",
+            "@type": "File",
+            "contentSize": "818",
+            "dateCreated": "2026-03-23T20:16:30.896651",
+            "dateModified": "2026-03-23T20:16:30.896651",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_20-16-30_896651_dut-l2-load-latency_run4.command"
+            },
+            "name": "dut-l2-load-latency_run4"
+        },
+        {
+            "@id": "energy/nida/dut_measurement_run4.csv",
+            "@type": "File",
+            "contentSize": "13168",
+            "dateCreated": "2026-03-23T20:19:50.180022",
+            "dateModified": "2026-03-23T20:19:50.180022",
+            "description": "Energy measurement during experiment on node nida. The measurement is done using a GUDE Power Unit providing current, voltage and power consumption values.",
+            "encodingFormat": "csv",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run4.loop"
+            },
+            "keywords": [
+                "energy"
+            ],
+            "name": "dut_measurement_run4.csv"
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run4.loop",
+            "@type": "LoopRun",
+            "contentSize": "41",
+            "dateCreated": "2026-03-23T19:48:36.203425",
+            "dateModified": "2026-03-23T19:48:36.203425",
+            "duration": "PT374S",
+            "endTime": "2026-03-23T20:19:50.262703",
+            "energyMeasurements": [
+                {
+                    "@id": "energy/nida/dut_measurement_run4.csv"
+                }
+            ],
+            "invokedCommands": [
+                {
+                    "@id": "scripts/nida/2026-03-23_20-16-30_896651_dut-l2-load-latency_run4.command"
+                }
+            ],
+            "keywords": [
+                "variables",
+                "loop_run"
+            ],
+            "name": "l2-forwarder_run4",
+            "runOfLoopedCommand": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder.file"
+            },
+            "startTime": "2026-03-23T20:13:35.702979",
+            "status": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run4.status"
+            },
+            "stderr": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run4.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run4.stdout"
+            },
+            "description": "Each iteration runs the libmoon l2-forward script to forward the received packets from the loadgen node."
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run4.stdout",
+            "@type": "File",
+            "contentSize": "98",
+            "dateCreated": "2026-03-23T19:48:36.203425",
+            "dateModified": "2026-03-23T19:48:36.203425",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run4.loop"
+            },
+            "name": "l2-forwarder_run4"
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run4.stderr",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2026-03-23T19:48:36.203425",
+            "dateModified": "2026-03-23T19:48:36.203425",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run4.loop"
+            },
+            "name": "l2-forwarder_run4"
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run4.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-23T19:48:36.203425",
+            "dateModified": "2026-03-23T19:48:36.203425",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run4.loop"
+            },
+            "name": "l2-forwarder_run4"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_20-20-09_370681_loadgen-l2-load-latency_run5.command",
+            "@type": "CommandFile",
+            "contentSize": "133",
+            "dateCreated": "2026-03-23T20:20:09.370681",
+            "dateModified": "2026-03-23T20:20:09.370681",
+            "duration": "PT0S",
+            "endTime": "2026-03-23T20:20:09.370681",
+            "executedOn": {
+                "@id": "cesis.anonymous.testbed"
+            },
+            "invokedBy": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run5.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "command"
+            ],
+            "name": "loadgen-l2-load-latency_run5",
+            "startTime": "2026-03-23T20:20:09.370681",
+            "status": "finished",
+            "stderr": {
+                "@id": "scripts/cesis/2026-03-23_20-20-09_370681_loadgen-l2-load-latency_run5.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/cesis/2026-03-23_20-20-09_370681_loadgen-l2-load-latency_run5.stdout"
+            },
+            "description": "Runs MoonGen's l2-load-latency example using the selected transmit and receive ports and histogram output paths."
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_20-20-09_370681_loadgen-l2-load-latency_run5.stdout",
+            "@type": "File",
+            "contentSize": "58568",
+            "dateCreated": "2026-03-23T20:20:09.370681",
+            "dateModified": "2026-03-23T20:20:09.370681",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_20-20-09_370681_loadgen-l2-load-latency_run5.command"
+            },
+            "name": "loadgen-l2-load-latency_run5"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_20-20-09_370681_loadgen-l2-load-latency_run5.stderr",
+            "@type": "File",
+            "contentSize": "984",
+            "dateCreated": "2026-03-23T20:20:09.370681",
+            "dateModified": "2026-03-23T20:20:09.370681",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_20-20-09_370681_loadgen-l2-load-latency_run5.command"
+            },
+            "name": "loadgen-l2-load-latency_run5"
+        },
+        {
+            "@id": "files/cesis/histogram-latencies_run5.csv",
+            "@type": "File",
+            "contentSize": "633",
+            "dateCreated": "2026-03-23T20:26:02.160087",
+            "dateModified": "2026-03-23T20:26:02.160087",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run5.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "histogram-latencies_run5.csv",
+            "description": "Uploaded latency histogram CSV for one benchmark iteration containing the latency-distribution data produced for the selected packet-rate and packet-size combination."
+        },
+        {
+            "@id": "files/cesis/histogram-latencies_run5.png",
+            "@type": "File",
+            "contentSize": "98239",
+            "dateCreated": "2026-03-23T20:26:02.586629",
+            "dateModified": "2026-03-23T20:26:02.586629",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run5.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "histogram-latencies_run5.png",
+            "description": "Uploaded latency histogram plot for one benchmark iteration of the MoonGen L2 load-latency experiment. It visualizes the filtered latency distribution for the selected packet-rate and packet-size combination."
+        },
+        {
+            "@id": "energy/cesis/measurement_run5.csv",
+            "@type": "File",
+            "contentSize": "12926",
+            "dateCreated": "2026-03-23T20:26:03.374593",
+            "dateModified": "2026-03-23T20:26:03.374593",
+            "description": "Energy measurement during experiment on node cesis. The measurement is done using a GUDE Power Unit providing current, voltage and power consumption values.",
+            "encodingFormat": "csv",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run5.loop"
+            },
+            "keywords": [
+                "energy"
+            ],
+            "name": "measurement_run5.csv"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run5.loop",
+            "@type": "LoopRun",
+            "contentSize": "43",
+            "dateCreated": "2026-03-23T19:48:35.867974",
+            "dateModified": "2026-03-23T19:48:35.867974",
+            "duration": "PT374S",
+            "endTime": "2026-03-23T20:26:03.441048",
+            "energyMeasurements": [
+                {
+                    "@id": "energy/cesis/measurement_run5.csv"
+                }
+            ],
+            "invokedCommands": [
+                {
+                    "@id": "scripts/cesis/2026-03-23_20-20-09_370681_loadgen-l2-load-latency_run5.command"
+                }
+            ],
+            "keywords": [
+                "variables",
+                "loop_run"
+            ],
+            "name": "moongen-load-generator_run5",
+            "resultData": [
+                {
+                    "@id": "files/cesis/histogram-latencies_run5.csv"
+                },
+                {
+                    "@id": "files/cesis/histogram-latencies_run5.png"
+                }
+            ],
+            "runOfLoopedCommand": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator.file"
+            },
+            "startTime": "2026-03-23T20:19:48.890520",
+            "status": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run5.status"
+            },
+            "stderr": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run5.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run5.stdout"
+            },
+            "description": "Each iteration runs the MoonGen l2-load-latency script with different values for packet rate and packet size, storing the measured latencies in a CSV file, generating a plot, and uploading both artifacts after each run."
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run5.stdout",
+            "@type": "File",
+            "contentSize": "469",
+            "dateCreated": "2026-03-23T19:48:35.867974",
+            "dateModified": "2026-03-23T19:48:35.867974",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run5.loop"
+            },
+            "name": "moongen-load-generator_run5"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run5.stderr",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2026-03-23T19:48:35.867974",
+            "dateModified": "2026-03-23T19:48:35.867974",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run5.loop"
+            },
+            "name": "moongen-load-generator_run5"
+        },
+        {
+            "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run5.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-23T19:48:35.867974",
+            "dateModified": "2026-03-23T19:48:35.867974",
+            "exampleOfWork": {
+                "@id": "scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run5.loop"
+            },
+            "name": "moongen-load-generator_run5"
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_20-22-45_463490_dut-l2-load-latency_run5.command",
+            "@type": "CommandFile",
+            "contentSize": "56",
+            "dateCreated": "2026-03-23T20:22:45.463490",
+            "dateModified": "2026-03-23T20:22:45.463490",
+            "duration": "PT0S",
+            "endTime": "2026-03-23T20:22:45.463490",
+            "executedOn": {
+                "@id": "nida.anonymous.testbed"
+            },
+            "invokedBy": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run5.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "command"
+            ],
+            "name": "dut-l2-load-latency_run5",
+            "startTime": "2026-03-23T20:22:45.463490",
+            "status": "finished",
+            "stderr": {
+                "@id": "scripts/nida/2026-03-23_20-22-45_463490_dut-l2-load-latency_run5.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/nida/2026-03-23_20-22-45_463490_dut-l2-load-latency_run5.stdout"
+            },
+            "description": "Runs libmoon's l2-forward example so the DUT forwards traffic during the load-generator measurement window."
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_20-22-45_463490_dut-l2-load-latency_run5.stdout",
+            "@type": "File",
+            "contentSize": "58572",
+            "dateCreated": "2026-03-23T20:22:45.463490",
+            "dateModified": "2026-03-23T20:22:45.463490",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_20-22-45_463490_dut-l2-load-latency_run5.command"
+            },
+            "name": "dut-l2-load-latency_run5"
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_20-22-45_463490_dut-l2-load-latency_run5.stderr",
+            "@type": "File",
+            "contentSize": "818",
+            "dateCreated": "2026-03-23T20:22:45.463490",
+            "dateModified": "2026-03-23T20:22:45.463490",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_20-22-45_463490_dut-l2-load-latency_run5.command"
+            },
+            "name": "dut-l2-load-latency_run5"
+        },
+        {
+            "@id": "energy/nida/dut_measurement_run5.csv",
+            "@type": "File",
+            "contentSize": "12883",
+            "dateCreated": "2026-03-23T20:26:04.833344",
+            "dateModified": "2026-03-23T20:26:04.833344",
+            "description": "Energy measurement during experiment on node nida. The measurement is done using a GUDE Power Unit providing current, voltage and power consumption values.",
+            "encodingFormat": "csv",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run5.loop"
+            },
+            "keywords": [
+                "energy"
+            ],
+            "name": "dut_measurement_run5.csv"
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run5.loop",
+            "@type": "LoopRun",
+            "contentSize": "43",
+            "dateCreated": "2026-03-23T19:48:36.203425",
+            "dateModified": "2026-03-23T19:48:36.203425",
+            "duration": "PT374S",
+            "endTime": "2026-03-23T20:26:04.907058",
+            "energyMeasurements": [
+                {
+                    "@id": "energy/nida/dut_measurement_run5.csv"
+                }
+            ],
+            "invokedCommands": [
+                {
+                    "@id": "scripts/nida/2026-03-23_20-22-45_463490_dut-l2-load-latency_run5.command"
+                }
+            ],
+            "keywords": [
+                "variables",
+                "loop_run"
+            ],
+            "name": "l2-forwarder_run5",
+            "runOfLoopedCommand": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder.file"
+            },
+            "startTime": "2026-03-23T20:19:50.262703",
+            "status": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run5.status"
+            },
+            "stderr": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run5.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run5.stdout"
+            },
+            "description": "Each iteration runs the libmoon l2-forward script to forward the received packets from the loadgen node."
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run5.stdout",
+            "@type": "File",
+            "contentSize": "98",
+            "dateCreated": "2026-03-23T19:48:36.203425",
+            "dateModified": "2026-03-23T19:48:36.203425",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run5.loop"
+            },
+            "name": "l2-forwarder_run5"
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run5.stderr",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2026-03-23T19:48:36.203425",
+            "dateModified": "2026-03-23T19:48:36.203425",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run5.loop"
+            },
+            "name": "l2-forwarder_run5"
+        },
+        {
+            "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run5.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-23T19:48:36.203425",
+            "dateModified": "2026-03-23T19:48:36.203425",
+            "exampleOfWork": {
+                "@id": "scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run5.loop"
+            },
+            "name": "l2-forwarder_run5"
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+#!/bin/bash
+RESULTS_DIR=$(pos_get_variable results_dir -r)
+LOG_FILE="$RESULTS_DIR/server-topology.txt"
+exec > >(tee -a "$LOG_FILE") 2>&1
+set -eux
+
+SERVER_IP=$(pos_get_variable server_ip -r)
+PREFIX_LENGTH=$(pos_get_variable prefix_length -r)
+SERVER_BRIDGE_INTERFACE=$(pos_get_variable server_bridge_interface -r)
+
+CLIENT_IP=$(pos_get_variable client_ip -r)
+CLIENT_EXTRA_IP=$(pos_get_variable client_extra_ip -r)
+SERVER_IP=$(pos_get_variable server_ip -r)
+
+SERVER_TO_CLIENT_INTERFACE=$(pos_get_variable server_to_client_interface -r)
+RATE=$(pos_get_variable fast_path_rate -r)     # mbit
+DELAY=$(pos_get_variable fast_path_delay -r)   # ms
+
+SERVER_TO_CLIENT_EXTRA_INTERFACE=$(pos_get_variable server_to_client_extra_interface -r)
+
+echo "Configuring the server's network with two paths to the client"
+
+echo "...Create bridge"
+ip link add name "$SERVER_BRIDGE_INTERFACE" type bridge
+
+echo "...Attach interfaces to bridge"
+ip link set dev "$SERVER_TO_CLIENT_INTERFACE" master "$SERVER_BRIDGE_INTERFACE"
+ip link set dev "$SERVER_TO_CLIENT_EXTRA_INTERFACE" master "$SERVER_BRIDGE_INTERFACE"
+
+echo "...Set interfaces up"
+ip link set dev "$SERVER_TO_CLIENT_INTERFACE" up
+ip link set dev "$SERVER_TO_CLIENT_EXTRA_INTERFACE" up
+ip link set dev "$SERVER_BRIDGE_INTERFACE" up
+
+echo "...Assign address to bridge"
+ip addr add dev "$SERVER_BRIDGE_INTERFACE" "$SERVER_IP"/"$PREFIX_LENGTH"
+
+echo "...Set routing"
+ip -6 route add "$CLIENT_IP" dev "$SERVER_BRIDGE_INTERFACE"
+ip -6 route add "$CLIENT_EXTRA_IP" dev "$SERVER_BRIDGE_INTERFACE"
+ip -6 route add "$SERVER_IP" dev "$SERVER_BRIDGE_INTERFACE"
+
+echo "...Set network parameters"
+
+LATENCY=$((DELAY + DELAY + DELAY)) # 1.5 BDP
+tc qdisc add dev "$SERVER_TO_CLIENT_INTERFACE" root handle 1: tbf rate "${RATE}"mbit buffer 64k latency "${LATENCY}"ms
+tc qdisc add dev "$SERVER_TO_CLIENT_INTERFACE" parent 1: handle 10: netem delay "${DELAY}"ms

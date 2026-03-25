@@ -1,0 +1,4 @@
+#!/bin/bash
+set -eu
+
+pos_upload -f -r "$(pos_get_variable results_dir -r)"

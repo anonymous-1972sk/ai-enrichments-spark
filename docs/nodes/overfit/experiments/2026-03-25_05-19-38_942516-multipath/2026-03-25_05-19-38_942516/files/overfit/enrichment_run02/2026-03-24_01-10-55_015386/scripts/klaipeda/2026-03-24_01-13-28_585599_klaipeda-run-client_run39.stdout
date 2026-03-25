@@ -1,0 +1,35 @@
+Configuring path properties with 2% loss
+Checking path to the server
+fd00:0:0:3::1 from fd00:0:0:1::1 dev enp2s0f1 table 100 src fd00:0:0:1::1 metric 1024 pref medium
+Running iperf3 client via fd00:0:0:1::1 for 10s
+iperf 3.12
+Linux klaipeda 6.1.0-17-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.69-1 (2023-12-30) x86_64
+Control connection MSS 1428
+Time: Tue, 24 Mar 2026 00:23:43 GMT
+Connecting to host fd00:0:0:3::1, port 25565
+      Cookie: qat4f6wy6tbzlot2ke7xiyghfipkfidcwt5u
+      TCP MSS: 1428 (default)
+[  5] local fd00:0:0:1::1 port 44695 connected to fd00:0:0:3::1 port 25565
+Starting Test: protocol: TCP, 1 streams, 131072 byte blocks, omitting 0 seconds, 10 second test, tos 0
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec  9.00 MBytes  75.5 Mbits/sec   65   23.7 KBytes       
+[  5]   1.00-2.00   sec  1.25 MBytes  10.5 Mbits/sec   20   18.1 KBytes       
+[  5]   2.00-3.00   sec  1.25 MBytes  10.5 Mbits/sec   19   16.7 KBytes       
+[  5]   3.00-4.00   sec  1.25 MBytes  10.5 Mbits/sec   22   5.58 KBytes       
+[  5]   4.00-5.00   sec  1.25 MBytes  10.5 Mbits/sec   18   9.76 KBytes       
+[  5]   5.00-6.00   sec  1.25 MBytes  10.5 Mbits/sec   16   15.3 KBytes       
+[  5]   6.00-7.00   sec  1.25 MBytes  10.5 Mbits/sec   23   16.7 KBytes       
+[  5]   7.00-8.00   sec  2.50 MBytes  21.0 Mbits/sec   13   23.7 KBytes       
+[  5]   8.00-9.00   sec  0.00 Bytes  0.00 bits/sec   36   11.2 KBytes       
+[  5]   9.00-10.00  sec  2.50 MBytes  21.0 Mbits/sec   18   8.37 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+Test Complete. Summary Results:
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-10.00  sec  21.5 MBytes  18.0 Mbits/sec  250             sender
+[  5]   0.00-10.01  sec  17.8 MBytes  14.9 Mbits/sec                  receiver
+CPU Utilization: local/sender 0.2% (0.0%u/0.2%s), remote/receiver 0.7% (0.1%u/0.6%s)
+snd_tcp_congestion cubic
+rcv_tcp_congestion cubic
+
+iperf Done.
+Client run complete.

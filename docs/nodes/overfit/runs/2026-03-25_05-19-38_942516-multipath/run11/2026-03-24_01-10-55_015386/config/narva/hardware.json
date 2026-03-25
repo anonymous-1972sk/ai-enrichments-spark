@@ -1,0 +1,340 @@
+{
+    "motherboard": {
+        "bios": {
+            "date": "02/20/2015",
+            "vendor": "American Megatrends",
+            "version": "2.2"
+        },
+        "model": "X9SCL/X9SCM",
+        "vendor": "Supermicro",
+        "revision": "1.11A"
+    },
+    "processor": [
+        {
+            "slot": "CPU",
+            "cores": 4,
+            "model": "Xeon E3-1230 V2 @ 3.30GHz",
+            "vendor": "Intel",
+            "threads": 8,
+            "version": "6.58.9",
+            "microcode": "27",
+            "virtualized": false,
+            "architecture": "64bit"
+        }
+    ],
+    "memory": {
+        "dimms": [
+            {
+                "slot": "DIMM_1A",
+                "type": "DDR3",
+                "empty": false,
+                "model": "9965525-033.A00LF",
+                "serial": "CA382DB7",
+                "vendor": "Kingston",
+                "capacity_bytes": 4294967296,
+                "maximum_speed_val": 1333,
+                "capacity_human_val": 4,
+                "maximum_speed_unit": "MHz",
+                "capacity_human_unit": "GiB",
+                "operational_speed_val": 1333,
+                "operational_speed_unit": "MHz"
+            },
+            {
+                "slot": "DIMM_2A",
+                "type": "DDR3",
+                "empty": false,
+                "model": "9965525-033.A00LF",
+                "serial": "CA382AB7",
+                "vendor": "Kingston",
+                "capacity_bytes": 4294967296,
+                "maximum_speed_val": 1333,
+                "capacity_human_val": 4,
+                "maximum_speed_unit": "MHz",
+                "capacity_human_unit": "GiB",
+                "operational_speed_val": 1333,
+                "operational_speed_unit": "MHz"
+            },
+            {
+                "slot": "DIMM_1B",
+                "type": "DDR3",
+                "empty": false,
+                "model": "9965525-033.A00LF",
+                "serial": "CB3830B7",
+                "vendor": "Kingston",
+                "capacity_bytes": 4294967296,
+                "maximum_speed_val": 1333,
+                "capacity_human_val": 4,
+                "maximum_speed_unit": "MHz",
+                "capacity_human_unit": "GiB",
+                "operational_speed_val": 1333,
+                "operational_speed_unit": "MHz"
+            },
+            {
+                "slot": "DIMM_2B",
+                "type": "DDR3",
+                "empty": false,
+                "model": "9965525-033.A00LF",
+                "serial": "CA3822B7",
+                "vendor": "Kingston",
+                "capacity_bytes": 4294967296,
+                "maximum_speed_val": 1333,
+                "capacity_human_val": 4,
+                "maximum_speed_unit": "MHz",
+                "capacity_human_unit": "GiB",
+                "operational_speed_val": 1333,
+                "operational_speed_unit": "MHz"
+            }
+        ],
+        "dimm_slots": 4,
+        "ecc_details": "Single-bit ECC",
+        "ecc_support": true,
+        "maximum_capacity_bytes": 34359738368,
+        "installed_capacity_bytes": 17179869184,
+        "maximum_capacity_human_val": 32,
+        "maximum_capacity_human_unit": "GiB",
+        "installed_capacity_human_val": 16,
+        "installed_capacity_human_unit": "GiB"
+    },
+    "storage": [],
+    "graphics": [],
+    "network": [
+        {
+            "model": "82599ES 10-Gigabit SFI/SFP+",
+            "vendor": "Intel",
+            "version": "01",
+            "firmware": "0x000161c1",
+            "interfaces": [
+                {
+                    "mac": "90:e2:ba:92:db:fc",
+                    "dev_name": "enp1s0f0",
+                    "bus_address": "pci@0000:01:00.0",
+                    "current_configuration": {
+                        "link_detected": false,
+                        "link_speed_val": null,
+                        "link_speed_unit": null,
+                        "transceiver_type": "No pluggable transceiver found",
+                        "transceiver_model": null,
+                        "transceiver_modes": null,
+                        "transceiver_medium": null,
+                        "transceiver_serial": null,
+                        "transceiver_revision": null
+                    }
+                },
+                {
+                    "mac": "90:e2:ba:92:db:fd",
+                    "dev_name": "enp1s0f1",
+                    "bus_address": "pci@0000:01:00.1",
+                    "current_configuration": {
+                        "link_detected": true,
+                        "link_speed_val": 10,
+                        "link_speed_unit": "Gbit/s",
+                        "transceiver_type": "SFP",
+                        "transceiver_model": "P.C30.H",
+                        "transceiver_modes": [
+                            "10000baseT/Full"
+                        ],
+                        "transceiver_medium": "Direct Attach Copper",
+                        "transceiver_serial": "F78JUH7-B",
+                        "transceiver_revision": "1.0"
+                    }
+                }
+            ],
+            "bus_address": "pci@0000:01:00.{0,1}"
+        },
+        {
+            "model": "82599ES 10-Gigabit SFI/SFP+",
+            "vendor": "Intel",
+            "version": "01",
+            "firmware": "0x000161b9",
+            "interfaces": [
+                {
+                    "mac": "90:e2:ba:1f:8d:44",
+                    "dev_name": "enp3s0",
+                    "bus_address": "pci@0000:03:00.0",
+                    "current_configuration": {
+                        "link_detected": true,
+                        "link_speed_val": 10,
+                        "link_speed_unit": "Gbit/s",
+                        "transceiver_type": "SFP",
+                        "transceiver_model": "P.C30.H",
+                        "transceiver_modes": [
+                            "10000baseT/Full"
+                        ],
+                        "transceiver_medium": "Direct Attach Copper",
+                        "transceiver_serial": "F78JUH4-B",
+                        "transceiver_revision": "1.0"
+                    }
+                }
+            ],
+            "bus_address": "pci@0000:03:00.0"
+        },
+        {
+            "model": "82576 Gigabit",
+            "vendor": "Intel",
+            "version": "01",
+            "firmware": "1.2.1",
+            "interfaces": [
+                {
+                    "mac": "90:e2:ba:1c:57:08",
+                    "dev_name": "enp7s0f0",
+                    "bus_address": "pci@0000:07:00.0",
+                    "current_configuration": {
+                        "link_detected": false,
+                        "link_speed_val": null,
+                        "link_speed_unit": null,
+                        "transceiver_type": "Internal transceiver",
+                        "transceiver_model": null,
+                        "transceiver_modes": [
+                            "10baseT/Half",
+                            "10baseT/Full",
+                            "100baseT/Half",
+                            "100baseT/Full",
+                            "1000baseT/Full"
+                        ],
+                        "transceiver_medium": "Twisted Pair Cable",
+                        "transceiver_serial": null,
+                        "transceiver_revision": null
+                    }
+                },
+                {
+                    "mac": "90:e2:ba:1c:57:09",
+                    "dev_name": "enp7s0f1",
+                    "bus_address": "pci@0000:07:00.1",
+                    "current_configuration": {
+                        "link_detected": false,
+                        "link_speed_val": null,
+                        "link_speed_unit": null,
+                        "transceiver_type": "Internal transceiver",
+                        "transceiver_model": null,
+                        "transceiver_modes": [
+                            "10baseT/Half",
+                            "10baseT/Full",
+                            "100baseT/Half",
+                            "100baseT/Full",
+                            "1000baseT/Full"
+                        ],
+                        "transceiver_medium": "Twisted Pair Cable",
+                        "transceiver_serial": null,
+                        "transceiver_revision": null
+                    }
+                }
+            ],
+            "bus_address": "pci@0000:07:00.{0,1}"
+        },
+        {
+            "model": "82576 Gigabit",
+            "vendor": "Intel",
+            "version": "01",
+            "firmware": "1.2.1",
+            "interfaces": [
+                {
+                    "mac": "90:e2:ba:1c:57:0a",
+                    "dev_name": "enp9s0f0",
+                    "bus_address": "pci@0000:09:00.0",
+                    "current_configuration": {
+                        "link_detected": false,
+                        "link_speed_val": null,
+                        "link_speed_unit": null,
+                        "transceiver_type": "Internal transceiver",
+                        "transceiver_model": null,
+                        "transceiver_modes": [
+                            "10baseT/Half",
+                            "10baseT/Full",
+                            "100baseT/Half",
+                            "100baseT/Full",
+                            "1000baseT/Full"
+                        ],
+                        "transceiver_medium": "Twisted Pair Cable",
+                        "transceiver_serial": null,
+                        "transceiver_revision": null
+                    }
+                },
+                {
+                    "mac": "90:e2:ba:1c:57:0b",
+                    "dev_name": "enp9s0f1",
+                    "bus_address": "pci@0000:09:00.1",
+                    "current_configuration": {
+                        "link_detected": false,
+                        "link_speed_val": null,
+                        "link_speed_unit": null,
+                        "transceiver_type": "Internal transceiver",
+                        "transceiver_model": null,
+                        "transceiver_modes": [
+                            "10baseT/Half",
+                            "10baseT/Full",
+                            "100baseT/Half",
+                            "100baseT/Full",
+                            "1000baseT/Full"
+                        ],
+                        "transceiver_medium": "Twisted Pair Cable",
+                        "transceiver_serial": null,
+                        "transceiver_revision": null
+                    }
+                }
+            ],
+            "bus_address": "pci@0000:09:00.{0,1}"
+        },
+        {
+            "model": "82579LM Gigabit (Lewisville)",
+            "vendor": "Intel",
+            "version": "05",
+            "firmware": "0.13-4",
+            "interfaces": [
+                {
+                    "mac": "00:25:90:a1:c3:4d",
+                    "dev_name": "enp0s25",
+                    "bus_address": "pci@0000:00:19.0",
+                    "current_configuration": {
+                        "link_detected": false,
+                        "link_speed_val": null,
+                        "link_speed_unit": null,
+                        "transceiver_type": "Internal transceiver",
+                        "transceiver_model": null,
+                        "transceiver_modes": [
+                            "10baseT/Half",
+                            "10baseT/Full",
+                            "100baseT/Half",
+                            "100baseT/Full",
+                            "1000baseT/Full"
+                        ],
+                        "transceiver_medium": "Twisted Pair Cable",
+                        "transceiver_serial": null,
+                        "transceiver_revision": null
+                    }
+                }
+            ],
+            "bus_address": "pci@0000:00:19.0"
+        },
+        {
+            "model": "82574L Gigabit",
+            "vendor": "Intel",
+            "version": "00",
+            "firmware": "2.1-2",
+            "interfaces": [
+                {
+                    "mac": "00:25:90:a1:c3:4c",
+                    "dev_name": "eno1",
+                    "bus_address": "pci@0000:0c:00.0",
+                    "current_configuration": {
+                        "link_detected": true,
+                        "link_speed_val": 1,
+                        "link_speed_unit": "Gbit/s",
+                        "transceiver_type": "Internal transceiver",
+                        "transceiver_model": null,
+                        "transceiver_modes": [
+                            "10baseT/Half",
+                            "10baseT/Full",
+                            "100baseT/Half",
+                            "100baseT/Full",
+                            "1000baseT/Full"
+                        ],
+                        "transceiver_medium": "Twisted Pair Cable",
+                        "transceiver_serial": null,
+                        "transceiver_revision": null
+                    }
+                }
+            ],
+            "bus_address": "pci@0000:0c:00.0"
+        }
+    ]
+}

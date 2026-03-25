@@ -1,0 +1,40 @@
+++ pos_get_variable server_port -r
++ PORT=25565
+++ pos_get_variable server_ip -r
++ SERVER_IP=fd00:0:0:3::1
+++ pos_get_variable client_path --from-loop
++ CLIENT_PATH=fd00:0:0:1::1
+++ pos_get_variable loss --from-loop
++ LOSS=2
+++ pos_get_variable benchmark_duration -r
++ BENCHMARK_DURATION=10
+++ pos_get_variable client_interface -r
++ CLIENT_INTERFACE=enp2s0f1
+++ pos_get_variable client_extra_interface -r
++ CLIENT_EXTRA_INTERFACE=enp2s0f0
++ echo 'Configuring path properties with 2% loss'
+++ pos_get_variable fast_path_rate -r
++ RATE=50
+++ pos_get_variable fast_path_delay -r
++ DELAY=5
+++ echo '3 * 5'
+++ bc
++ LATENCY=15
++ tc qdisc replace dev enp2s0f1 root handle 1: tbf rate 50mbit buffer 64k latency 15ms
++ tc qdisc replace dev enp2s0f1 parent 1: handle 10: netem delay 5ms loss 2%
+++ pos_get_variable slow_path_rate --from-loop
++ RATE=50
+++ pos_get_variable slow_path_delay --from-loop
++ DELAY=5
+++ echo '3 * 5'
+++ bc
++ LATENCY=15
++ tc qdisc replace dev enp2s0f0 root handle 1: tbf rate 50mbit buffer 64k latency 15ms
++ tc qdisc replace dev enp2s0f0 parent 1: handle 10: netem delay 5ms loss 2%
++ pos_sync --tag server_ready
++ echo 'Checking path to the server'
++ ip -6 route get fd00:0:0:3::1 from fd00:0:0:1::1
++ echo 'Running iperf3 client via fd00:0:0:1::1 for 10s'
++ iperf3 --client fd00:0:0:3::1 --port 25565 --bind fd00:0:0:1::1 --time 10 --verbose
++ pos_sync --tag client_finished
++ echo 'Client run complete.'

@@ -1,0 +1,221 @@
+2026-03-25 05:00:20  Loop params: model_profile=gemma3_4b model=<profile-or-default> ctx=8192 temperature=0.0 top_p=0.9 num_predict=<ollama-default> think=<profile-or-default-or-omitted> peek_chars=10000
+2026-03-25 05:00:20  Run manifest path: /tmp/llm-enrichment-manifest.json
+2026-03-25 05:00:20  GPU metrics CSV path: /tmp/llm-enrichment-gpu-metrics.csv
+2026-03-25 05:00:20  Immutable baseline folder: /srv/testbed/results/anonymous/default/2026-03-23_19-39-04_161273
+2026-03-25 05:00:20  Working directory root: /tmp/enricher
+2026-03-25 05:00:20  Per-run upload label: 2026-03-23_19-39-04_161273
+2026-03-25 05:00:20  Created fresh working copy for this loop run: /tmp/enricher/2026-03-23_19-39-04_161273
+2026-03-25 05:00:20  Resolved Ollama model for cleanup: gemma3:4b
+2026-03-25 05:00 INFO: Resolved model profile 'gemma3_4b' from /root/ai-metadata-enricher/config/model_profiles.yml -> model=gemma3:4b think=<omitted>
+2026-03-25 05:00 INFO: Started GPU metrics monitor: /tmp/llm-enrichment-gpu-metrics.csv (interval=1000 ms)
+2026-03-25 05:00 INFO: Pulling model 'gemma3:4b'...
+2026-03-25 05:00 INFO: Model 'gemma3:4b' is ready.
+2026-03-25 05:00 INFO: Warming up model 'gemma3:4b'...
+2026-03-25 05:00 INFO: Model ready.
+2026-03-25 05:00 INFO: Starting enrichment for result folder: /tmp/enricher/2026-03-23_19-39-04_161273
+2026-03-25 05:00 INFO: Processing experiment: config/allocation.json
+2026-03-25 05:00 INFO: Found 9 executed command(s)
+2026-03-25 05:00 INFO: Skipping pre-described entity: scripts/cesis/2026-03-23_19-41-37_716526_bootstrap.file (type: {'CommandFileBootstrap'})
+2026-03-25 05:00 INFO: Skipping pre-described entity: scripts/cesis/2026-03-23_19-39-08_076780_reset.command (type: {'CommandFileReset'})
+2026-03-25 05:00 INFO: Skipping pre-described entity: scripts/nida/2026-03-23_19-43-51_281626_bootstrap.file (type: {'CommandFileBootstrap'})
+2026-03-25 05:00 INFO: Skipping pre-described entity: scripts/nida/2026-03-23_19-39-08_407231_reset.command (type: {'CommandFileReset'})
+2026-03-25 05:00 INFO: -----------------------------------------------------------
+Processing command entity: scripts/nida/2026-03-23_19-43-55_946506_setup-dut.file
+  name    : 2026-03-23_19-43-55_946506_setup-dut.file
+  type    : {'CommandFile'}
+  path    : /tmp/enricher/2026-03-23_19-39-04_161273/scripts/nida/2026-03-23_19-43-55_946506_setup-dut.file
+  filetype: script
+2026-03-25 05:00 INFO: Sending prompt to model 'gemma3:4b' (attempt 1)
+2026-03-25 05:00 INFO: LLM usage | entity=scripts/nida/2026-03-23_19-43-55_946506_setup-dut.file | context=command | prompt_tokens=556 | output_tokens=18 | prompt_eval_s=0.118 | eval_s=0.246 | total_s=0.902 | load_s=0.509 | prompt_tps=4704.57 | output_tps=73.11
+2026-03-25 05:00 DEBUG:   -> description set for scripts/nida/2026-03-23_19-43-55_946506_setup-dut.file [command]
+2026-03-25 05:00 INFO: -----------------------------------------------------------
+Processing command entity: scripts/cesis/2026-03-23_19-43-55_628662_setup-loadgen.file
+  name    : 2026-03-23_19-43-55_628662_setup-loadgen.file
+  type    : {'CommandFile'}
+  path    : /tmp/enricher/2026-03-23_19-39-04_161273/scripts/cesis/2026-03-23_19-43-55_628662_setup-loadgen.file
+  filetype: script
+2026-03-25 05:00 INFO: Sending prompt to model 'gemma3:4b' (attempt 1)
+2026-03-25 05:00 INFO: LLM usage | entity=scripts/cesis/2026-03-23_19-43-55_628662_setup-loadgen.file | context=command | prompt_tokens=539 | output_tokens=16 | prompt_eval_s=0.045 | eval_s=0.215 | total_s=0.858 | load_s=0.572 | prompt_tps=12013.25 | output_tps=74.38
+2026-03-25 05:00 DEBUG:   -> description set for scripts/cesis/2026-03-23_19-43-55_628662_setup-loadgen.file [command]
+2026-03-25 05:00 INFO: Skipping pre-described entity: scripts/cesis/2026-03-23_19-48-35_142825_copy_plot_latency.py.command (type: {'CommandFileCopy'})
+2026-03-25 05:00 INFO: -----------------------------------------------------------
+Processing looped command entity: scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator.file
+  name    : 2026-03-23_19-48-35_867974_moongen-load-generator.file
+  type    : {'CommandFileLooped'}
+  path    : /tmp/enricher/2026-03-23_19-39-04_161273/scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator.file
+  filetype: script
+2026-03-25 05:00 INFO: Sending prompt to model 'gemma3:4b' (attempt 1)
+2026-03-25 05:00 INFO: LLM usage | entity=scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator.file | context=command | prompt_tokens=1027 | output_tokens=76 | prompt_eval_s=0.146 | eval_s=1.072 | total_s=1.797 | load_s=0.469 | prompt_tps=7037.01 | output_tps=70.92
+2026-03-25 05:00 DEBUG:   -> description set for scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator.file [command]
+2026-03-25 05:00 INFO: Found 6 loop run(s) for scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator.file
+2026-03-25 05:00 DEBUG:     Loop run 1/6: scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run0.loop
+2026-03-25 05:00 INFO: Sending prompt to model 'gemma3:4b' (attempt 1)
+2026-03-25 05:00 INFO: LLM usage | entity=scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run0.loop | context=loop run | prompt_tokens=1074 | output_tokens=47 | prompt_eval_s=0.204 | eval_s=0.652 | total_s=1.412 | load_s=0.487 | prompt_tps=5265.21 | output_tps=72.06
+2026-03-25 05:00 DEBUG:   -> description set for scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run0.loop [loop run (new)]
+2026-03-25 05:00 INFO:   Processing invokedCommand 1: scripts/cesis/2026-03-23_19-48-56_389619_loadgen-l2-load-latency_run0.command (normalized: scripts/cesis/loadgen-l2-load-latency_run.command)
+2026-03-25 05:00 INFO: Sending prompt to model 'gemma3:4b' (attempt 1)
+2026-03-25 05:00 INFO: LLM usage | entity=scripts/cesis/2026-03-23_19-48-56_389619_loadgen-l2-load-latency_run0.command | context=invoked command | prompt_tokens=401 | output_tokens=17 | prompt_eval_s=0.083 | eval_s=0.226 | total_s=0.735 | load_s=0.394 | prompt_tps=4812.17 | output_tps=75.24
+2026-03-25 05:00 DEBUG:   -> description set for scripts/cesis/2026-03-23_19-48-56_389619_loadgen-l2-load-latency_run0.command [invoked command (new)]
+2026-03-25 05:00 INFO:   Processing resultData 1: files/cesis/histogram-latencies_run0.csv (normalized: files/cesis/histogram-latencies_run.csv)
+2026-03-25 05:00 INFO: Sending prompt to model 'gemma3:4b' (attempt 1)
+2026-03-25 05:00 INFO: LLM usage | entity=files/cesis/histogram-latencies_run0.csv | context=result data | prompt_tokens=8192 | output_tokens=342 | prompt_eval_s=1.410 | eval_s=5.097 | total_s=7.430 | load_s=0.483 | prompt_tps=5810.88 | output_tps=67.10
+2026-03-25 05:00 DEBUG:   -> description set for files/cesis/histogram-latencies_run0.csv [result data (new)]
+2026-03-25 05:00 INFO:   Processing resultData 2: files/cesis/histogram-latencies_run0.png (normalized: files/cesis/histogram-latencies_run.png)
+2026-03-25 05:00 INFO: Sending prompt to model 'gemma3:4b' (attempt 1)
+2026-03-25 05:00 INFO: LLM usage | entity=files/cesis/histogram-latencies_run0.png | context=result data | prompt_tokens=1008 | output_tokens=30 | prompt_eval_s=0.178 | eval_s=0.417 | total_s=1.049 | load_s=0.404 | prompt_tps=5657.01 | output_tps=71.89
+2026-03-25 05:00 DEBUG:   -> description set for files/cesis/histogram-latencies_run0.png [result data (new)]
+2026-03-25 05:00 DEBUG:     Loop run 2/6: scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run1.loop
+2026-03-25 05:00 DEBUG:   -> description set for scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run1.loop [loop run (cached)]
+2026-03-25 05:00 INFO:   Processing invokedCommand 1: scripts/cesis/2026-03-23_19-55-11_061959_loadgen-l2-load-latency_run1.command (normalized: scripts/cesis/loadgen-l2-load-latency_run.command)
+2026-03-25 05:00 DEBUG:   -> description set for scripts/cesis/2026-03-23_19-55-11_061959_loadgen-l2-load-latency_run1.command [invoked command (cached)]
+2026-03-25 05:00 INFO:   Processing resultData 1: files/cesis/histogram-latencies_run1.csv (normalized: files/cesis/histogram-latencies_run.csv)
+2026-03-25 05:00 DEBUG:   -> description set for files/cesis/histogram-latencies_run1.csv [result data (cached)]
+2026-03-25 05:00 INFO:   Processing resultData 2: files/cesis/histogram-latencies_run1.png (normalized: files/cesis/histogram-latencies_run.png)
+2026-03-25 05:00 DEBUG:   -> description set for files/cesis/histogram-latencies_run1.png [result data (cached)]
+2026-03-25 05:00 DEBUG:     Loop run 3/6: scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run2.loop
+2026-03-25 05:00 DEBUG:   -> description set for scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run2.loop [loop run (cached)]
+2026-03-25 05:00 INFO:   Processing invokedCommand 1: scripts/cesis/2026-03-23_20-01-25_586122_loadgen-l2-load-latency_run2.command (normalized: scripts/cesis/loadgen-l2-load-latency_run.command)
+2026-03-25 05:00 DEBUG:   -> description set for scripts/cesis/2026-03-23_20-01-25_586122_loadgen-l2-load-latency_run2.command [invoked command (cached)]
+2026-03-25 05:00 INFO:   Processing resultData 1: files/cesis/histogram-latencies_run2.csv (normalized: files/cesis/histogram-latencies_run.csv)
+2026-03-25 05:00 DEBUG:   -> description set for files/cesis/histogram-latencies_run2.csv [result data (cached)]
+2026-03-25 05:00 INFO:   Processing resultData 2: files/cesis/histogram-latencies_run2.png (normalized: files/cesis/histogram-latencies_run.png)
+2026-03-25 05:00 DEBUG:   -> description set for files/cesis/histogram-latencies_run2.png [result data (cached)]
+2026-03-25 05:00 DEBUG:     Loop run 4/6: scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run3.loop
+2026-03-25 05:00 DEBUG:   -> description set for scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run3.loop [loop run (cached)]
+2026-03-25 05:00 INFO:   Processing invokedCommand 1: scripts/cesis/2026-03-23_20-07-40_162594_loadgen-l2-load-latency_run3.command (normalized: scripts/cesis/loadgen-l2-load-latency_run.command)
+2026-03-25 05:00 DEBUG:   -> description set for scripts/cesis/2026-03-23_20-07-40_162594_loadgen-l2-load-latency_run3.command [invoked command (cached)]
+2026-03-25 05:00 INFO:   Processing resultData 1: files/cesis/histogram-latencies_run3.csv (normalized: files/cesis/histogram-latencies_run.csv)
+2026-03-25 05:00 DEBUG:   -> description set for files/cesis/histogram-latencies_run3.csv [result data (cached)]
+2026-03-25 05:00 INFO:   Processing resultData 2: files/cesis/histogram-latencies_run3.png (normalized: files/cesis/histogram-latencies_run.png)
+2026-03-25 05:00 DEBUG:   -> description set for files/cesis/histogram-latencies_run3.png [result data (cached)]
+2026-03-25 05:00 DEBUG:     Loop run 5/6: scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run4.loop
+2026-03-25 05:00 DEBUG:   -> description set for scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run4.loop [loop run (cached)]
+2026-03-25 05:00 INFO:   Processing invokedCommand 1: scripts/cesis/2026-03-23_20-13-54_767010_loadgen-l2-load-latency_run4.command (normalized: scripts/cesis/loadgen-l2-load-latency_run.command)
+2026-03-25 05:00 DEBUG:   -> description set for scripts/cesis/2026-03-23_20-13-54_767010_loadgen-l2-load-latency_run4.command [invoked command (cached)]
+2026-03-25 05:00 INFO:   Processing resultData 1: files/cesis/histogram-latencies_run4.csv (normalized: files/cesis/histogram-latencies_run.csv)
+2026-03-25 05:00 DEBUG:   -> description set for files/cesis/histogram-latencies_run4.csv [result data (cached)]
+2026-03-25 05:00 INFO:   Processing resultData 2: files/cesis/histogram-latencies_run4.png (normalized: files/cesis/histogram-latencies_run.png)
+2026-03-25 05:00 DEBUG:   -> description set for files/cesis/histogram-latencies_run4.png [result data (cached)]
+2026-03-25 05:00 DEBUG:     Loop run 6/6: scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run5.loop
+2026-03-25 05:00 DEBUG:   -> description set for scripts/cesis/2026-03-23_19-48-35_867974_moongen-load-generator_run5.loop [loop run (cached)]
+2026-03-25 05:00 INFO:   Processing invokedCommand 1: scripts/cesis/2026-03-23_20-20-09_370681_loadgen-l2-load-latency_run5.command (normalized: scripts/cesis/loadgen-l2-load-latency_run.command)
+2026-03-25 05:00 DEBUG:   -> description set for scripts/cesis/2026-03-23_20-20-09_370681_loadgen-l2-load-latency_run5.command [invoked command (cached)]
+2026-03-25 05:00 INFO:   Processing resultData 1: files/cesis/histogram-latencies_run5.csv (normalized: files/cesis/histogram-latencies_run.csv)
+2026-03-25 05:00 DEBUG:   -> description set for files/cesis/histogram-latencies_run5.csv [result data (cached)]
+2026-03-25 05:00 INFO:   Processing resultData 2: files/cesis/histogram-latencies_run5.png (normalized: files/cesis/histogram-latencies_run.png)
+2026-03-25 05:00 DEBUG:   -> description set for files/cesis/histogram-latencies_run5.png [result data (cached)]
+2026-03-25 05:00 INFO: -----------------------------------------------------------
+Processing looped command entity: scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder.file
+  name    : 2026-03-23_19-48-36_203425_l2-forwarder.file
+  type    : {'CommandFileLooped'}
+  path    : /tmp/enricher/2026-03-23_19-39-04_161273/scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder.file
+  filetype: script
+2026-03-25 05:00 INFO: Sending prompt to model 'gemma3:4b' (attempt 1)
+2026-03-25 05:00 INFO: LLM usage | entity=scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder.file | context=command | prompt_tokens=763 | output_tokens=83 | prompt_eval_s=0.146 | eval_s=1.160 | total_s=1.860 | load_s=0.442 | prompt_tps=5234.72 | output_tps=71.57
+2026-03-25 05:00 DEBUG:   -> description set for scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder.file [command]
+2026-03-25 05:00 INFO: Found 6 loop run(s) for scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder.file
+2026-03-25 05:00 DEBUG:     Loop run 1/6: scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run0.loop
+2026-03-25 05:00 INFO: Sending prompt to model 'gemma3:4b' (attempt 1)
+2026-03-25 05:00 INFO: LLM usage | entity=scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run0.loop | context=loop run | prompt_tokens=810 | output_tokens=56 | prompt_eval_s=0.123 | eval_s=0.777 | total_s=1.433 | load_s=0.454 | prompt_tps=6587.23 | output_tps=72.05
+2026-03-25 05:00 DEBUG:   -> description set for scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run0.loop [loop run (new)]
+2026-03-25 05:00 INFO:   Processing invokedCommand 1: scripts/nida/2026-03-23_19-51-32_755121_dut-l2-load-latency_run0.command (normalized: scripts/nida/dut-l2-load-latency_run.command)
+2026-03-25 05:00 INFO: Sending prompt to model 'gemma3:4b' (attempt 1)
+2026-03-25 05:00 INFO: LLM usage | entity=scripts/nida/2026-03-23_19-51-32_755121_dut-l2-load-latency_run0.command | context=invoked command | prompt_tokens=369 | output_tokens=16 | prompt_eval_s=0.034 | eval_s=0.217 | total_s=0.716 | load_s=0.437 | prompt_tps=10812.29 | output_tps=73.88
+2026-03-25 05:00 DEBUG:   -> description set for scripts/nida/2026-03-23_19-51-32_755121_dut-l2-load-latency_run0.command [invoked command (new)]
+2026-03-25 05:00 DEBUG:     Loop run 2/6: scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run1.loop
+2026-03-25 05:00 DEBUG:   -> description set for scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run1.loop [loop run (cached)]
+2026-03-25 05:00 INFO:   Processing invokedCommand 1: scripts/nida/2026-03-23_19-57-47_138890_dut-l2-load-latency_run1.command (normalized: scripts/nida/dut-l2-load-latency_run.command)
+2026-03-25 05:00 DEBUG:   -> description set for scripts/nida/2026-03-23_19-57-47_138890_dut-l2-load-latency_run1.command [invoked command (cached)]
+2026-03-25 05:00 DEBUG:     Loop run 3/6: scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run2.loop
+2026-03-25 05:00 DEBUG:   -> description set for scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run2.loop [loop run (cached)]
+2026-03-25 05:00 INFO:   Processing invokedCommand 1: scripts/nida/2026-03-23_20-04-01_765228_dut-l2-load-latency_run2.command (normalized: scripts/nida/dut-l2-load-latency_run.command)
+2026-03-25 05:00 DEBUG:   -> description set for scripts/nida/2026-03-23_20-04-01_765228_dut-l2-load-latency_run2.command [invoked command (cached)]
+2026-03-25 05:00 DEBUG:     Loop run 4/6: scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run3.loop
+2026-03-25 05:00 DEBUG:   -> description set for scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run3.loop [loop run (cached)]
+2026-03-25 05:00 INFO:   Processing invokedCommand 1: scripts/nida/2026-03-23_20-10-16_344373_dut-l2-load-latency_run3.command (normalized: scripts/nida/dut-l2-load-latency_run.command)
+2026-03-25 05:00 DEBUG:   -> description set for scripts/nida/2026-03-23_20-10-16_344373_dut-l2-load-latency_run3.command [invoked command (cached)]
+2026-03-25 05:00 DEBUG:     Loop run 5/6: scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run4.loop
+2026-03-25 05:00 DEBUG:   -> description set for scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run4.loop [loop run (cached)]
+2026-03-25 05:00 INFO:   Processing invokedCommand 1: scripts/nida/2026-03-23_20-16-30_896651_dut-l2-load-latency_run4.command (normalized: scripts/nida/dut-l2-load-latency_run.command)
+2026-03-25 05:00 DEBUG:   -> description set for scripts/nida/2026-03-23_20-16-30_896651_dut-l2-load-latency_run4.command [invoked command (cached)]
+2026-03-25 05:00 DEBUG:     Loop run 6/6: scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run5.loop
+2026-03-25 05:00 DEBUG:   -> description set for scripts/nida/2026-03-23_19-48-36_203425_l2-forwarder_run5.loop [loop run (cached)]
+2026-03-25 05:00 INFO:   Processing invokedCommand 1: scripts/nida/2026-03-23_20-22-45_463490_dut-l2-load-latency_run5.command (normalized: scripts/nida/dut-l2-load-latency_run.command)
+2026-03-25 05:00 DEBUG:   -> description set for scripts/nida/2026-03-23_20-22-45_463490_dut-l2-load-latency_run5.command [invoked command (cached)]
+2026-03-25 05:00 INFO: Scanning experiment-level result data...
+2026-03-25 05:00 DEBUG:   -> skip files/cesis/histogram-latencies_run0.csv (already covered)
+2026-03-25 05:00 DEBUG:   -> skip files/cesis/histogram-latencies_run0.png (already covered)
+2026-03-25 05:00 DEBUG:   -> skip files/cesis/histogram-latencies_run1.csv (already covered)
+2026-03-25 05:00 DEBUG:   -> skip files/cesis/histogram-latencies_run1.png (already covered)
+2026-03-25 05:00 DEBUG:   -> skip files/cesis/histogram-latencies_run2.csv (already covered)
+2026-03-25 05:00 DEBUG:   -> skip files/cesis/histogram-latencies_run2.png (already covered)
+2026-03-25 05:00 DEBUG:   -> skip files/cesis/histogram-latencies_run3.csv (already covered)
+2026-03-25 05:00 DEBUG:   -> skip files/cesis/histogram-latencies_run3.png (already covered)
+2026-03-25 05:00 DEBUG:   -> skip files/cesis/histogram-latencies_run4.csv (already covered)
+2026-03-25 05:00 DEBUG:   -> skip files/cesis/histogram-latencies_run4.png (already covered)
+2026-03-25 05:00 DEBUG:   -> skip files/cesis/histogram-latencies_run5.csv (already covered)
+2026-03-25 05:00 DEBUG:   -> skip files/cesis/histogram-latencies_run5.png (already covered)
+2026-03-25 05:00 INFO: Processing 12 experiment-level energy measurement(s)
+2026-03-25 05:00 DEBUG:   -> preserving trusted existing description for energy/cesis/measurement_run0.csv [energy measurement]
+2026-03-25 05:00 DEBUG:   -> preserving trusted existing description for energy/nida/dut_measurement_run0.csv [energy measurement]
+2026-03-25 05:00 DEBUG:   -> preserving trusted existing description for energy/cesis/measurement_run1.csv [energy measurement]
+2026-03-25 05:00 DEBUG:   -> preserving trusted existing description for energy/nida/dut_measurement_run1.csv [energy measurement]
+2026-03-25 05:00 DEBUG:   -> preserving trusted existing description for energy/cesis/measurement_run2.csv [energy measurement]
+2026-03-25 05:00 DEBUG:   -> preserving trusted existing description for energy/nida/dut_measurement_run2.csv [energy measurement]
+2026-03-25 05:00 DEBUG:   -> preserving trusted existing description for energy/cesis/measurement_run3.csv [energy measurement]
+2026-03-25 05:00 DEBUG:   -> preserving trusted existing description for energy/nida/dut_measurement_run3.csv [energy measurement]
+2026-03-25 05:00 DEBUG:   -> preserving trusted existing description for energy/cesis/measurement_run4.csv [energy measurement]
+2026-03-25 05:00 DEBUG:   -> preserving trusted existing description for energy/nida/dut_measurement_run4.csv [energy measurement]
+2026-03-25 05:00 DEBUG:   -> preserving trusted existing description for energy/cesis/measurement_run5.csv [energy measurement]
+2026-03-25 05:00 DEBUG:   -> preserving trusted existing description for energy/nida/dut_measurement_run5.csv [energy measurement]
+2026-03-25 05:00 DEBUG:   -> no hardware.json for nida.anonymous.testbed, skipping node
+2026-03-25 05:00 DEBUG:   -> no hardware.json for cesis.anonymous.testbed, skipping node
+2026-03-25 05:00 INFO: Generating crate-level title and description...
+2026-03-25 05:00 INFO: Sending prompt to model 'gemma3:4b' (attempt 1)
+2026-03-25 05:00 INFO: LLM usage | entity=./ | context=crate summary | prompt_tokens=1357 | output_tokens=99 | prompt_eval_s=0.211 | eval_s=1.401 | total_s=2.219 | load_s=0.478 | prompt_tps=6416.16 | output_tps=70.68
+2026-03-25 05:00 DEBUG:   -> name replaced generic for ./ [crate summary]
+2026-03-25 05:00 DEBUG:   -> description replaced generic for ./ [crate summary]
+2026-03-25 05:00 INFO: Sending prompt to model 'gemma3:4b' (attempt 1)
+2026-03-25 05:00 INFO: LLM usage | entity=./ | context=crate keywords | prompt_tokens=1253 | output_tokens=16 | prompt_eval_s=0.227 | eval_s=0.217 | total_s=1.046 | load_s=0.565 | prompt_tps=5510.47 | output_tps=73.65
+2026-03-25 05:00 DEBUG:   -> keywords refreshed existing for ./ [crate keywords]
+2026-03-25 05:00 DEBUG: No CITATION.cff found at /tmp/enricher/2026-03-23_19-39-04_161273/CITATION.cff
+2026-03-25 05:00 INFO: LLM usage summary | calls=12 | calls_with_usage=12 | prompt_tokens=17349 | output_tokens=816 | prompt_eval_s=2.926 | eval_s=11.697 | total_s=21.457 | load_s=5.693 | prompt_tps=5929.27 | output_tps=69.76
+2026-03-25 05:00 INFO: Enrichment finished. Updated 43 entities.
+2026-03-25 05:00 INFO: Saved metadata. Updated 43 description(s).
+2026-03-25 05:00 INFO: Total time: 21.5s
+2026-03-25 05:00 INFO: Wrote run summary JSON: /tmp/llm-enrichment-manifest.json
+2026-03-25 05:00:51  Unloaded Ollama model after run: gemma3:4b
+2026-03-25 05:00:51  Running autoscore using reference crate: /srv/testbed/results/anonymous/default/2026-03-23_19-39-04_161273_reference
+2026-03-25 05:00 INFO: Loaded 70 reference(s) from reference crate /srv/testbed/results/anonymous/default/2026-03-23_19-39-04_161273_reference
+2026-03-25 05:00 INFO: Matched 70 of 70 references (0 unmatched)
+2026-03-25 05:00 DEBUG: matplotlib data path: /root/venv3/lib/python3.12/site-packages/matplotlib/mpl-data
+2026-03-25 05:00 DEBUG: CONFIGDIR=/root/.config/matplotlib
+2026-03-25 05:00 DEBUG: interactive is False
+2026-03-25 05:00 DEBUG: platform is linux
+2026-03-25 05:00 DEBUG: CACHEDIR=/root/.cache/matplotlib
+2026-03-25 05:00 DEBUG: Using fontManager instance from /root/.cache/matplotlib/fontlist-v390.json
+2026-03-25 05:00 DEBUG: Starting new HTTPS connection (1): huggingface.co:443
+2026-03-25 05:00 DEBUG: https://huggingface.co:443 "HEAD /microsoft/deberta-large-mnli/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2026-03-25 05:00 DEBUG: https://huggingface.co:443 "HEAD /api/resolve-cache/models/microsoft/deberta-large-mnli/7296194b9009373def4f7c5dad292651e4b5cf4e/tokenizer_config.json HTTP/1.1" 200 0
+2026-03-25 05:00 DEBUG: https://huggingface.co:443 "GET /api/models/microsoft/deberta-large-mnli/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2026-03-25 05:00 DEBUG: https://huggingface.co:443 "GET /api/models/microsoft/deberta-large-mnli/tree/main?recursive=True&expand=False HTTP/1.1" 200 None
+2026-03-25 05:00 DEBUG: https://huggingface.co:443 "HEAD /microsoft/deberta-large-mnli/resolve/main/config.json HTTP/1.1" 307 0
+2026-03-25 05:00 DEBUG: https://huggingface.co:443 "HEAD /api/resolve-cache/models/microsoft/deberta-large-mnli/7296194b9009373def4f7c5dad292651e4b5cf4e/config.json HTTP/1.1" 200 0
+2026-03-25 05:00 DEBUG: https://huggingface.co:443 "HEAD /microsoft/deberta-large-mnli/resolve/main/model.safetensors HTTP/1.1" 404 0
+2026-03-25 05:01 INFO: Computed BERTScore for 70 pairs (requested=auto, actual=cuda)
+2026-03-25 05:01 INFO: Wrote autoscore report to /tmp/enricher/bertscore_results.json
+
+=== Autoscore: 70/70 matched ===
+  ROUGE-L F1 mean:      0.4742  (sd=0.4322)
+  Token overlap mean:   0.4472  (sd=0.4527)
+  BERTScore F1 mean:    0.5506  (sd=0.3916)
+  BERTScore P mean:     0.5368
+  BERTScore R mean:     0.5692
+  [description] n=69  ROUGE-L=0.4789  overlap=0.451
+  [name] n=1  ROUGE-L=0.1538  overlap=0.1818
+
+2026-03-25 05:01:01  Reference autoscore completed successfully.
+2026-03-25 05:01 INFO: Wrote markdown report to /tmp/enricher/bertscore_results.md
+Report written to /tmp/enricher/bertscore_results.md
+2026-03-25 05:01:01  Evaluation markdown report written to /tmp/enricher/bertscore_results.md
+2026-03-25 05:01:01  Uploading folder '/tmp/enricher-staging' as 'enrichment' with loop suffixing

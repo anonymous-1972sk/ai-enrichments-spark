@@ -1,0 +1,35 @@
+Configuring path properties with 5% loss
+Checking path to the server
+fd00:0:0:3::1 from fd00:0:0:1::1 dev enp2s0f1 table 100 src fd00:0:0:1::1 metric 1024 pref medium
+Running iperf3 client via fd00:0:0:1::1 for 10s
+iperf 3.12
+Linux klaipeda 6.1.0-17-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.69-1 (2023-12-30) x86_64
+Control connection MSS 1428
+Time: Tue, 24 Mar 2026 00:26:54 GMT
+Connecting to host fd00:0:0:3::1, port 25565
+      Cookie: bfbghhvoddbnwpd3jkopaxet46ncxhh3oqeb
+      TCP MSS: 1428 (default)
+[  5] local fd00:0:0:1::1 port 34513 connected to fd00:0:0:3::1 port 25565
+Starting Test: protocol: TCP, 1 streams, 131072 byte blocks, omitting 0 seconds, 10 second test, tos 0
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec  7.39 MBytes  62.0 Mbits/sec   96   9.76 KBytes       
+[  5]   1.00-2.00   sec  1.16 MBytes  9.76 Mbits/sec   32   6.97 KBytes       
+[  5]   2.00-3.00   sec  0.00 Bytes  0.00 bits/sec   14   8.37 KBytes       
+[  5]   3.00-4.00   sec  1.16 MBytes  9.77 Mbits/sec   27   4.18 KBytes       
+[  5]   4.00-5.00   sec  0.00 Bytes  0.00 bits/sec   20   12.6 KBytes       
+[  5]   5.00-6.00   sec  1.15 MBytes  9.68 Mbits/sec   30   13.9 KBytes       
+[  5]   6.00-7.00   sec  1.17 MBytes  9.86 Mbits/sec   21   5.58 KBytes       
+[  5]   7.00-8.00   sec  0.00 Bytes  0.00 bits/sec   21   5.58 KBytes       
+[  5]   8.00-9.00   sec  0.00 Bytes  0.00 bits/sec   31   9.76 KBytes       
+[  5]   9.00-10.00  sec  1.16 MBytes  9.77 Mbits/sec   18   13.9 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+Test Complete. Summary Results:
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-10.00  sec  13.2 MBytes  11.1 Mbits/sec  310             sender
+[  5]   0.00-10.01  sec  10.3 MBytes  8.59 Mbits/sec                  receiver
+CPU Utilization: local/sender 0.2% (0.0%u/0.2%s), remote/receiver 0.5% (0.0%u/0.5%s)
+snd_tcp_congestion cubic
+rcv_tcp_congestion cubic
+
+iperf Done.
+Client run complete.

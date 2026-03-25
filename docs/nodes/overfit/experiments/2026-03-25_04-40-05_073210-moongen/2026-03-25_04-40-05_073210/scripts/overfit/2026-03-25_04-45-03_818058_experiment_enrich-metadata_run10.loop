@@ -1,0 +1,11 @@
+{
+  "ctx": 8192,
+  "top_p": 0.9,
+  "peek_chars": 10000,
+  "temperature": 0.0,
+  "model_profile": "gpt_oss_20b",
+  "crate_basename": "2026-03-23_19-39-04_161273",
+  "reference_path": "/srv/testbed/results/anonymous/default/2026-03-23_19-39-04_161273_reference",
+  "reference_label": "2026-03-23_19-39-04_161273_reference",
+  "baseline_result_folder": "/srv/testbed/results/anonymous/default/2026-03-23_19-39-04_161273"
+}

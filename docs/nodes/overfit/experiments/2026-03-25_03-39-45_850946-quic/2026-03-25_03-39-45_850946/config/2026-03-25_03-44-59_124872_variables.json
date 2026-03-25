@@ -1,0 +1,39 @@
+{
+    "loop": {
+        "model_profile": [
+            "gemma3_4b",
+            "gemma3_12b",
+            "qwen3_14b",
+            "deepseek_r1_8b",
+            "gpt_oss_20b",
+            "gpt_oss_120b"
+        ],
+        "ctx": [
+            8192
+        ],
+        "temperature": [
+            0.0
+        ],
+        "top_p": [
+            0.9
+        ],
+        "peek_chars": [
+            100,
+            10000
+        ],
+        "baseline_result_folder": [
+            "/srv/testbed/results/anonymous/default/2026-03-16_19-51-26_709427"
+        ],
+        "crate_basename": [
+            "2026-03-16_19-51-26_709427"
+        ],
+        "reference_label": [
+            "2026-03-16_19-51-26_709427_reference"
+        ],
+        "reference_path": [
+            "/srv/testbed/results/anonymous/default/2026-03-16_19-51-26_709427_reference"
+        ]
+    },
+    "global": {},
+    "overfit": {}
+}

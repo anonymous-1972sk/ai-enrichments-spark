@@ -1,0 +1,1 @@
+['bash', '-c', 'mkdir -p /srv/testbed/results/anonymous/default && test ! -e /srv/testbed/results/anonymous/default/2026-03-23_19-39-04_161273']

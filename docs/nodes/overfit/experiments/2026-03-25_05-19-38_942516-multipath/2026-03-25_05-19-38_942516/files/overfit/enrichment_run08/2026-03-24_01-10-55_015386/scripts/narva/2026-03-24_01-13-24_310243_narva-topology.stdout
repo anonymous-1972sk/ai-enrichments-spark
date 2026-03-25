@@ -1,0 +1,47 @@
+++ pos_get_variable server_ip -r
++ SERVER_IP=fd00:0:0:3::1
+++ pos_get_variable prefix_length -r
++ PREFIX_LENGTH=112
+++ pos_get_variable server_bridge_interface -r
++ SERVER_BRIDGE_INTERFACE=br0
+++ pos_get_variable client_ip -r
++ CLIENT_IP=fd00:0:0:1::1
+++ pos_get_variable client_extra_ip -r
++ CLIENT_EXTRA_IP=fd00:0:0:2::1
+++ pos_get_variable server_ip -r
++ SERVER_IP=fd00:0:0:3::1
+++ pos_get_variable server_to_client_interface -r
++ SERVER_TO_CLIENT_INTERFACE=enp1s0f1
+++ pos_get_variable fast_path_rate -r
++ RATE=50
+++ pos_get_variable fast_path_delay -r
++ DELAY=5
+++ pos_get_variable server_to_client_extra_interface -r
++ SERVER_TO_CLIENT_EXTRA_INTERFACE=enp3s0
++ echo 'Configuring the server'\''s network with two paths to the client'
+Configuring the server's network with two paths to the client
++ echo '...Create bridge'
+...Create bridge
++ ip link add name br0 type bridge
++ echo '...Attach interfaces to bridge'
+...Attach interfaces to bridge
++ ip link set dev enp1s0f1 master br0
++ ip link set dev enp3s0 master br0
++ echo '...Set interfaces up'
+...Set interfaces up
++ ip link set dev enp1s0f1 up
++ ip link set dev enp3s0 up
++ ip link set dev br0 up
++ echo '...Assign address to bridge'
+...Assign address to bridge
++ ip addr add dev br0 fd00:0:0:3::1/112
++ echo '...Set routing'
+...Set routing
++ ip -6 route add fd00:0:0:1::1 dev br0
++ ip -6 route add fd00:0:0:2::1 dev br0
++ ip -6 route add fd00:0:0:3::1 dev br0
++ echo '...Set network parameters'
+...Set network parameters
++ LATENCY=15
++ tc qdisc add dev enp1s0f1 root handle 1: tbf rate 50mbit buffer 64k latency 15ms
++ tc qdisc add dev enp1s0f1 parent 1: handle 10: netem delay 5ms

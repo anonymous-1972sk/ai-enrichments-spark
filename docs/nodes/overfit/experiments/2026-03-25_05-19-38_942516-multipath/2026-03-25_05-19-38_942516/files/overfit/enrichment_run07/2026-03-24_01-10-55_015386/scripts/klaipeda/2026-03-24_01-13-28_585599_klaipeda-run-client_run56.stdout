@@ -1,0 +1,35 @@
+Configuring path properties with 5% loss
+Checking path to the server
+fd00:0:0:3::1 from fd00:0:0:2::1 dev enp2s0f0 table 200 src fd00:0:0:2::1 metric 1024 pref medium
+Running iperf3 client via fd00:0:0:2::1 for 10s
+iperf 3.12
+Linux klaipeda 6.1.0-17-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.69-1 (2023-12-30) x86_64
+Control connection MSS 1428
+Time: Tue, 24 Mar 2026 00:28:38 GMT
+Connecting to host fd00:0:0:3::1, port 25565
+      Cookie: qgqa4fgpapyohjn756dtjvgfjjvnucbasfij
+      TCP MSS: 1428 (default)
+[  5] local fd00:0:0:2::1 port 55617 connected to fd00:0:0:3::1 port 25565
+Starting Test: protocol: TCP, 1 streams, 131072 byte blocks, omitting 0 seconds, 10 second test, tos 0
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec   478 KBytes  3.92 Mbits/sec   11   16.7 KBytes       
+[  5]   1.00-2.00   sec   126 KBytes  1.03 Mbits/sec    2   16.7 KBytes       
+[  5]   2.00-3.00   sec   126 KBytes  1.03 Mbits/sec    7   4.18 KBytes       
+[  5]   3.00-4.00   sec  0.00 Bytes  0.00 bits/sec    1   8.37 KBytes       
+[  5]   4.00-5.00   sec   126 KBytes  1.03 Mbits/sec    4   9.76 KBytes       
+[  5]   5.00-6.00   sec   126 KBytes  1.03 Mbits/sec    2   11.2 KBytes       
+[  5]   6.00-7.00   sec  0.00 Bytes  0.00 bits/sec    4   8.37 KBytes       
+[  5]   7.00-8.00   sec   126 KBytes  1.03 Mbits/sec    4   5.58 KBytes       
+[  5]   8.00-9.00   sec  0.00 Bytes  0.00 bits/sec    5   4.18 KBytes       
+[  5]   9.00-10.00  sec   126 KBytes  1.03 Mbits/sec    3   4.18 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+Test Complete. Summary Results:
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-10.00  sec  1.20 MBytes  1.01 Mbits/sec   43             sender
+[  5]   0.00-10.10  sec   944 KBytes   766 Kbits/sec                  receiver
+CPU Utilization: local/sender 1.0% (0.2%u/0.8%s), remote/receiver 0.1% (0.0%u/0.1%s)
+snd_tcp_congestion cubic
+rcv_tcp_congestion cubic
+
+iperf Done.
+Client run complete.

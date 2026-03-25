@@ -1,0 +1,72 @@
+#!/bin/bash
+set -eux
+
+PORT=$(pos_get_variable server_port -r)
+SERVER_IP=$(pos_get_variable server_ip -r)
+SERVER_BRIDGE_INTERFACE=$(pos_get_variable server_bridge_interface -r)
+LOSS=$(pos_get_variable loss --from-loop)
+SLOW_RATE=$(pos_get_variable slow_path_rate --from-loop)
+SLOW_DELAY=$(pos_get_variable slow_path_delay --from-loop)
+
+SERVER_TO_CLIENT_INTERFACE=$(pos_get_variable server_to_client_interface -r)
+SERVER_TO_CLIENT_EXTRA_INTERFACE=$(pos_get_variable server_to_client_extra_interface -r)
+
+DATA_DIR=/root/data
+mkdir -p "$DATA_DIR"
+
+echo "Configuring server-side netem with ${LOSS}% loss (bidirectional)"
+
+RATE=$(pos_get_variable fast_path_rate -r)
+DELAY=$(pos_get_variable fast_path_delay -r)
+LATENCY=$(echo "3 * $DELAY" | bc)
+tc qdisc replace dev "$SERVER_TO_CLIENT_INTERFACE" root handle 1: tbf rate "${RATE}"mbit buffer 64k latency "${LATENCY}"ms
+tc qdisc replace dev "$SERVER_TO_CLIENT_INTERFACE" parent 1: handle 10: netem delay "${DELAY}"ms loss "${LOSS}"%
+
+LATENCY=$(echo "3 * $SLOW_DELAY" | bc)
+tc qdisc replace dev "$SERVER_TO_CLIENT_EXTRA_INTERFACE" root handle 1: tbf rate "${SLOW_RATE}"mbit buffer 64k latency "${LATENCY}"ms
+tc qdisc replace dev "$SERVER_TO_CLIENT_EXTRA_INTERFACE" parent 1: handle 10: netem delay "${SLOW_DELAY}"ms loss "${LOSS}"%
+
+tshark \
+    --interface "$SERVER_BRIDGE_INTERFACE" \
+    -f "port $PORT" \
+    -q \
+    -w "$DATA_DIR/capture.pcapng" \
+    >/dev/null 2>&1 &
+TSHARK_PID=$!
+
+iperf3 --server --port "$PORT" --bind "$SERVER_IP" --verbose --one-off &
+IPERF_PID=$!
+
+for _ in $(seq 1 30); do
+    if ss -tlnp | grep -q ":$PORT"; then
+        echo "iperf3 server is listening on port $PORT (PID $IPERF_PID)"
+        break
+    fi
+    sleep 1
+done
+
+pos_sync --tag "server_ready"
+
+echo "Waiting for iperf3 to handle client connection..."
+wait "$IPERF_PID" || true
+
+pos_sync --tag "client_finished"
+
+sleep 1
+kill -INT "$TSHARK_PID" 2>/dev/null || true
+wait "$TSHARK_PID" 2>/dev/null || true
+
+tshark \
+    -r "$DATA_DIR/capture.pcapng" \
+    -T fields \
+    -e frame.time_relative \
+    -e frame.len \
+    > "$DATA_DIR/capture.txt"
+
+rm -f "$DATA_DIR/capture.pcapng"
+
+pos_upload -f -l -o data -r "$DATA_DIR"
+
+rm -r "$DATA_DIR" || true
+
+echo "Server run complete."

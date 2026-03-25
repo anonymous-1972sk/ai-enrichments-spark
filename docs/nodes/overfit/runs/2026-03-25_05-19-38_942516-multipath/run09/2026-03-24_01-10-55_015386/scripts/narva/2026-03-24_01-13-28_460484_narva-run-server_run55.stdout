@@ -1,0 +1,33 @@
+Configuring server-side netem with 5% loss (bidirectional)
+iperf 3.12
+Linux narva 6.1.0-17-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.69-1 (2023-12-30) x86_64
+iperf3 server is listening on port 25565 (PID 7825)
+Waiting for iperf3 to handle client connection...
+-----------------------------------------------------------
+Server listening on 25565 (test #1)
+-----------------------------------------------------------
+Time: Tue, 24 Mar 2026 00:24:51 GMT
+Accepted connection from fd00:0:0:2::1, port 36093
+      Cookie: vsb7lfuc2iame2f4wv5zxypej2wblaihler6
+      TCP MSS: 0 (default)
+[  5] local fd00:0:0:3::1 port 25565 connected to fd00:0:0:2::1 port 42653
+Starting Test: protocol: TCP, 1 streams, 131072 byte blocks, omitting 0 seconds, 10 second test, tos 0
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-1.00   sec   290 KBytes  2.38 Mbits/sec                  
+[  5]   1.00-2.00   sec   152 KBytes  1.25 Mbits/sec                  
+[  5]   2.00-3.00   sec  87.9 KBytes   720 Kbits/sec                  
+[  5]   3.00-4.00   sec   128 KBytes  1.05 Mbits/sec                  
+[  5]   4.00-5.00   sec   206 KBytes  1.69 Mbits/sec                  
+[  5]   5.00-6.00   sec   138 KBytes  1.13 Mbits/sec                  
+[  5]   6.00-7.00   sec  89.2 KBytes   731 Kbits/sec                  
+[  5]   7.00-8.00   sec   113 KBytes   925 Kbits/sec                  
+[  5]   8.00-9.00   sec   145 KBytes  1.19 Mbits/sec                  
+[  5]   9.00-10.00  sec   181 KBytes  1.49 Mbits/sec                  
+[  5]  10.00-10.05  sec  8.37 KBytes  1.36 Mbits/sec                  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+Test Complete. Summary Results:
+[ ID] Interval           Transfer     Bitrate
+[  5] (sender statistics not available)
+[  5]   0.00-10.05  sec  1.50 MBytes  1.25 Mbits/sec                  receiver
+rcv_tcp_congestion cubic
+Server run complete.

@@ -1,0 +1,29 @@
+#!/bin/bash
+RESULTS_DIR=$(pos_get_variable results_dir -r)
+LOG_FILE="$RESULTS_DIR/client-topology.txt"
+exec > >(tee -a "$LOG_FILE") 2>&1
+set -eux
+
+CLIENT_INTERFACE=$(pos_get_variable client_interface -r)
+CLIENT_IP=$(pos_get_variable client_ip -r)
+SERVER_IP=$(pos_get_variable server_ip -r)
+PREFIX_LENGTH=$(pos_get_variable prefix_length -r)
+
+CLIENT_EXTRA_INTERFACE=$(pos_get_variable client_extra_interface -r)
+CLIENT_EXTRA_IP=$(pos_get_variable client_extra_ip -r)
+CLIENT_TABLE_ID=$(pos_get_variable client_table_id -r)
+CLIENT_EXTRA_TABLE_ID=$(pos_get_variable client_extra_table_id -r)
+
+echo "Configuring the client's network with two paths to the server"
+
+echo "...Configuring the fast path"
+ip addr add dev "$CLIENT_INTERFACE" "$CLIENT_IP"/"$PREFIX_LENGTH"
+ip -6 route add "$SERVER_IP"/"$PREFIX_LENGTH" dev "$CLIENT_INTERFACE" table "$CLIENT_TABLE_ID"
+ip -6 rule add from "$CLIENT_IP" lookup "$CLIENT_TABLE_ID"
+ip link set dev "$CLIENT_INTERFACE" up
+
+echo "...Configuring the slow path"
+ip addr add dev "$CLIENT_EXTRA_INTERFACE" "$CLIENT_EXTRA_IP"/"$PREFIX_LENGTH"
+ip -6 route add "$SERVER_IP"/"$PREFIX_LENGTH" dev "$CLIENT_EXTRA_INTERFACE" table "$CLIENT_EXTRA_TABLE_ID"
+ip -6 rule add from "$CLIENT_EXTRA_IP" lookup "$CLIENT_EXTRA_TABLE_ID"
+ip link set dev "$CLIENT_EXTRA_INTERFACE" up

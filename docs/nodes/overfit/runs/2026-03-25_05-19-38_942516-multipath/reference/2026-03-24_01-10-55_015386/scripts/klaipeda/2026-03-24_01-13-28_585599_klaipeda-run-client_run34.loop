@@ -1,0 +1,6 @@
+{
+  "loss": "1",
+  "client_path": "fd00:0:0:2::1",
+  "slow_path_rate": "50",
+  "slow_path_delay": "25"
+}

@@ -1,0 +1,2158 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.2/context",
+    "@graph": [
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "author": [
+                {
+                    "@id": "https://orcid.org/XXXX-XXXX-XXXX-XXXX"
+                }
+            ],
+            "conformsTo": {
+                "@id": "https://anonymous-4dc42.github.io/rise-ro-crate-profile/0.1.0/"
+            },
+            "contributor": [
+                {
+                    "@id": "https://credit.niso.org/contributor-roles/investigation/"
+                }
+            ],
+            "dateCreated": "2026-03-25T03:39:45.859226",
+            "dateModified": "2026-03-25T04:35:29.244615",
+            "datePublished": "2026-03-25T02:39:45+00:00",
+            "description": "This experiment enriches an existing RO-Crate artifact with generated titles, descriptions, and keywords using locally hosted LLMs through Ollama. Different models and prompt context budgets are combined to evaluate how model choice and available artifact context influence metadata quality. Each run produces an enriched RO-Crate artifact together with run manifests, including token and runtime statistics, GPU and energy measurements, and automated comparisons against a human-written reference using BERTScore metric.",
+            "hasPart": [
+                {
+                    "@id": "config/overfit/hardware.json"
+                },
+                {
+                    "@id": "config/allocation.json"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-41-50_013735_bootstrap.file"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-41-50_013735_bootstrap.stdout"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-41-50_013735_bootstrap.stderr"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-41-50_013735_bootstrap.status"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-39-47_225344_reset.command"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-39-47_225344_reset.stdout"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-39-47_225344_reset.stderr"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-39-47_225344_reset.status"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-41-56_005451_setup_enrich-metadata.file"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-41-56_005451_setup_enrich-metadata.stdout"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-41-56_005451_setup_enrich-metadata.stderr"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-41-56_005451_setup_enrich-metadata.status"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-33_022527_copy_ai-metadata-enricher.command"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-33_022527_copy_ai-metadata-enricher.stdout"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-33_022527_copy_ai-metadata-enricher.stderr"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-33_022527_copy_ai-metadata-enricher.status"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-36_346811_prepare_ro-crate-target.command"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-36_346811_prepare_ro-crate-target.stdout"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-36_346811_prepare_ro-crate-target.stderr"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-36_346811_prepare_ro-crate-target.status"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-39_672103_copy_2026-03-16_19-51-26_709427.command"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-39_672103_copy_2026-03-16_19-51-26_709427.stdout"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-39_672103_copy_2026-03-16_19-51-26_709427.stderr"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-39_672103_copy_2026-03-16_19-51-26_709427.status"
+                },
+                {
+                    "@id": "files/overfit/2026-03-16_19-51-26_709427_original/"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-44_598986_upload_original_ro_crate.command"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-44_598986_upload_original_ro_crate.stdout"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-44_598986_upload_original_ro_crate.stderr"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-44_598986_upload_original_ro_crate.status"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-49_290477_copy_2026-03-16_19-51-26_709427_reference.command"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-49_290477_copy_2026-03-16_19-51-26_709427_reference.stdout"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-49_290477_copy_2026-03-16_19-51-26_709427_reference.stderr"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-49_290477_copy_2026-03-16_19-51-26_709427_reference.status"
+                },
+                {
+                    "@id": "files/overfit/2026-03-16_19-51-26_709427_reference/"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-53_483199_upload_reference_ro_crate.command"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-53_483199_upload_reference_ro_crate.stdout"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-53_483199_upload_reference_ro_crate.stderr"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-53_483199_upload_reference_ro_crate.status"
+                },
+                {
+                    "@id": "config/2026-03-25_03-44-59_124872_variables.json"
+                },
+                {
+                    "@id": "files/overfit/enrichment_run00/"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata.file"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run00.loop"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run00.stdout"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run00.stderr"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run00.status"
+                },
+                {
+                    "@id": "files/overfit/enrichment_run01/"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run01.loop"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run01.stdout"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run01.stderr"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run01.status"
+                },
+                {
+                    "@id": "files/overfit/enrichment_run02/"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run02.loop"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run02.stdout"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run02.stderr"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run02.status"
+                },
+                {
+                    "@id": "files/overfit/enrichment_run03/"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run03.loop"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run03.stdout"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run03.stderr"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run03.status"
+                },
+                {
+                    "@id": "files/overfit/enrichment_run04/"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run04.loop"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run04.stdout"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run04.stderr"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run04.status"
+                },
+                {
+                    "@id": "files/overfit/enrichment_run05/"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run05.loop"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run05.stdout"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run05.stderr"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run05.status"
+                },
+                {
+                    "@id": "files/overfit/enrichment_run06/"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run06.loop"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run06.stdout"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run06.stderr"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run06.status"
+                },
+                {
+                    "@id": "files/overfit/enrichment_run07/"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run07.loop"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run07.stdout"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run07.stderr"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run07.status"
+                },
+                {
+                    "@id": "files/overfit/enrichment_run08/"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run08.loop"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run08.stdout"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run08.stderr"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run08.status"
+                },
+                {
+                    "@id": "files/overfit/enrichment_run09/"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run09.loop"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run09.stdout"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run09.stderr"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run09.status"
+                },
+                {
+                    "@id": "files/overfit/enrichment_run10/"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run10.loop"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run10.stdout"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run10.stderr"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run10.status"
+                },
+                {
+                    "@id": "files/overfit/enrichment_run11/"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run11.loop"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run11.stdout"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run11.stderr"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run11.status"
+                }
+            ],
+            "keywords": [
+                "RO-Crate",
+                "Metadata Enrichment",
+                "Large Language Models",
+                "Ollama",
+                "BERTScore"
+            ],
+            "mainEntity": {
+                "@id": "config/allocation.json"
+            },
+            "name": "Evaluation of Local LLMs for RO-Crate Metadata Enrichment"
+        },
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.2"
+            }
+        },
+        {
+            "@id": "http://doi.org/10.1145/3485983.3494841",
+            "@type": "CreativeWork",
+            "alternateName": "pos",
+            "citation": "http://doi.org/10.1145/3485983.3494841",
+            "description": "The pos Framework: A Methodology and Toolchain for Reproducible Network Experiments",
+            "name": "Plain Orchestrating Service",
+            "version": "3.0.0"
+        },
+        {
+            "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/19",
+            "@type": "WebSite",
+            "name": "Acrobat PDF 1.5"
+        },
+        {
+            "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817",
+            "@type": "WebSite",
+            "name": "JSON Data Format"
+        },
+        {
+            "@id": "https://anonymous-4dc42.github.io/rise-ro-crate-profile/0.1.0/",
+            "@type": [
+                "CreativeWork",
+                "Profile"
+            ],
+            "alternateName": "RISE RO-Crate Profile",
+            "name": "Research Infrastructure Shareable Experiments RO-Crate Profile",
+            "version": "0.1.0"
+        },
+        {
+            "@id": "https://orcid.org/XXXX-XXXX-XXXX-XXXX",
+            "@type": "Person",
+            "affiliation": {
+                "@id": "https://ror.org/anonymous"
+            },
+            "name": "Anonymous",
+            "familyName": "Anonymous",
+            "givenName": "Anonymous"
+        },
+        {
+            "@id": "https://credit.niso.org/contributor-roles/investigation/",
+            "@type": "Role",
+            "contributor": [
+                {
+                    "@id": "https://orcid.org/XXXX-XXXX-XXXX-XXXX"
+                }
+            ],
+            "roleName": "Investigation"
+        },
+        {
+            "@id": "https://ror.org/anonymous",
+            "@type": "Organization",
+            "location": "Anonym City, Anonymized",
+            "name": "Anonym University",
+            "url": "https://www.anonymized-university.com"
+        },
+        {
+            "@id": "config/overfit/hardware.json",
+            "@type": "File",
+            "contentSize": "134",
+            "dateCreated": "2026-03-25T03:39:46.549200",
+            "dateModified": "2026-03-25T03:39:46.549200",
+            "description": "Contains information about CPU, GPU, RAM, motherboard, storage, and network",
+            "encodingFormat": {
+                "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817"
+            },
+            "name": "Hardware of testbed node overfit"
+        },
+        {
+            "@id": "config/allocation.json",
+            "@type": "Experiment",
+            "dateCreated": "2026-03-25T03:39:45.851111",
+            "dateModified": "2026-03-25T03:39:45.851111",
+            "encodingFormat": "application/json",
+            "executedCommands": [
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-41-50_013735_bootstrap.file"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-39-47_225344_reset.command"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-41-56_005451_setup_enrich-metadata.file"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-33_022527_copy_ai-metadata-enricher.command"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-36_346811_prepare_ro-crate-target.command"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-39_672103_copy_2026-03-16_19-51-26_709427.command"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-44_598986_upload_original_ro_crate.command"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-49_290477_copy_2026-03-16_19-51-26_709427_reference.command"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-53_483199_upload_reference_ro_crate.command"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata.file"
+                }
+            ],
+            "experimentController": [
+                {
+                    "@id": "http://doi.org/10.1145/3485983.3494841"
+                }
+            ],
+            "experimentNodes": [
+                {
+                    "@id": "overfit.anonymous.testbed"
+                }
+            ],
+            "includedOSImages": [
+                {
+                    "@id": "default/ubuntu-noble-dgx-cuda-toolkit"
+                }
+            ],
+            "name": "Anonymous_260325_033945_850946",
+            "resultData": [
+                {
+                    "@id": "files/overfit/2026-03-16_19-51-26_709427_original/"
+                },
+                {
+                    "@id": "files/overfit/2026-03-16_19-51-26_709427_reference/"
+                },
+                {
+                    "@id": "files/overfit/enrichment_run00/"
+                },
+                {
+                    "@id": "files/overfit/enrichment_run01/"
+                },
+                {
+                    "@id": "files/overfit/enrichment_run02/"
+                },
+                {
+                    "@id": "files/overfit/enrichment_run03/"
+                },
+                {
+                    "@id": "files/overfit/enrichment_run04/"
+                },
+                {
+                    "@id": "files/overfit/enrichment_run05/"
+                },
+                {
+                    "@id": "files/overfit/enrichment_run06/"
+                },
+                {
+                    "@id": "files/overfit/enrichment_run07/"
+                },
+                {
+                    "@id": "files/overfit/enrichment_run08/"
+                },
+                {
+                    "@id": "files/overfit/enrichment_run09/"
+                },
+                {
+                    "@id": "files/overfit/enrichment_run10/"
+                },
+                {
+                    "@id": "files/overfit/enrichment_run11/"
+                }
+            ],
+            "supplementaryData": []
+        },
+        {
+            "@id": "overfit.anonymous.testbed",
+            "@type": "ExperimentNode",
+            "description": "Metadata for Testbed Node overfit",
+            "hardware": {
+                "@id": "config/overfit/hardware.json"
+            },
+            "name": "overfit"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-41-50_013735_bootstrap.file",
+            "@type": "CommandFileBootstrap",
+            "contentSize": "10495",
+            "dateCreated": "2026-03-25T03:41:50.013786",
+            "dateModified": "2026-03-25T03:41:50.013786",
+            "description": "Script executed to set up the environment and install pos tools on node overfit",
+            "duration": "PT2S",
+            "endTime": "2026-03-25T03:41:52.374007",
+            "executedOn": {
+                "@id": "overfit.anonymous.testbed"
+            },
+            "keywords": [
+                "command",
+                "script",
+                "bootstrap"
+            ],
+            "name": "bootstrap",
+            "startTime": "2026-03-25T03:41:50.013786",
+            "status": {
+                "@id": "scripts/overfit/2026-03-25_03-41-50_013735_bootstrap.status"
+            },
+            "stderr": {
+                "@id": "scripts/overfit/2026-03-25_03-41-50_013735_bootstrap.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/overfit/2026-03-25_03-41-50_013735_bootstrap.stdout"
+            }
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-41-50_013735_bootstrap.stdout",
+            "@type": "File",
+            "contentSize": "10786",
+            "dateCreated": "2026-03-25T03:41:50.013786",
+            "dateModified": "2026-03-25T03:41:50.013786",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-41-50_013735_bootstrap.file"
+            },
+            "name": "bootstrap"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-41-50_013735_bootstrap.stderr",
+            "@type": "File",
+            "contentSize": "1707",
+            "dateCreated": "2026-03-25T03:41:50.013786",
+            "dateModified": "2026-03-25T03:41:50.013786",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-41-50_013735_bootstrap.file"
+            },
+            "name": "bootstrap"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-41-50_013735_bootstrap.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-25T03:41:50.013786",
+            "dateModified": "2026-03-25T03:41:50.013786",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-41-50_013735_bootstrap.file"
+            },
+            "name": "bootstrap"
+        },
+        {
+            "@id": "default/ubuntu-noble-dgx-cuda-toolkit",
+            "@type": "OSImage",
+            "description": "This image was generated automatically and uses ubuntu-noble-dgx-cuda-toolkit as base.",
+            "fileSize": "6549405696",
+            "name": "ubuntu-noble-dgx-cuda-toolkit"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-39-47_225344_reset.command",
+            "@type": "CommandFileReset",
+            "bootParameters": [
+                "iommu=pt"
+            ],
+            "bootedImage": {
+                "@id": "default/ubuntu-noble-dgx-cuda-toolkit"
+            },
+            "contentSize": "624",
+            "dateCreated": "2026-03-25T03:39:47.225344",
+            "dateModified": "2026-03-25T03:39:47.225344",
+            "description": "Shuts down the node and restarts it from the specified live image to ensure a clean system state.",
+            "duration": "PT128S",
+            "endTime": "2026-03-25T03:41:55.600209",
+            "executedOn": {
+                "@id": "overfit.anonymous.testbed"
+            },
+            "keywords": [
+                "command",
+                "reset"
+            ],
+            "name": "reset",
+            "startTime": "2026-03-25T03:39:47.225515",
+            "status": {
+                "@id": "scripts/overfit/2026-03-25_03-39-47_225344_reset.status"
+            },
+            "stderr": {
+                "@id": "scripts/overfit/2026-03-25_03-39-47_225344_reset.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/overfit/2026-03-25_03-39-47_225344_reset.stdout"
+            }
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-39-47_225344_reset.stdout",
+            "@type": "File",
+            "contentSize": "4",
+            "dateCreated": "2026-03-25T03:39:47.225344",
+            "dateModified": "2026-03-25T03:39:47.225344",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-39-47_225344_reset.command"
+            },
+            "name": "reset"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-39-47_225344_reset.stderr",
+            "@type": "File",
+            "contentSize": "4",
+            "dateCreated": "2026-03-25T03:39:47.225344",
+            "dateModified": "2026-03-25T03:39:47.225344",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-39-47_225344_reset.command"
+            },
+            "name": "reset"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-39-47_225344_reset.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-25T03:39:47.225344",
+            "dateModified": "2026-03-25T03:39:47.225344",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-39-47_225344_reset.command"
+            },
+            "name": "reset"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-41-56_005451_setup_enrich-metadata.file",
+            "@type": "CommandFile",
+            "contentSize": "1426",
+            "dateCreated": "2026-03-25T03:41:56.005451",
+            "dateModified": "2026-03-25T03:41:56.005451",
+            "duration": "PT156S",
+            "endTime": "2026-03-25T03:44:32.632237",
+            "executedOn": {
+                "@id": "overfit.anonymous.testbed"
+            },
+            "keywords": [
+                "command",
+                "script"
+            ],
+            "name": "setup_enrich-metadata",
+            "startTime": "2026-03-25T03:41:56.005584",
+            "status": {
+                "@id": "scripts/overfit/2026-03-25_03-41-56_005451_setup_enrich-metadata.status"
+            },
+            "stderr": {
+                "@id": "scripts/overfit/2026-03-25_03-41-56_005451_setup_enrich-metadata.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/overfit/2026-03-25_03-41-56_005451_setup_enrich-metadata.stdout"
+            }
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-41-56_005451_setup_enrich-metadata.stdout",
+            "@type": "File",
+            "contentSize": "39459",
+            "dateCreated": "2026-03-25T03:41:56.005451",
+            "dateModified": "2026-03-25T03:41:56.005451",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-41-56_005451_setup_enrich-metadata.file"
+            },
+            "name": "setup_enrich-metadata"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-41-56_005451_setup_enrich-metadata.stderr",
+            "@type": "File",
+            "contentSize": "11630",
+            "dateCreated": "2026-03-25T03:41:56.005451",
+            "dateModified": "2026-03-25T03:41:56.005451",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-41-56_005451_setup_enrich-metadata.file"
+            },
+            "name": "setup_enrich-metadata"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-41-56_005451_setup_enrich-metadata.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-25T03:41:56.005451",
+            "dateModified": "2026-03-25T03:41:56.005451",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-41-56_005451_setup_enrich-metadata.file"
+            },
+            "name": "setup_enrich-metadata"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-33_022527_copy_ai-metadata-enricher.command",
+            "@type": "CommandFileCopy",
+            "contentSize": "108",
+            "dateCreated": "2026-03-25T03:44:33.022527",
+            "dateModified": "2026-03-25T03:44:33.022527",
+            "description": "Recursively copies folder from /home/Anonymous/experiments/ai-metadata-enricher to /root/ai-metadata-enricher on node overfit.",
+            "destinationPath": "/root/ai-metadata-enricher",
+            "duration": "PT2S",
+            "endTime": "2026-03-25T03:44:35.986511",
+            "executedOn": {
+                "@id": "overfit.anonymous.testbed"
+            },
+            "keywords": [
+                "command",
+                "copy"
+            ],
+            "name": "copy_files",
+            "recursiveCopy": true,
+            "sourcePath": "/home/Anonymous/experiments/ai-metadata-enricher",
+            "startTime": "2026-03-25T03:44:33.022673",
+            "status": {
+                "@id": "scripts/overfit/2026-03-25_03-44-33_022527_copy_ai-metadata-enricher.status"
+            },
+            "stderr": {
+                "@id": "scripts/overfit/2026-03-25_03-44-33_022527_copy_ai-metadata-enricher.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/overfit/2026-03-25_03-44-33_022527_copy_ai-metadata-enricher.stdout"
+            }
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-33_022527_copy_ai-metadata-enricher.stdout",
+            "@type": "File",
+            "contentSize": "4",
+            "dateCreated": "2026-03-25T03:44:33.022527",
+            "dateModified": "2026-03-25T03:44:33.022527",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-33_022527_copy_ai-metadata-enricher.command"
+            },
+            "name": "copy_ai-metadata-enricher"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-33_022527_copy_ai-metadata-enricher.stderr",
+            "@type": "File",
+            "contentSize": "4",
+            "dateCreated": "2026-03-25T03:44:33.022527",
+            "dateModified": "2026-03-25T03:44:33.022527",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-33_022527_copy_ai-metadata-enricher.command"
+            },
+            "name": "copy_ai-metadata-enricher"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-33_022527_copy_ai-metadata-enricher.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-25T03:44:33.022527",
+            "dateModified": "2026-03-25T03:44:33.022527",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-33_022527_copy_ai-metadata-enricher.command"
+            },
+            "name": "copy_ai-metadata-enricher"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-36_346811_prepare_ro-crate-target.command",
+            "@type": "CommandFile",
+            "contentSize": "144",
+            "dateCreated": "2026-03-25T03:44:36.346811",
+            "dateModified": "2026-03-25T03:44:36.346811",
+            "duration": "PT2S",
+            "endTime": "2026-03-25T03:44:39.323608",
+            "executedOn": {
+                "@id": "overfit.anonymous.testbed"
+            },
+            "keywords": [
+                "command"
+            ],
+            "name": "prepare_ro-crate-target",
+            "startTime": "2026-03-25T03:44:36.346932",
+            "status": {
+                "@id": "scripts/overfit/2026-03-25_03-44-36_346811_prepare_ro-crate-target.status"
+            },
+            "stderr": {
+                "@id": "scripts/overfit/2026-03-25_03-44-36_346811_prepare_ro-crate-target.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/overfit/2026-03-25_03-44-36_346811_prepare_ro-crate-target.stdout"
+            }
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-36_346811_prepare_ro-crate-target.stdout",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2026-03-25T03:44:36.346811",
+            "dateModified": "2026-03-25T03:44:36.346811",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-36_346811_prepare_ro-crate-target.command"
+            },
+            "name": "prepare_ro-crate-target"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-36_346811_prepare_ro-crate-target.stderr",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2026-03-25T03:44:36.346811",
+            "dateModified": "2026-03-25T03:44:36.346811",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-36_346811_prepare_ro-crate-target.command"
+            },
+            "name": "prepare_ro-crate-target"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-36_346811_prepare_ro-crate-target.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-25T03:44:36.346811",
+            "dateModified": "2026-03-25T03:44:36.346811",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-36_346811_prepare_ro-crate-target.command"
+            },
+            "name": "prepare_ro-crate-target"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-39_672103_copy_2026-03-16_19-51-26_709427.command",
+            "@type": "CommandFileCopy",
+            "contentSize": "157",
+            "dateCreated": "2026-03-25T03:44:39.672103",
+            "dateModified": "2026-03-25T03:44:39.672103",
+            "description": "Recursively copies folder from /srv/testbed/results/anonymous/default/llm-enrichment/Quic/2026-03-16_19-51-26_709427 to /srv/testbed/results/anonymous/default on node overfit.",
+            "destinationPath": "/srv/testbed/results/anonymous/default",
+            "duration": "PT4S",
+            "endTime": "2026-03-25T03:44:44.250880",
+            "executedOn": {
+                "@id": "overfit.anonymous.testbed"
+            },
+            "keywords": [
+                "command",
+                "copy"
+            ],
+            "name": "copy_result_folder",
+            "recursiveCopy": true,
+            "sourcePath": "/srv/testbed/results/anonymous/default/llm-enrichment/Quic/2026-03-16_19-51-26_709427",
+            "startTime": "2026-03-25T03:44:39.672279",
+            "status": {
+                "@id": "scripts/overfit/2026-03-25_03-44-39_672103_copy_2026-03-16_19-51-26_709427.status"
+            },
+            "stderr": {
+                "@id": "scripts/overfit/2026-03-25_03-44-39_672103_copy_2026-03-16_19-51-26_709427.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/overfit/2026-03-25_03-44-39_672103_copy_2026-03-16_19-51-26_709427.stdout"
+            }
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-39_672103_copy_2026-03-16_19-51-26_709427.stdout",
+            "@type": "File",
+            "contentSize": "4",
+            "dateCreated": "2026-03-25T03:44:39.672103",
+            "dateModified": "2026-03-25T03:44:39.672103",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-39_672103_copy_2026-03-16_19-51-26_709427.command"
+            },
+            "name": "copy_2026-03-16_19-51-26_709427"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-39_672103_copy_2026-03-16_19-51-26_709427.stderr",
+            "@type": "File",
+            "contentSize": "4",
+            "dateCreated": "2026-03-25T03:44:39.672103",
+            "dateModified": "2026-03-25T03:44:39.672103",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-39_672103_copy_2026-03-16_19-51-26_709427.command"
+            },
+            "name": "copy_2026-03-16_19-51-26_709427"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-39_672103_copy_2026-03-16_19-51-26_709427.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-25T03:44:39.672103",
+            "dateModified": "2026-03-25T03:44:39.672103",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-39_672103_copy_2026-03-16_19-51-26_709427.command"
+            },
+            "name": "copy_2026-03-16_19-51-26_709427"
+        },
+        {
+            "@id": "files/overfit/2026-03-16_19-51-26_709427_original/",
+            "@type": "Dataset",
+            "dateCreated": "2026-03-25T03:44:48.556480",
+            "dateModified": "2026-03-25T03:44:48.556480",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-44_598986_upload_original_ro_crate.command"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "2026-03-16_19-51-26_709427_original"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-44_598986_upload_original_ro_crate.command",
+            "@type": "CommandFile",
+            "contentSize": "167",
+            "dateCreated": "2026-03-25T03:44:44.598986",
+            "dateModified": "2026-03-25T03:44:44.598986",
+            "duration": "PT4S",
+            "endTime": "2026-03-25T03:44:48.681030",
+            "executedOn": {
+                "@id": "overfit.anonymous.testbed"
+            },
+            "keywords": [
+                "command"
+            ],
+            "name": "upload_original_ro_crate",
+            "resultData": [
+                {
+                    "@id": "files/overfit/2026-03-16_19-51-26_709427_original/"
+                }
+            ],
+            "startTime": "2026-03-25T03:44:44.599108",
+            "status": {
+                "@id": "scripts/overfit/2026-03-25_03-44-44_598986_upload_original_ro_crate.status"
+            },
+            "stderr": {
+                "@id": "scripts/overfit/2026-03-25_03-44-44_598986_upload_original_ro_crate.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/overfit/2026-03-25_03-44-44_598986_upload_original_ro_crate.stdout"
+            }
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-44_598986_upload_original_ro_crate.stdout",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2026-03-25T03:44:44.598986",
+            "dateModified": "2026-03-25T03:44:44.598986",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-44_598986_upload_original_ro_crate.command"
+            },
+            "name": "upload_original_ro_crate"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-44_598986_upload_original_ro_crate.stderr",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2026-03-25T03:44:44.598986",
+            "dateModified": "2026-03-25T03:44:44.598986",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-44_598986_upload_original_ro_crate.command"
+            },
+            "name": "upload_original_ro_crate"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-44_598986_upload_original_ro_crate.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-25T03:44:44.598986",
+            "dateModified": "2026-03-25T03:44:44.598986",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-44_598986_upload_original_ro_crate.command"
+            },
+            "name": "upload_original_ro_crate"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-49_290477_copy_2026-03-16_19-51-26_709427_reference.command",
+            "@type": "CommandFileCopy",
+            "contentSize": "167",
+            "dateCreated": "2026-03-25T03:44:49.290477",
+            "dateModified": "2026-03-25T03:44:49.290477",
+            "description": "Recursively copies folder from /srv/testbed/results/anonymous/default/llm-enrichment/Quic/2026-03-16_19-51-26_709427_reference to /srv/testbed/results/anonymous/default on node overfit.",
+            "destinationPath": "/srv/testbed/results/anonymous/default",
+            "duration": "PT3S",
+            "endTime": "2026-03-25T03:44:52.765462",
+            "executedOn": {
+                "@id": "overfit.anonymous.testbed"
+            },
+            "keywords": [
+                "command",
+                "copy"
+            ],
+            "name": "copy_reference_folder",
+            "recursiveCopy": true,
+            "sourcePath": "/srv/testbed/results/anonymous/default/llm-enrichment/Quic/2026-03-16_19-51-26_709427_reference",
+            "startTime": "2026-03-25T03:44:49.290644",
+            "status": {
+                "@id": "scripts/overfit/2026-03-25_03-44-49_290477_copy_2026-03-16_19-51-26_709427_reference.status"
+            },
+            "stderr": {
+                "@id": "scripts/overfit/2026-03-25_03-44-49_290477_copy_2026-03-16_19-51-26_709427_reference.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/overfit/2026-03-25_03-44-49_290477_copy_2026-03-16_19-51-26_709427_reference.stdout"
+            }
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-49_290477_copy_2026-03-16_19-51-26_709427_reference.stdout",
+            "@type": "File",
+            "contentSize": "4",
+            "dateCreated": "2026-03-25T03:44:49.290477",
+            "dateModified": "2026-03-25T03:44:49.290477",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-49_290477_copy_2026-03-16_19-51-26_709427_reference.command"
+            },
+            "name": "copy_2026-03-16_19-51-26_709427_reference"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-49_290477_copy_2026-03-16_19-51-26_709427_reference.stderr",
+            "@type": "File",
+            "contentSize": "4",
+            "dateCreated": "2026-03-25T03:44:49.290477",
+            "dateModified": "2026-03-25T03:44:49.290477",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-49_290477_copy_2026-03-16_19-51-26_709427_reference.command"
+            },
+            "name": "copy_2026-03-16_19-51-26_709427_reference"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-49_290477_copy_2026-03-16_19-51-26_709427_reference.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-25T03:44:49.290477",
+            "dateModified": "2026-03-25T03:44:49.290477",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-49_290477_copy_2026-03-16_19-51-26_709427_reference.command"
+            },
+            "name": "copy_2026-03-16_19-51-26_709427_reference"
+        },
+        {
+            "@id": "files/overfit/2026-03-16_19-51-26_709427_reference/",
+            "@type": "Dataset",
+            "dateCreated": "2026-03-25T03:44:57.845103",
+            "dateModified": "2026-03-25T03:44:57.845103",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-53_483199_upload_reference_ro_crate.command"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "2026-03-16_19-51-26_709427_reference"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-53_483199_upload_reference_ro_crate.command",
+            "@type": "CommandFile",
+            "contentSize": "178",
+            "dateCreated": "2026-03-25T03:44:53.483199",
+            "dateModified": "2026-03-25T03:44:53.483199",
+            "duration": "PT4S",
+            "endTime": "2026-03-25T03:44:58.064754",
+            "executedOn": {
+                "@id": "overfit.anonymous.testbed"
+            },
+            "keywords": [
+                "command"
+            ],
+            "name": "upload_reference_ro_crate",
+            "resultData": [
+                {
+                    "@id": "files/overfit/2026-03-16_19-51-26_709427_reference/"
+                }
+            ],
+            "startTime": "2026-03-25T03:44:53.483343",
+            "status": {
+                "@id": "scripts/overfit/2026-03-25_03-44-53_483199_upload_reference_ro_crate.status"
+            },
+            "stderr": {
+                "@id": "scripts/overfit/2026-03-25_03-44-53_483199_upload_reference_ro_crate.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/overfit/2026-03-25_03-44-53_483199_upload_reference_ro_crate.stdout"
+            }
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-53_483199_upload_reference_ro_crate.stdout",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2026-03-25T03:44:53.483199",
+            "dateModified": "2026-03-25T03:44:53.483199",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-53_483199_upload_reference_ro_crate.command"
+            },
+            "name": "upload_reference_ro_crate"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-53_483199_upload_reference_ro_crate.stderr",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2026-03-25T03:44:53.483199",
+            "dateModified": "2026-03-25T03:44:53.483199",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-53_483199_upload_reference_ro_crate.command"
+            },
+            "name": "upload_reference_ro_crate"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-53_483199_upload_reference_ro_crate.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-25T03:44:53.483199",
+            "dateModified": "2026-03-25T03:44:53.483199",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-53_483199_upload_reference_ro_crate.command"
+            },
+            "name": "upload_reference_ro_crate"
+        },
+        {
+            "@id": "config/2026-03-25_03-44-59_124872_variables.json",
+            "@type": "File",
+            "contentSize": "897",
+            "dateCreated": "2026-03-25T03:44:59.124872",
+            "dateModified": "2026-03-25T03:44:59.124872",
+            "description": "Contains a variable set for the allocation as of 2026-03-25_03-44-59_124872.",
+            "encodingFormat": {
+                "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817"
+            },
+            "keywords": [
+                "variables"
+            ],
+            "name": "VariableSet"
+        },
+        {
+            "@id": "files/overfit/enrichment_run00/",
+            "@type": "Dataset",
+            "dateCreated": "2026-03-25T03:47:54.036418",
+            "dateModified": "2026-03-25T03:47:54.036418",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run00.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "enrichment_run00"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata.file",
+            "@type": "CommandFileLooped",
+            "contentSize": "12428",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "duration": "PT3008S",
+            "endTime": "2026-03-25T04:35:08.484462",
+            "executedOn": {
+                "@id": "overfit.anonymous.testbed"
+            },
+            "keywords": [
+                "command",
+                "script",
+                "looped"
+            ],
+            "loopRuns": [
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run00.loop"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run01.loop"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run02.loop"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run03.loop"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run04.loop"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run05.loop"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run06.loop"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run07.loop"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run08.loop"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run09.loop"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run10.loop"
+                },
+                {
+                    "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run11.loop"
+                }
+            ],
+            "name": "experiment_enrich-metadata",
+            "startTime": "2026-03-25T03:44:59.619398",
+            "variableSet": {
+                "@id": "config/2026-03-25_03-44-59_124872_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run00.loop",
+            "@type": "LoopRun",
+            "contentSize": "415",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "duration": "PT174S",
+            "endTime": "2026-03-25T03:47:54.368162",
+            "keywords": [
+                "variables",
+                "loop_run"
+            ],
+            "name": "experiment_enrich-metadata_run00",
+            "resultData": [
+                {
+                    "@id": "files/overfit/enrichment_run00/"
+                }
+            ],
+            "runOfLoopedCommand": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata.file"
+            },
+            "startTime": "2026-03-25T03:44:59.619398",
+            "status": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run00.status"
+            },
+            "stderr": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run00.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run00.stdout"
+            }
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run00.stdout",
+            "@type": "File",
+            "contentSize": "111035",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run00.loop"
+            },
+            "name": "experiment_enrich-metadata_run00"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run00.stderr",
+            "@type": "File",
+            "contentSize": "519",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run00.loop"
+            },
+            "name": "experiment_enrich-metadata_run00"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run00.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run00.loop"
+            },
+            "name": "experiment_enrich-metadata_run00"
+        },
+        {
+            "@id": "files/overfit/enrichment_run01/",
+            "@type": "Dataset",
+            "dateCreated": "2026-03-25T03:49:35.974319",
+            "dateModified": "2026-03-25T03:49:35.974319",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run01.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "enrichment_run01"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run01.loop",
+            "@type": "LoopRun",
+            "contentSize": "416",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "duration": "PT102S",
+            "endTime": "2026-03-25T03:49:36.394092",
+            "keywords": [
+                "variables",
+                "loop_run"
+            ],
+            "name": "experiment_enrich-metadata_run01",
+            "resultData": [
+                {
+                    "@id": "files/overfit/enrichment_run01/"
+                }
+            ],
+            "runOfLoopedCommand": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata.file"
+            },
+            "startTime": "2026-03-25T03:47:54.368162",
+            "status": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run01.status"
+            },
+            "stderr": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run01.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run01.stdout"
+            }
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run01.stdout",
+            "@type": "File",
+            "contentSize": "102784",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run01.loop"
+            },
+            "name": "experiment_enrich-metadata_run01"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run01.stderr",
+            "@type": "File",
+            "contentSize": "519",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run01.loop"
+            },
+            "name": "experiment_enrich-metadata_run01"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run01.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run01.loop"
+            },
+            "name": "experiment_enrich-metadata_run01"
+        },
+        {
+            "@id": "files/overfit/enrichment_run02/",
+            "@type": "Dataset",
+            "dateCreated": "2026-03-25T03:59:20.725396",
+            "dateModified": "2026-03-25T03:59:20.725396",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run02.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "enrichment_run02"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run02.loop",
+            "@type": "LoopRun",
+            "contentSize": "415",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "duration": "PT584S",
+            "endTime": "2026-03-25T03:59:21.251066",
+            "keywords": [
+                "variables",
+                "loop_run"
+            ],
+            "name": "experiment_enrich-metadata_run02",
+            "resultData": [
+                {
+                    "@id": "files/overfit/enrichment_run02/"
+                }
+            ],
+            "runOfLoopedCommand": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata.file"
+            },
+            "startTime": "2026-03-25T03:49:36.394092",
+            "status": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run02.status"
+            },
+            "stderr": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run02.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run02.stdout"
+            }
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run02.stdout",
+            "@type": "File",
+            "contentSize": "102826",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run02.loop"
+            },
+            "name": "experiment_enrich-metadata_run02"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run02.stderr",
+            "@type": "File",
+            "contentSize": "519",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run02.loop"
+            },
+            "name": "experiment_enrich-metadata_run02"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run02.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run02.loop"
+            },
+            "name": "experiment_enrich-metadata_run02"
+        },
+        {
+            "@id": "files/overfit/enrichment_run03/",
+            "@type": "Dataset",
+            "dateCreated": "2026-03-25T04:06:22.605367",
+            "dateModified": "2026-03-25T04:06:22.605367",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run03.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "enrichment_run03"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run03.loop",
+            "@type": "LoopRun",
+            "contentSize": "420",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "duration": "PT421S",
+            "endTime": "2026-03-25T04:06:23.206097",
+            "keywords": [
+                "variables",
+                "loop_run"
+            ],
+            "name": "experiment_enrich-metadata_run03",
+            "resultData": [
+                {
+                    "@id": "files/overfit/enrichment_run03/"
+                }
+            ],
+            "runOfLoopedCommand": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata.file"
+            },
+            "startTime": "2026-03-25T03:59:21.251066",
+            "status": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run03.status"
+            },
+            "stderr": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run03.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run03.stdout"
+            }
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run03.stdout",
+            "@type": "File",
+            "contentSize": "102992",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run03.loop"
+            },
+            "name": "experiment_enrich-metadata_run03"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run03.stderr",
+            "@type": "File",
+            "contentSize": "519",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run03.loop"
+            },
+            "name": "experiment_enrich-metadata_run03"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run03.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run03.loop"
+            },
+            "name": "experiment_enrich-metadata_run03"
+        },
+        {
+            "@id": "files/overfit/enrichment_run04/",
+            "@type": "Dataset",
+            "dateCreated": "2026-03-25T04:08:40.826863",
+            "dateModified": "2026-03-25T04:08:40.826863",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run04.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "enrichment_run04"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run04.loop",
+            "@type": "LoopRun",
+            "contentSize": "417",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "duration": "PT138S",
+            "endTime": "2026-03-25T04:08:41.572002",
+            "keywords": [
+                "variables",
+                "loop_run"
+            ],
+            "name": "experiment_enrich-metadata_run04",
+            "resultData": [
+                {
+                    "@id": "files/overfit/enrichment_run04/"
+                }
+            ],
+            "runOfLoopedCommand": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata.file"
+            },
+            "startTime": "2026-03-25T04:06:23.206097",
+            "status": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run04.status"
+            },
+            "stderr": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run04.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run04.stdout"
+            }
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run04.stdout",
+            "@type": "File",
+            "contentSize": "102818",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run04.loop"
+            },
+            "name": "experiment_enrich-metadata_run04"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run04.stderr",
+            "@type": "File",
+            "contentSize": "519",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run04.loop"
+            },
+            "name": "experiment_enrich-metadata_run04"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run04.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run04.loop"
+            },
+            "name": "experiment_enrich-metadata_run04"
+        },
+        {
+            "@id": "files/overfit/enrichment_run05/",
+            "@type": "Dataset",
+            "dateCreated": "2026-03-25T04:11:21.447515",
+            "dateModified": "2026-03-25T04:11:21.447515",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run05.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "enrichment_run05"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run05.loop",
+            "@type": "LoopRun",
+            "contentSize": "418",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "duration": "PT160S",
+            "endTime": "2026-03-25T04:11:22.236401",
+            "keywords": [
+                "variables",
+                "loop_run"
+            ],
+            "name": "experiment_enrich-metadata_run05",
+            "resultData": [
+                {
+                    "@id": "files/overfit/enrichment_run05/"
+                }
+            ],
+            "runOfLoopedCommand": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata.file"
+            },
+            "startTime": "2026-03-25T04:08:41.572002",
+            "status": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run05.status"
+            },
+            "stderr": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run05.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run05.stdout"
+            }
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run05.stdout",
+            "@type": "File",
+            "contentSize": "102862",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run05.loop"
+            },
+            "name": "experiment_enrich-metadata_run05"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run05.stderr",
+            "@type": "File",
+            "contentSize": "519",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run05.loop"
+            },
+            "name": "experiment_enrich-metadata_run05"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run05.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run05.loop"
+            },
+            "name": "experiment_enrich-metadata_run05"
+        },
+        {
+            "@id": "files/overfit/enrichment_run06/",
+            "@type": "Dataset",
+            "dateCreated": "2026-03-25T04:12:39.516782",
+            "dateModified": "2026-03-25T04:12:39.516782",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run06.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "enrichment_run06"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run06.loop",
+            "@type": "LoopRun",
+            "contentSize": "417",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "duration": "PT78S",
+            "endTime": "2026-03-25T04:12:40.381601",
+            "keywords": [
+                "variables",
+                "loop_run"
+            ],
+            "name": "experiment_enrich-metadata_run06",
+            "resultData": [
+                {
+                    "@id": "files/overfit/enrichment_run06/"
+                }
+            ],
+            "runOfLoopedCommand": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata.file"
+            },
+            "startTime": "2026-03-25T04:11:22.236401",
+            "status": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run06.status"
+            },
+            "stderr": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run06.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run06.stdout"
+            }
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run06.stdout",
+            "@type": "File",
+            "contentSize": "102754",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run06.loop"
+            },
+            "name": "experiment_enrich-metadata_run06"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run06.stderr",
+            "@type": "File",
+            "contentSize": "519",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run06.loop"
+            },
+            "name": "experiment_enrich-metadata_run06"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run06.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run06.loop"
+            },
+            "name": "experiment_enrich-metadata_run06"
+        },
+        {
+            "@id": "files/overfit/enrichment_run07/",
+            "@type": "Dataset",
+            "dateCreated": "2026-03-25T04:14:29.181834",
+            "dateModified": "2026-03-25T04:14:29.181834",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run07.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "enrichment_run07"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run07.loop",
+            "@type": "LoopRun",
+            "contentSize": "418",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "duration": "PT109S",
+            "endTime": "2026-03-25T04:14:30.157838",
+            "keywords": [
+                "variables",
+                "loop_run"
+            ],
+            "name": "experiment_enrich-metadata_run07",
+            "resultData": [
+                {
+                    "@id": "files/overfit/enrichment_run07/"
+                }
+            ],
+            "runOfLoopedCommand": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata.file"
+            },
+            "startTime": "2026-03-25T04:12:40.381601",
+            "status": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run07.status"
+            },
+            "stderr": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run07.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run07.stdout"
+            }
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run07.stdout",
+            "@type": "File",
+            "contentSize": "102784",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run07.loop"
+            },
+            "name": "experiment_enrich-metadata_run07"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run07.stderr",
+            "@type": "File",
+            "contentSize": "519",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run07.loop"
+            },
+            "name": "experiment_enrich-metadata_run07"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run07.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run07.loop"
+            },
+            "name": "experiment_enrich-metadata_run07"
+        },
+        {
+            "@id": "files/overfit/enrichment_run08/",
+            "@type": "Dataset",
+            "dateCreated": "2026-03-25T04:23:46.263333",
+            "dateModified": "2026-03-25T04:23:46.263333",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run08.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "enrichment_run08"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run08.loop",
+            "@type": "LoopRun",
+            "contentSize": "417",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "duration": "PT557S",
+            "endTime": "2026-03-25T04:23:47.319136",
+            "keywords": [
+                "variables",
+                "loop_run"
+            ],
+            "name": "experiment_enrich-metadata_run08",
+            "resultData": [
+                {
+                    "@id": "files/overfit/enrichment_run08/"
+                }
+            ],
+            "runOfLoopedCommand": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata.file"
+            },
+            "startTime": "2026-03-25T04:14:30.157838",
+            "status": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run08.status"
+            },
+            "stderr": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run08.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run08.stdout"
+            }
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run08.stdout",
+            "@type": "File",
+            "contentSize": "102834",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run08.loop"
+            },
+            "name": "experiment_enrich-metadata_run08"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run08.stderr",
+            "@type": "File",
+            "contentSize": "519",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run08.loop"
+            },
+            "name": "experiment_enrich-metadata_run08"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run08.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run08.loop"
+            },
+            "name": "experiment_enrich-metadata_run08"
+        },
+        {
+            "@id": "files/overfit/enrichment_run09/",
+            "@type": "Dataset",
+            "dateCreated": "2026-03-25T04:30:30.945345",
+            "dateModified": "2026-03-25T04:30:30.945345",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run09.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "enrichment_run09"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run09.loop",
+            "@type": "LoopRun",
+            "contentSize": "422",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "duration": "PT404S",
+            "endTime": "2026-03-25T04:30:32.087423",
+            "keywords": [
+                "variables",
+                "loop_run"
+            ],
+            "name": "experiment_enrich-metadata_run09",
+            "resultData": [
+                {
+                    "@id": "files/overfit/enrichment_run09/"
+                }
+            ],
+            "runOfLoopedCommand": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata.file"
+            },
+            "startTime": "2026-03-25T04:23:47.319136",
+            "status": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run09.status"
+            },
+            "stderr": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run09.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run09.stdout"
+            }
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run09.stdout",
+            "@type": "File",
+            "contentSize": "103000",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run09.loop"
+            },
+            "name": "experiment_enrich-metadata_run09"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run09.stderr",
+            "@type": "File",
+            "contentSize": "519",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run09.loop"
+            },
+            "name": "experiment_enrich-metadata_run09"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run09.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run09.loop"
+            },
+            "name": "experiment_enrich-metadata_run09"
+        },
+        {
+            "@id": "files/overfit/enrichment_run10/",
+            "@type": "Dataset",
+            "dateCreated": "2026-03-25T04:32:16.916117",
+            "dateModified": "2026-03-25T04:32:16.916117",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run10.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "enrichment_run10"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run10.loop",
+            "@type": "LoopRun",
+            "contentSize": "419",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "duration": "PT106S",
+            "endTime": "2026-03-25T04:32:18.185003",
+            "keywords": [
+                "variables",
+                "loop_run"
+            ],
+            "name": "experiment_enrich-metadata_run10",
+            "resultData": [
+                {
+                    "@id": "files/overfit/enrichment_run10/"
+                }
+            ],
+            "runOfLoopedCommand": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata.file"
+            },
+            "startTime": "2026-03-25T04:30:32.087423",
+            "status": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run10.status"
+            },
+            "stderr": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run10.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run10.stdout"
+            }
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run10.stdout",
+            "@type": "File",
+            "contentSize": "102820",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run10.loop"
+            },
+            "name": "experiment_enrich-metadata_run10"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run10.stderr",
+            "@type": "File",
+            "contentSize": "519",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run10.loop"
+            },
+            "name": "experiment_enrich-metadata_run10"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run10.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run10.loop"
+            },
+            "name": "experiment_enrich-metadata_run10"
+        },
+        {
+            "@id": "files/overfit/enrichment_run11/",
+            "@type": "Dataset",
+            "dateCreated": "2026-03-25T04:35:07.158563",
+            "dateModified": "2026-03-25T04:35:07.158563",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run11.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "enrichment_run11"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run11.loop",
+            "@type": "LoopRun",
+            "contentSize": "420",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "duration": "PT170S",
+            "endTime": "2026-03-25T04:35:08.484462",
+            "keywords": [
+                "variables",
+                "loop_run"
+            ],
+            "name": "experiment_enrich-metadata_run11",
+            "resultData": [
+                {
+                    "@id": "files/overfit/enrichment_run11/"
+                }
+            ],
+            "runOfLoopedCommand": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata.file"
+            },
+            "startTime": "2026-03-25T04:32:18.185003",
+            "status": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run11.status"
+            },
+            "stderr": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run11.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run11.stdout"
+            }
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run11.stdout",
+            "@type": "File",
+            "contentSize": "102865",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run11.loop"
+            },
+            "name": "experiment_enrich-metadata_run11"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run11.stderr",
+            "@type": "File",
+            "contentSize": "519",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run11.loop"
+            },
+            "name": "experiment_enrich-metadata_run11"
+        },
+        {
+            "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run11.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-25T03:44:59.617741",
+            "dateModified": "2026-03-25T03:44:59.617741",
+            "exampleOfWork": {
+                "@id": "scripts/overfit/2026-03-25_03-44-59_617741_experiment_enrich-metadata_run11.loop"
+            },
+            "name": "experiment_enrich-metadata_run11"
+        }
+    ]
+}

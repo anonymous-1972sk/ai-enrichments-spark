@@ -1,0 +1,35 @@
+Configuring path properties with 0.5% loss
+Checking path to the server
+fd00:0:0:3::1 from fd00:0:0:1::1 dev enp2s0f1 table 100 src fd00:0:0:1::1 metric 1024 pref medium
+Running iperf3 client via fd00:0:0:1::1 for 10s
+iperf 3.12
+Linux klaipeda 6.1.0-17-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.69-1 (2023-12-30) x86_64
+Control connection MSS 1428
+Time: Tue, 24 Mar 2026 00:15:51 GMT
+Connecting to host fd00:0:0:3::1, port 25565
+      Cookie: dd3ulj235zuyz6bhyrqdb37nibz2ahjphzmv
+      TCP MSS: 1428 (default)
+[  5] local fd00:0:0:1::1 port 44249 connected to fd00:0:0:3::1 port 25565
+Starting Test: protocol: TCP, 1 streams, 131072 byte blocks, omitting 0 seconds, 10 second test, tos 0
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec  8.74 MBytes  73.3 Mbits/sec    5    464 KBytes       
+[  5]   1.00-2.00   sec  6.01 MBytes  50.4 Mbits/sec   19    131 KBytes       
+[  5]   2.00-3.00   sec  3.62 MBytes  30.3 Mbits/sec   28   13.9 KBytes       
+[  5]   3.00-4.00   sec  2.39 MBytes  20.0 Mbits/sec   10   26.5 KBytes       
+[  5]   4.00-5.00   sec  2.38 MBytes  19.9 Mbits/sec    9   48.8 KBytes       
+[  5]   5.00-6.00   sec  4.86 MBytes  40.8 Mbits/sec   18   20.9 KBytes       
+[  5]   6.00-7.00   sec  4.77 MBytes  40.0 Mbits/sec    6   47.4 KBytes       
+[  5]   7.00-8.00   sec  4.85 MBytes  40.7 Mbits/sec   18   41.8 KBytes       
+[  5]   8.00-9.00   sec  2.39 MBytes  20.0 Mbits/sec   17   20.9 KBytes       
+[  5]   9.00-10.00  sec  4.76 MBytes  39.9 Mbits/sec   11   34.9 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+Test Complete. Summary Results:
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-10.00  sec  44.8 MBytes  37.5 Mbits/sec  141             sender
+[  5]   0.00-10.01  sec  41.3 MBytes  34.6 Mbits/sec                  receiver
+CPU Utilization: local/sender 0.3% (0.0%u/0.3%s), remote/receiver 2.1% (0.3%u/1.8%s)
+snd_tcp_congestion cubic
+rcv_tcp_congestion cubic
+
+iperf Done.
+Client run complete.

@@ -1,0 +1,26 @@
+{
+    "narva.anonymous.testbed": [
+        {
+            "inf_a": "enp2s0f0",
+            "inf_b": "enp3s0",
+            "mac_a": "00:1b:21:94:de:b4",
+            "mac_b": "90:e2:ba:1f:8d:44",
+            "type": "link",
+            "properties": {
+                "speed": "10GigBaseCX4 - X copper over 8 pair 100-Ohm balanced cable",
+                "device_b": "server"
+            }
+        },
+        {
+            "inf_a": "enp2s0f1",
+            "inf_b": "enp1s0f1",
+            "mac_a": "00:1b:21:94:de:b5",
+            "mac_b": "90:e2:ba:92:db:fd",
+            "type": "link",
+            "properties": {
+                "speed": "10GigBaseCX4 - X copper over 8 pair 100-Ohm balanced cable",
+                "device_b": "server"
+            }
+        }
+    ]
+}

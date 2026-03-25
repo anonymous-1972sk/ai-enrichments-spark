@@ -1,0 +1,1 @@
+['bash', '-lc', 'pos_upload --recursive --outfile 2026-03-24_01-10-55_015386_original --timeout 240 /srv/testbed/results/anonymous/default/2026-03-24_01-10-55_015386']

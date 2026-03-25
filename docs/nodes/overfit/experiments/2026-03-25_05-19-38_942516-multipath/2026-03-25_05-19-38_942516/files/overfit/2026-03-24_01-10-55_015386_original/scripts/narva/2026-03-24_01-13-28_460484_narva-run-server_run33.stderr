@@ -1,0 +1,56 @@
+++ pos_get_variable server_port -r
++ PORT=25565
+++ pos_get_variable server_ip -r
++ SERVER_IP=fd00:0:0:3::1
+++ pos_get_variable server_bridge_interface -r
++ SERVER_BRIDGE_INTERFACE=br0
+++ pos_get_variable loss --from-loop
++ LOSS=1
+++ pos_get_variable slow_path_rate --from-loop
++ SLOW_RATE=50
+++ pos_get_variable slow_path_delay --from-loop
++ SLOW_DELAY=5
+++ pos_get_variable server_to_client_interface -r
++ SERVER_TO_CLIENT_INTERFACE=enp1s0f1
+++ pos_get_variable server_to_client_extra_interface -r
++ SERVER_TO_CLIENT_EXTRA_INTERFACE=enp3s0
++ DATA_DIR=/root/data
++ mkdir -p /root/data
++ echo 'Configuring server-side netem with 1% loss (bidirectional)'
+++ pos_get_variable fast_path_rate -r
++ RATE=50
+++ pos_get_variable fast_path_delay -r
++ DELAY=5
+++ echo '3 * 5'
+++ bc
++ LATENCY=15
++ tc qdisc replace dev enp1s0f1 root handle 1: tbf rate 50mbit buffer 64k latency 15ms
++ tc qdisc replace dev enp1s0f1 parent 1: handle 10: netem delay 5ms loss 1%
+++ echo '3 * 5'
+++ bc
++ LATENCY=15
++ tc qdisc replace dev enp3s0 root handle 1: tbf rate 50mbit buffer 64k latency 15ms
++ tc qdisc replace dev enp3s0 parent 1: handle 10: netem delay 5ms loss 1%
++ TSHARK_PID=5507
++ tshark --interface br0 -f 'port 25565' -q -w /root/data/capture.pcapng
++ IPERF_PID=5508
++ iperf3 --server --port 25565 --bind fd00:0:0:3::1 --verbose --one-off
+++ seq 1 30
++ for _ in $(seq 1 30)
++ ss -tlnp
++ grep -q :25565
++ echo 'iperf3 server is listening on port 25565 (PID 5508)'
++ break
++ pos_sync --tag server_ready
++ echo 'Waiting for iperf3 to handle client connection...'
++ wait 5508
++ pos_sync --tag client_finished
++ sleep 1
++ kill -INT 5507
++ wait 5507
++ tshark -r /root/data/capture.pcapng -T fields -e frame.time_relative -e frame.len
+Running as user "root" and group "root". This could be dangerous.
++ rm -f /root/data/capture.pcapng
++ pos_upload -f -l -o data -r /root/data
++ rm -r /root/data
++ echo 'Server run complete.'

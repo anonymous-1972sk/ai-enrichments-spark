@@ -1,0 +1,35 @@
+Configuring path properties with 2% loss
+Checking path to the server
+fd00:0:0:3::1 from fd00:0:0:2::1 dev enp2s0f0 table 200 src fd00:0:0:2::1 metric 1024 pref medium
+Running iperf3 client via fd00:0:0:2::1 for 10s
+iperf 3.12
+Linux klaipeda 6.1.0-17-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.69-1 (2023-12-30) x86_64
+Control connection MSS 1428
+Time: Tue, 24 Mar 2026 00:25:10 GMT
+Connecting to host fd00:0:0:3::1, port 25565
+      Cookie: 2g66vfn5y52d2pnvn35rl2arohdwuvioaoec
+      TCP MSS: 1428 (default)
+[  5] local fd00:0:0:2::1 port 53273 connected to fd00:0:0:3::1 port 25565
+Starting Test: protocol: TCP, 1 streams, 131072 byte blocks, omitting 0 seconds, 10 second test, tos 0
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec   178 KBytes  1.46 Mbits/sec    5   8.37 KBytes       
+[  5]   1.00-2.00   sec  83.7 KBytes   685 Kbits/sec    1   11.2 KBytes       
+[  5]   2.00-3.00   sec  92.0 KBytes   754 Kbits/sec    3   6.97 KBytes       
+[  5]   3.00-4.00   sec  93.4 KBytes   765 Kbits/sec    0   12.6 KBytes       
+[  5]   4.00-5.00   sec  90.6 KBytes   742 Kbits/sec    4   9.76 KBytes       
+[  5]   5.00-6.00   sec   177 KBytes  1.45 Mbits/sec    0   16.7 KBytes       
+[  5]   6.00-7.00   sec   162 KBytes  1.33 Mbits/sec    2   18.1 KBytes       
+[  5]   7.00-8.00   sec  78.1 KBytes   639 Kbits/sec    4   12.6 KBytes       
+[  5]   8.00-9.00   sec   155 KBytes  1.27 Mbits/sec    0   18.1 KBytes       
+[  5]   9.00-10.00  sec   247 KBytes  2.02 Mbits/sec    1   18.1 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+Test Complete. Summary Results:
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-10.00  sec  1.33 MBytes  1.11 Mbits/sec   20             sender
+[  5]   0.00-10.10  sec  1.19 MBytes   992 Kbits/sec                  receiver
+CPU Utilization: local/sender 1.0% (0.2%u/0.8%s), remote/receiver 0.1% (0.0%u/0.1%s)
+snd_tcp_congestion cubic
+rcv_tcp_congestion cubic
+
+iperf Done.
+Client run complete.

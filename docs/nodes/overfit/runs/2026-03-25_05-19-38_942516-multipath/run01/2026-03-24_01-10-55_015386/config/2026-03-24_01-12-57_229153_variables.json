@@ -1,0 +1,61 @@
+{
+    "loop": {
+        "client_path": [
+            "fd00:0:0:1::1",
+            "fd00:0:0:2::1"
+        ],
+        "loss": [
+            "0",
+            "0.5",
+            "1",
+            "2",
+            "5"
+        ],
+        "slow_path_rate": [
+            "10",
+            "50"
+        ],
+        "slow_path_delay": [
+            "5",
+            "25",
+            "50"
+        ]
+    },
+    "narva": {
+        "client_ip": "fd00:0:0:1::1",
+        "client_interface": "enp2s0f1",
+        "client_extra_ip": "fd00:0:0:2::1",
+        "client_extra_interface": "enp2s0f0",
+        "client_table_id": 100,
+        "client_extra_table_id": 200,
+        "fast_path_delay": 5,
+        "fast_path_rate": 50,
+        "server_ip": "fd00:0:0:3::1",
+        "server_port": 25565,
+        "server_bridge_interface": "br0",
+        "server_to_client_interface": "enp1s0f1",
+        "server_to_client_extra_interface": "enp3s0",
+        "results_dir": "/root/results",
+        "benchmark_duration": 10,
+        "prefix_length": 112
+    },
+    "global": {},
+    "klaipeda": {
+        "client_ip": "fd00:0:0:1::1",
+        "client_interface": "enp2s0f1",
+        "client_extra_ip": "fd00:0:0:2::1",
+        "client_extra_interface": "enp2s0f0",
+        "client_table_id": 100,
+        "client_extra_table_id": 200,
+        "fast_path_delay": 5,
+        "fast_path_rate": 50,
+        "server_ip": "fd00:0:0:3::1",
+        "server_port": 25565,
+        "server_bridge_interface": "br0",
+        "server_to_client_interface": "enp1s0f1",
+        "server_to_client_extra_interface": "enp3s0",
+        "results_dir": "/root/results",
+        "benchmark_duration": 10,
+        "prefix_length": 112
+    }
+}

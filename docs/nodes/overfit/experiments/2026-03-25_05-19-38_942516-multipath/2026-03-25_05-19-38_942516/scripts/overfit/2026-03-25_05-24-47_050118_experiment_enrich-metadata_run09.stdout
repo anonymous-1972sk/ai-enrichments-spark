@@ -1,0 +1,608 @@
+2026-03-25 05:54:15  Loop params: model_profile=deepseek_r1_8b model=<profile-or-default> ctx=8192 temperature=0.0 top_p=0.9 num_predict=<ollama-default> think=<profile-or-default-or-omitted> peek_chars=10000
+2026-03-25 05:54:15  Run manifest path: /tmp/llm-enrichment-manifest.json
+2026-03-25 05:54:15  GPU metrics CSV path: /tmp/llm-enrichment-gpu-metrics.csv
+2026-03-25 05:54:15  Immutable baseline folder: /srv/testbed/results/anonymous/default/2026-03-24_01-10-55_015386
+2026-03-25 05:54:15  Working directory root: /tmp/enricher
+2026-03-25 05:54:15  Per-run upload label: 2026-03-24_01-10-55_015386
+2026-03-25 05:54:15  Created fresh working copy for this loop run: /tmp/enricher/2026-03-24_01-10-55_015386
+2026-03-25 05:54:15  Resolved Ollama model for cleanup: deepseek-r1:8b
+2026-03-25 05:54 INFO: Resolved model profile 'deepseek_r1_8b' from /root/ai-metadata-enricher/config/model_profiles.yml -> model=deepseek-r1:8b think=<omitted>
+2026-03-25 05:54 INFO: Started GPU metrics monitor: /tmp/llm-enrichment-gpu-metrics.csv (interval=1000 ms)
+2026-03-25 05:54 INFO: Pulling model 'deepseek-r1:8b'...
+2026-03-25 05:54 INFO: Model 'deepseek-r1:8b' is ready.
+2026-03-25 05:54 INFO: Warming up model 'deepseek-r1:8b'...
+2026-03-25 05:54 INFO: Model ready.
+2026-03-25 05:54 INFO: Starting enrichment for result folder: /tmp/enricher/2026-03-24_01-10-55_015386
+2026-03-25 05:54 INFO: Processing experiment: config/allocation.json
+2026-03-25 05:54 INFO: Found 16 executed command(s)
+2026-03-25 05:54 INFO: Skipping pre-described entity: scripts/klaipeda/2026-03-24_01-12-46_403083_bootstrap.file (type: {'CommandFileBootstrap'})
+2026-03-25 05:54 INFO: Skipping pre-described entity: scripts/klaipeda/2026-03-24_01-10-55_286306_reset.command (type: {'CommandFileReset'})
+2026-03-25 05:54 INFO: Skipping pre-described entity: scripts/narva/2026-03-24_01-12-54_399581_bootstrap.file (type: {'CommandFileBootstrap'})
+2026-03-25 05:54 INFO: Skipping pre-described entity: scripts/narva/2026-03-24_01-10-55_390948_reset.command (type: {'CommandFileReset'})
+2026-03-25 05:54 INFO: -----------------------------------------------------------
+Processing command entity: scripts/narva/2026-03-24_01-12-57_374504_narva-install-dependencies.file
+  name    : 2026-03-24_01-12-57_374504_narva-install-dependencies.file
+  type    : {'CommandFile'}
+  path    : /tmp/enricher/2026-03-24_01-10-55_015386/scripts/narva/2026-03-24_01-12-57_374504_narva-install-dependencies.file
+  filetype: script
+2026-03-25 05:54 INFO: Sending prompt to model 'deepseek-r1:8b' (attempt 1)
+2026-03-25 05:54 INFO: LLM usage | entity=scripts/narva/2026-03-24_01-12-57_374504_narva-install-dependencies.file | context=command | prompt_tokens=511 | output_tokens=506 | prompt_eval_s=0.173 | eval_s=12.346 | total_s=13.101 | load_s=0.181 | prompt_tps=2952.01 | output_tps=40.98
+2026-03-25 05:54 DEBUG:   -> description set for scripts/narva/2026-03-24_01-12-57_374504_narva-install-dependencies.file [command]
+2026-03-25 05:54 INFO: -----------------------------------------------------------
+Processing command entity: scripts/klaipeda/2026-03-24_01-12-57_351652_klaipeda-install-dependencies.file
+  name    : 2026-03-24_01-12-57_351652_klaipeda-install-dependencies.file
+  type    : {'CommandFile'}
+  path    : /tmp/enricher/2026-03-24_01-10-55_015386/scripts/klaipeda/2026-03-24_01-12-57_351652_klaipeda-install-dependencies.file
+  filetype: script
+2026-03-25 05:54 INFO: Sending prompt to model 'deepseek-r1:8b' (attempt 1)
+2026-03-25 05:54 INFO: LLM usage | entity=scripts/klaipeda/2026-03-24_01-12-57_351652_klaipeda-install-dependencies.file | context=command | prompt_tokens=512 | output_tokens=483 | prompt_eval_s=0.073 | eval_s=11.791 | total_s=12.455 | load_s=0.241 | prompt_tps=7044.96 | output_tps=40.96
+2026-03-25 05:54 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-12-57_351652_klaipeda-install-dependencies.file [command]
+2026-03-25 05:54 INFO: -----------------------------------------------------------
+Processing command entity: scripts/klaipeda/2026-03-24_01-13-20_509239_klaipeda-topology.file
+  name    : 2026-03-24_01-13-20_509239_klaipeda-topology.file
+  type    : {'CommandFile'}
+  path    : /tmp/enricher/2026-03-24_01-10-55_015386/scripts/klaipeda/2026-03-24_01-13-20_509239_klaipeda-topology.file
+  filetype: script
+2026-03-25 05:54 INFO: Sending prompt to model 'deepseek-r1:8b' (attempt 1)
+2026-03-25 05:55 INFO: LLM usage | entity=scripts/klaipeda/2026-03-24_01-13-20_509239_klaipeda-topology.file | context=command | prompt_tokens=713 | output_tokens=673 | prompt_eval_s=0.120 | eval_s=16.581 | total_s=17.406 | load_s=0.211 | prompt_tps=5932.73 | output_tps=40.59
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-20_509239_klaipeda-topology.file [command]
+2026-03-25 05:55 INFO: -----------------------------------------------------------
+Processing command entity: scripts/narva/2026-03-24_01-13-24_310243_narva-topology.file
+  name    : 2026-03-24_01-13-24_310243_narva-topology.file
+  type    : {'CommandFile'}
+  path    : /tmp/enricher/2026-03-24_01-10-55_015386/scripts/narva/2026-03-24_01-13-24_310243_narva-topology.file
+  filetype: script
+2026-03-25 05:55 INFO: Sending prompt to model 'deepseek-r1:8b' (attempt 1)
+2026-03-25 05:55 INFO: LLM usage | entity=scripts/narva/2026-03-24_01-13-24_310243_narva-topology.file | context=command | prompt_tokens=864 | output_tokens=821 | prompt_eval_s=0.171 | eval_s=20.348 | total_s=21.315 | load_s=0.204 | prompt_tps=5050.49 | output_tps=40.35
+2026-03-25 05:55 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-24_310243_narva-topology.file [command]
+2026-03-25 05:55 INFO: -----------------------------------------------------------
+Processing looped command entity: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client.file
+  name    : 2026-03-24_01-13-28_585599_klaipeda-run-client.file
+  type    : {'CommandFileLooped'}
+  path    : /tmp/enricher/2026-03-24_01-10-55_015386/scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client.file
+  filetype: script
+2026-03-25 05:55 INFO: Sending prompt to model 'deepseek-r1:8b' (attempt 1)
+2026-03-25 05:55 INFO: LLM usage | entity=scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client.file | context=command | prompt_tokens=812 | output_tokens=471 | prompt_eval_s=0.162 | eval_s=11.593 | total_s=12.313 | load_s=0.218 | prompt_tps=4997.31 | output_tps=40.63
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client.file [command]
+2026-03-25 05:55 INFO: Found 60 loop run(s) for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client.file
+2026-03-25 05:55 DEBUG:     Loop run 1/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run00.loop
+2026-03-25 05:55 INFO: Sending prompt to model 'deepseek-r1:8b' (attempt 1)
+2026-03-25 05:55 INFO: LLM usage | entity=scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run00.loop | context=loop run | prompt_tokens=876 | output_tokens=450 | prompt_eval_s=0.218 | eval_s=11.090 | total_s=11.781 | load_s=0.141 | prompt_tps=4024.03 | output_tps=40.58
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run00.loop [loop run (new)]
+2026-03-25 05:55 DEBUG:     Loop run 2/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run01.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run01.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 3/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run02.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run02.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 4/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run03.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run03.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 5/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run04.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run04.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 6/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run05.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run05.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 7/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run06.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run06.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 8/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run07.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run07.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 9/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run08.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run08.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 10/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run09.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run09.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 11/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run10.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run10.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 12/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run11.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run11.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 13/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run12.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run12.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 14/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run13.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run13.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 15/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run14.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run14.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 16/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run15.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run15.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 17/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run16.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run16.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 18/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run17.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run17.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 19/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run18.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run18.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 20/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run19.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run19.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 21/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run20.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run20.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 22/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run21.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run21.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 23/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run22.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run22.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 24/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run23.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run23.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 25/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run24.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run24.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 26/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run25.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run25.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 27/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run26.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run26.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 28/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run27.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run27.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 29/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run28.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run28.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 30/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run29.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run29.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 31/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run30.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run30.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 32/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run31.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run31.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 33/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run32.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run32.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 34/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run33.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run33.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 35/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run34.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run34.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 36/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run35.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run35.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 37/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run36.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run36.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 38/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run37.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run37.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 39/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run38.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run38.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 40/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run39.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run39.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 41/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run40.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run40.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 42/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run41.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run41.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 43/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run42.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run42.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 44/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run43.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run43.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 45/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run44.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run44.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 46/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run45.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run45.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 47/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run46.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run46.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 48/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run47.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run47.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 49/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run48.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run48.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 50/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run49.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run49.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 51/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run50.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run50.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 52/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run51.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run51.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 53/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run52.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run52.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 54/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run53.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run53.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 55/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run54.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run54.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 56/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run55.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run55.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 57/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run56.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run56.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 58/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run57.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run57.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 59/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run58.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run58.loop [loop run (cached)]
+2026-03-25 05:55 DEBUG:     Loop run 60/60: scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run59.loop
+2026-03-25 05:55 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-13-28_585599_klaipeda-run-client_run59.loop [loop run (cached)]
+2026-03-25 05:55 INFO: -----------------------------------------------------------
+Processing looped command entity: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server.file
+  name    : 2026-03-24_01-13-28_460484_narva-run-server.file
+  type    : {'CommandFileLooped'}
+  path    : /tmp/enricher/2026-03-24_01-10-55_015386/scripts/narva/2026-03-24_01-13-28_460484_narva-run-server.file
+  filetype: script
+2026-03-25 05:55 INFO: Sending prompt to model 'deepseek-r1:8b' (attempt 1)
+2026-03-25 05:56 INFO: LLM usage | entity=scripts/narva/2026-03-24_01-13-28_460484_narva-run-server.file | context=command | prompt_tokens=1045 | output_tokens=535 | prompt_eval_s=0.269 | eval_s=13.259 | total_s=14.112 | load_s=0.195 | prompt_tps=3888.25 | output_tps=40.35
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server.file [command]
+2026-03-25 05:56 INFO: Found 60 loop run(s) for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server.file
+2026-03-25 05:56 DEBUG:     Loop run 1/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run00.loop
+2026-03-25 05:56 INFO: Sending prompt to model 'deepseek-r1:8b' (attempt 1)
+2026-03-25 05:56 INFO: LLM usage | entity=scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run00.loop | context=loop run | prompt_tokens=1109 | output_tokens=632 | prompt_eval_s=0.287 | eval_s=15.718 | total_s=16.646 | load_s=0.182 | prompt_tps=3868.11 | output_tps=40.21
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run00.loop [loop run (new)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run00/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 INFO: Sending prompt to model 'deepseek-r1:8b' (attempt 1)
+2026-03-25 05:56 INFO: LLM usage | entity=files/narva/data_run00/ | context=result data | prompt_tokens=1546 | output_tokens=359 | prompt_eval_s=0.435 | eval_s=8.995 | total_s=9.921 | load_s=0.220 | prompt_tps=3556.40 | output_tps=39.91
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run00/ [result data (new)]
+2026-03-25 05:56 DEBUG:     Loop run 2/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run01.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run01.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run01/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run01/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 3/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run02.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run02.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run02/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run02/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 4/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run03.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run03.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run03/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run03/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 5/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run04.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run04.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run04/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run04/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 6/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run05.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run05.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run05/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run05/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 7/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run06.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run06.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run06/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run06/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 8/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run07.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run07.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run07/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run07/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 9/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run08.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run08.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run08/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run08/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 10/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run09.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run09.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run09/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run09/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 11/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run10.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run10.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run10/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run10/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 12/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run11.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run11.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run11/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run11/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 13/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run12.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run12.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run12/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run12/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 14/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run13.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run13.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run13/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run13/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 15/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run14.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run14.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run14/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run14/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 16/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run15.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run15.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run15/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run15/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 17/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run16.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run16.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run16/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run16/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 18/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run17.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run17.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run17/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run17/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 19/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run18.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run18.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run18/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run18/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 20/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run19.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run19.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run19/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run19/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 21/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run20.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run20.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run20/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run20/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 22/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run21.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run21.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run21/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run21/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 23/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run22.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run22.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run22/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run22/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 24/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run23.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run23.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run23/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run23/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 25/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run24.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run24.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run24/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run24/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 26/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run25.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run25.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run25/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run25/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 27/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run26.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run26.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run26/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run26/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 28/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run27.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run27.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run27/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run27/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 29/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run28.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run28.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run28/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run28/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 30/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run29.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run29.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run29/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run29/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 31/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run30.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run30.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run30/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run30/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 32/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run31.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run31.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run31/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run31/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 33/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run32.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run32.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run32/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run32/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 34/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run33.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run33.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run33/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run33/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 35/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run34.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run34.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run34/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run34/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 36/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run35.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run35.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run35/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run35/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 37/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run36.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run36.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run36/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run36/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 38/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run37.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run37.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run37/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run37/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 39/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run38.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run38.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run38/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run38/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 40/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run39.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run39.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run39/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run39/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 41/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run40.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run40.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run40/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run40/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 42/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run41.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run41.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run41/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run41/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 43/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run42.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run42.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run42/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run42/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 44/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run43.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run43.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run43/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run43/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 45/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run44.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run44.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run44/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run44/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 46/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run45.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run45.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run45/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run45/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 47/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run46.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run46.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run46/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run46/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 48/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run47.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run47.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run47/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run47/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 49/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run48.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run48.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run48/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run48/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 50/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run49.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run49.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run49/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run49/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 51/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run50.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run50.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run50/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run50/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 52/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run51.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run51.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run51/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run51/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 53/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run52.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run52.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run52/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run52/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 54/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run53.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run53.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run53/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run53/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 55/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run54.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run54.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run54/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run54/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 56/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run55.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run55.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run55/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run55/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 57/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run56.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run56.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run56/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run56/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 58/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run57.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run57.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run57/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run57/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 59/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run58.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run58.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run58/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run58/ [result data (cached)]
+2026-03-25 05:56 DEBUG:     Loop run 60/60: scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run59.loop
+2026-03-25 05:56 DEBUG:   -> description set for scripts/narva/2026-03-24_01-13-28_460484_narva-run-server_run59.loop [loop run (cached)]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/narva/data_run59/ (normalized: files/narva/data_run/)
+2026-03-25 05:56 DEBUG:   -> description set for files/narva/data_run59/ [result data (cached)]
+2026-03-25 05:56 INFO: -----------------------------------------------------------
+Processing command entity: scripts/klaipeda/2026-03-24_01-31-22_439860_klaipeda-upload-results.file
+  name    : 2026-03-24_01-31-22_439860_klaipeda-upload-results.file
+  type    : {'CommandFile'}
+  path    : /tmp/enricher/2026-03-24_01-10-55_015386/scripts/klaipeda/2026-03-24_01-31-22_439860_klaipeda-upload-results.file
+  filetype: script
+2026-03-25 05:56 INFO: Sending prompt to model 'deepseek-r1:8b' (attempt 1)
+2026-03-25 05:56 INFO: LLM usage | entity=scripts/klaipeda/2026-03-24_01-31-22_439860_klaipeda-upload-results.file | context=command | prompt_tokens=424 | output_tokens=433 | prompt_eval_s=0.073 | eval_s=10.529 | total_s=11.103 | load_s=0.189 | prompt_tps=5772.45 | output_tps=41.12
+2026-03-25 05:56 DEBUG:   -> description set for scripts/klaipeda/2026-03-24_01-31-22_439860_klaipeda-upload-results.file [command]
+2026-03-25 05:56 INFO:   Processing resultData 1: files/klaipeda/results/ (normalized: files/klaipeda/results/)
+2026-03-25 05:56 INFO: Sending prompt to model 'deepseek-r1:8b' (attempt 1)
+2026-03-25 05:57 INFO: LLM usage | entity=files/klaipeda/results/ | context=result data | prompt_tokens=762 | output_tokens=577 | prompt_eval_s=0.171 | eval_s=14.206 | total_s=15.028 | load_s=0.236 | prompt_tps=4458.74 | output_tps=40.62
+2026-03-25 05:57 DEBUG:   -> description set for files/klaipeda/results/ [result data (new)]
+2026-03-25 05:57 INFO: -----------------------------------------------------------
+Processing command entity: scripts/narva/2026-03-24_01-31-24_754655_narva-upload-results.file
+  name    : 2026-03-24_01-31-24_754655_narva-upload-results.file
+  type    : {'CommandFile'}
+  path    : /tmp/enricher/2026-03-24_01-10-55_015386/scripts/narva/2026-03-24_01-31-24_754655_narva-upload-results.file
+  filetype: script
+2026-03-25 05:57 INFO: Sending prompt to model 'deepseek-r1:8b' (attempt 1)
+2026-03-25 05:57 INFO: LLM usage | entity=scripts/narva/2026-03-24_01-31-24_754655_narva-upload-results.file | context=command | prompt_tokens=423 | output_tokens=454 | prompt_eval_s=0.072 | eval_s=11.052 | total_s=11.597 | load_s=0.142 | prompt_tps=5839.69 | output_tps=41.08
+2026-03-25 05:57 DEBUG:   -> description set for scripts/narva/2026-03-24_01-31-24_754655_narva-upload-results.file [command]
+2026-03-25 05:57 INFO:   Processing resultData 1: files/narva/results/ (normalized: files/narva/results/)
+2026-03-25 05:57 INFO: Sending prompt to model 'deepseek-r1:8b' (attempt 1)
+2026-03-25 05:57 INFO: LLM usage | entity=files/narva/results/ | context=result data | prompt_tokens=764 | output_tokens=420 | prompt_eval_s=0.173 | eval_s=10.316 | total_s=10.995 | load_s=0.202 | prompt_tps=4416.60 | output_tps=40.71
+2026-03-25 05:57 DEBUG:   -> description set for files/narva/results/ [result data (new)]
+2026-03-25 05:57 INFO: -----------------------------------------------------------
+Processing command entity: scripts/narva/2026-03-24_01-31-27_012438_create-evaluation-dir.command
+  name    : 2026-03-24_01-31-27_012438_create-evaluation-dir.command
+  type    : {'CommandFile'}
+  path    : /tmp/enricher/2026-03-24_01-10-55_015386/scripts/narva/2026-03-24_01-31-27_012438_create-evaluation-dir.command
+  filetype: command
+2026-03-25 05:57 INFO: Sending prompt to model 'deepseek-r1:8b' (attempt 1)
+2026-03-25 05:57 INFO: LLM usage | entity=scripts/narva/2026-03-24_01-31-27_012438_create-evaluation-dir.command | context=command | prompt_tokens=332 | output_tokens=280 | prompt_eval_s=0.045 | eval_s=6.773 | total_s=7.155 | load_s=0.135 | prompt_tps=7372.42 | output_tps=41.34
+2026-03-25 05:57 DEBUG:   -> description set for scripts/narva/2026-03-24_01-31-27_012438_create-evaluation-dir.command [command]
+2026-03-25 05:57 INFO: Skipping pre-described entity: scripts/narva/2026-03-24_01-31-28_606220_copy_files.command (type: {'CommandFileCopy'})
+2026-03-25 05:57 INFO: Skipping pre-described entity: scripts/narva/2026-03-24_01-31-29_687199_copy_scripts.command (type: {'CommandFileCopy'})
+2026-03-25 05:57 INFO: -----------------------------------------------------------
+Processing command entity: scripts/narva/2026-03-24_01-31-31_094520_generate-throughput-heatmap.file
+  name    : 2026-03-24_01-31-31_094520_generate-throughput-heatmap.file
+  type    : {'CommandFile'}
+  path    : /tmp/enricher/2026-03-24_01-10-55_015386/scripts/narva/2026-03-24_01-31-31_094520_generate-throughput-heatmap.file
+  filetype: script
+2026-03-25 05:57 INFO: Sending prompt to model 'deepseek-r1:8b' (attempt 1)
+2026-03-25 05:57 INFO: LLM usage | entity=scripts/narva/2026-03-24_01-31-31_094520_generate-throughput-heatmap.file | context=command | prompt_tokens=1871 | output_tokens=677 | prompt_eval_s=0.544 | eval_s=17.121 | total_s=18.310 | load_s=0.151 | prompt_tps=3441.35 | output_tps=39.54
+2026-03-25 05:57 DEBUG:   -> description set for scripts/narva/2026-03-24_01-31-31_094520_generate-throughput-heatmap.file [command]
+2026-03-25 05:57 INFO:   Processing resultData 1: files/narva/throughput_heatmap.pdf (normalized: files/narva/throughput_heatmap.pdf)
+2026-03-25 05:57 INFO: Sending prompt to model 'deepseek-r1:8b' (attempt 1)
+2026-03-25 05:58 INFO: LLM usage | entity=files/narva/throughput_heatmap.pdf | context=result data | prompt_tokens=1566 | output_tokens=556 | prompt_eval_s=0.443 | eval_s=13.951 | total_s=14.962 | load_s=0.157 | prompt_tps=3537.64 | output_tps=39.85
+2026-03-25 05:58 DEBUG:   -> description set for files/narva/throughput_heatmap.pdf [result data (new)]
+2026-03-25 05:58 INFO: Scanning experiment-level result data...
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run00/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run01/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run02/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run03/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run04/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run05/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run06/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run07/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run08/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run09/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run10/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run11/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run12/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run13/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run14/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run15/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run16/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run17/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run18/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run19/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run20/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run21/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run22/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run23/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run24/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run25/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run26/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run27/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run28/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run29/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run30/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run31/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run32/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run33/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run34/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run35/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run36/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run37/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run38/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run39/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run40/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run41/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run42/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run43/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run44/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run45/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run46/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run47/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run48/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run49/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run50/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run51/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run52/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run53/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run54/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run55/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run56/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run57/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run58/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/data_run59/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/klaipeda/results/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/results/ (already covered)
+2026-03-25 05:58 DEBUG:   -> skip files/narva/throughput_heatmap.pdf (already covered)
+2026-03-25 05:58 DEBUG:   -> no hardware.json for klaipeda.anonymous.testbed, skipping node
+2026-03-25 05:58 DEBUG:   -> no hardware.json for narva.anonymous.testbed, skipping node
+2026-03-25 05:58 INFO: Generating crate-level title and description...
+2026-03-25 05:58 INFO: Sending prompt to model 'deepseek-r1:8b' (attempt 1)
+2026-03-25 05:58 INFO: LLM usage | entity=./ | context=crate summary | prompt_tokens=1814 | output_tokens=842 | prompt_eval_s=0.542 | eval_s=21.317 | total_s=22.722 | load_s=0.248 | prompt_tps=3347.57 | output_tps=39.50
+2026-03-25 05:58 DEBUG:   -> name replaced generic for ./ [crate summary]
+2026-03-25 05:58 DEBUG:   -> description replaced generic for ./ [crate summary]
+2026-03-25 05:58 INFO: Sending prompt to model 'deepseek-r1:8b' (attempt 1)
+2026-03-25 05:58 INFO: LLM usage | entity=./ | context=crate keywords | prompt_tokens=1722 | output_tokens=661 | prompt_eval_s=0.492 | eval_s=16.670 | total_s=17.877 | load_s=0.228 | prompt_tps=3499.46 | output_tps=39.65
+2026-03-25 05:58 DEBUG:   -> keywords refreshed existing for ./ [crate keywords]
+2026-03-25 05:58 DEBUG: No CITATION.cff found at /tmp/enricher/2026-03-24_01-10-55_015386/CITATION.cff
+2026-03-25 05:58 INFO: LLM usage summary | calls=18 | calls_with_usage=18 | prompt_tokens=17666 | output_tokens=9830 | prompt_eval_s=4.462 | eval_s=243.658 | total_s=258.801 | load_s=3.479 | prompt_tps=3958.77 | output_tps=40.34
+2026-03-25 05:58 INFO: Enrichment finished. Updated 196 entities.
+2026-03-25 05:58 INFO: Saved metadata. Updated 196 description(s).
+2026-03-25 05:58 INFO: Total time: 4m 19.1s
+2026-03-25 05:58 INFO: Wrote run summary JSON: /tmp/llm-enrichment-manifest.json
+2026-03-25 05:58:47  Unloaded Ollama model after run: deepseek-r1:8b
+2026-03-25 05:58:47  Running autoscore using reference crate: /srv/testbed/results/anonymous/default/2026-03-24_01-10-55_015386_reference
+2026-03-25 05:58 INFO: Loaded 211 reference(s) from reference crate /srv/testbed/results/anonymous/default/2026-03-24_01-10-55_015386_reference
+2026-03-25 05:58 INFO: Matched 211 of 211 references (0 unmatched)
+2026-03-25 05:58 DEBUG: matplotlib data path: /root/venv3/lib/python3.12/site-packages/matplotlib/mpl-data
+2026-03-25 05:58 DEBUG: CONFIGDIR=/root/.config/matplotlib
+2026-03-25 05:58 DEBUG: interactive is False
+2026-03-25 05:58 DEBUG: platform is linux
+2026-03-25 05:58 DEBUG: CACHEDIR=/root/.cache/matplotlib
+2026-03-25 05:58 DEBUG: Using fontManager instance from /root/.cache/matplotlib/fontlist-v390.json
+2026-03-25 05:58 DEBUG: Starting new HTTPS connection (1): huggingface.co:443
+2026-03-25 05:58 DEBUG: https://huggingface.co:443 "HEAD /microsoft/deberta-large-mnli/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2026-03-25 05:58 DEBUG: https://huggingface.co:443 "HEAD /api/resolve-cache/models/microsoft/deberta-large-mnli/7296194b9009373def4f7c5dad292651e4b5cf4e/tokenizer_config.json HTTP/1.1" 200 0
+2026-03-25 05:58 DEBUG: https://huggingface.co:443 "GET /api/models/microsoft/deberta-large-mnli/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2026-03-25 05:58 DEBUG: https://huggingface.co:443 "GET /api/models/microsoft/deberta-large-mnli/tree/main?recursive=True&expand=False HTTP/1.1" 200 None
+2026-03-25 05:58 DEBUG: https://huggingface.co:443 "HEAD /microsoft/deberta-large-mnli/resolve/main/config.json HTTP/1.1" 307 0
+2026-03-25 05:58 DEBUG: https://huggingface.co:443 "HEAD /api/resolve-cache/models/microsoft/deberta-large-mnli/7296194b9009373def4f7c5dad292651e4b5cf4e/config.json HTTP/1.1" 200 0
+2026-03-25 05:58 DEBUG: https://huggingface.co:443 "HEAD /microsoft/deberta-large-mnli/resolve/main/model.safetensors HTTP/1.1" 404 0
+2026-03-25 05:58 INFO: Computed BERTScore for 211 pairs (requested=auto, actual=cuda)
+2026-03-25 05:58 INFO: Wrote autoscore report to /tmp/enricher/bertscore_results.json
+
+=== Autoscore: 211/211 matched ===
+  ROUGE-L F1 mean:      0.238  (sd=0.2229)
+  Token overlap mean:   0.2003  (sd=0.2314)
+  BERTScore F1 mean:    0.3789  (sd=0.2033)
+  BERTScore P mean:     0.3625
+  BERTScore R mean:     0.3921
+  [description] n=210  ROUGE-L=0.2382  overlap=0.2008
+  [name] n=1  ROUGE-L=0.1818  overlap=0.1
+
+2026-03-25 05:58:55  Reference autoscore completed successfully.
+2026-03-25 05:58 INFO: Wrote markdown report to /tmp/enricher/bertscore_results.md
+Report written to /tmp/enricher/bertscore_results.md
+2026-03-25 05:58:55  Evaluation markdown report written to /tmp/enricher/bertscore_results.md
+2026-03-25 05:58:55  Uploading folder '/tmp/enricher-staging' as 'enrichment' with loop suffixing

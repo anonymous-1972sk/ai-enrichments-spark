@@ -1,0 +1,30 @@
+++ pos_get_variable client_interface -r
++ CLIENT_INTERFACE=enp2s0f1
+++ pos_get_variable client_ip -r
++ CLIENT_IP=fd00:0:0:1::1
+++ pos_get_variable server_ip -r
++ SERVER_IP=fd00:0:0:3::1
+++ pos_get_variable prefix_length -r
++ PREFIX_LENGTH=112
+++ pos_get_variable client_extra_interface -r
++ CLIENT_EXTRA_INTERFACE=enp2s0f0
+++ pos_get_variable client_extra_ip -r
++ CLIENT_EXTRA_IP=fd00:0:0:2::1
+++ pos_get_variable client_table_id -r
++ CLIENT_TABLE_ID=100
+++ pos_get_variable client_extra_table_id -r
++ CLIENT_EXTRA_TABLE_ID=200
++ echo 'Configuring the client'\''s network with two paths to the server'
+Configuring the client's network with two paths to the server
++ echo '...Configuring the fast path'
+...Configuring the fast path
++ ip addr add dev enp2s0f1 fd00:0:0:1::1/112
++ ip -6 route add fd00:0:0:3::1/112 dev enp2s0f1 table 100
++ ip -6 rule add from fd00:0:0:1::1 lookup 100
++ ip link set dev enp2s0f1 up
++ echo '...Configuring the slow path'
+...Configuring the slow path
++ ip addr add dev enp2s0f0 fd00:0:0:2::1/112
++ ip -6 route add fd00:0:0:3::1/112 dev enp2s0f0 table 200
++ ip -6 rule add from fd00:0:0:2::1 lookup 200
++ ip link set dev enp2s0f0 up
